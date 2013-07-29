@@ -1,0 +1,47 @@
+.content-info {
+  font-size:0.875em;
+}
+
+.widget{
+  padding:4em 0;
+}
+
+.f1 {
+  background: $gray-light;
+  color:$white;
+  a {
+    color:$gray-lighter;
+    &:hover, &:focus {
+        color:$white;
+    }
+  }
+
+
+
+  .widget:nth-child(2) {
+    background: $green;
+    margin:0 -1em;
+    padding:4em 2em;
+    text-align: center;
+  }
+
+}
+
+.f2 {
+  background: $gray-lighter;
+  color:$gray-darker;
+  a {
+    color:$orange;
+    &:hover, &:focus {
+        color:$green;
+    }
+  }
+
+  .widget:nth-child(2) {
+    background: lighten($gray-lighter,15%);
+    margin:0 -1em;
+    padding:4em 2em;
+    text-align: center;
+
+  }
+}

@@ -1,0 +1,85 @@
+.entry-side {
+}
+
+.entry-intro {
+  font-size:1.75em;
+  font-weight: bold;
+  margin-bottom: 2em;
+
+}
+
+.entry-testimon {
+
+}
+
+.entry-actionblock {
+  margin:1.5em 0 2em;
+  font-size: 2em;
+  font-style: italic;
+  font-weight:800;
+  color:$orange;
+  text-transform: uppercase;
+  line-height:1em;
+
+  .tel, .online {
+    margin:0.5em 0em;
+    position:relative;
+    padding-left:3em;
+
+    &:before {
+      @include box-sizing('border-box');
+      position: absolute;
+      left:0;
+      //top:-0.25em;
+      text-align: center;
+      font-family: 'EntypoRegular';
+      content:'\1F4DE';
+      color:$white;
+      background: $orange;
+      font-size:2em;
+      //padding-top:0.25em;
+      line-height:1.2em;
+      border-radius:1em;
+      width:1.2em;
+      height:1.2em;
+    }
+  }
+  .tel {
+
+
+    
+    span {
+      font-size:1em;
+      font-weight: 300;
+      display:block;
+      margin-top:0.125em;
+    }
+  }
+
+  .online {
+    &:before {
+      content:'\E789';
+      z-index:-1;
+    }
+    &:hover:before {
+      background:darken($orange,20%);
+    }
+    a {
+        color:$orange;
+        text-decoration: none;
+        display:block;
+        margin-left:-3em;
+        padding-left:3em;
+        &:hover, &:focus {
+          color:darken($orange,20%);
+        }
+        
+    }
+
+  }
+
+}
+
+.entry-content {
+  margin-bottom:8em;
+} 

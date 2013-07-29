@@ -1,0 +1,83 @@
+.tovabbiak {
+  background: $gray;
+  color:$white;
+  font-size:0.875em;
+
+  a {
+  color:$orange;
+  &:hover, &:focus {
+      color:$green;
+    }
+  }
+  h2 {
+    text-align:center;
+  }
+
+  .tovkez {
+    @include box-sizing('border-box');
+    position:relative;
+
+    margin:2em 6%;
+    padding:0 4em 2em 0;
+    border-bottom: 1px solid $gray-dark;
+    &:after {
+        content:'';
+        position:absolute;
+        left:0;bottom:0;right:0;
+          border-top: 1px solid $gray-darker;
+    }
+    h3{
+      font-size: 1.25em;
+      text-transform: none;
+      font-weight: 700;
+      margin-bottom:0;
+
+    }
+    p {
+      margin-top:0.5em;
+    }
+    .read-more {
+      background: $orange;
+      color:$gray;
+      font-size: 4em;
+      display: block;
+      position:absolute;
+      right:0;
+      top:0.0666667em;
+      @include box-sizing('border-box');
+      width:0.8em;
+      height:0.8em;
+      border-radius:0.4em;
+      &:hover, &:focus {
+        background:$green;
+      }
+      &:after {
+        content:'\E766';
+        position:absolute;
+        text-align: center;
+        line-height: 0.8em;
+        right:0.2em;
+        font-family: EntypoRegular;
+        
+      }
+    }
+
+  }
+  
+  .more {
+    display: block;
+    color:$green;
+    font-weight:bold;
+    font-style: italic;
+    margin:2em 2em 4em 2em;
+     &:hover, &:focus {
+      text-decoration:underline;
+      //color:darken($green,10%);
+      color:darken($orange,20%);
+    }
+
+  }
+
+}
+
+

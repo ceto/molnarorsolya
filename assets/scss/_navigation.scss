@@ -1,0 +1,27 @@
+#menu-primary-navigation {
+
+  font-size: 1.125em;
+  list-style-type: none;
+  padding:0;
+  li {
+    display: inline-block;
+    text-align: center;
+    width:49%;
+    margin:0.66666667em 0;
+  }
+
+  
+  a {
+  padding:3px 3px;
+  color:$gray-light;
+  text-decoration: none;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.066666667em;
+    &:hover, &:focus {
+      color:$white;
+      background: $gray-dark;
+    }
+  }
+
+}

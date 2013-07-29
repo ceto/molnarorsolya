@@ -3,5 +3,60 @@
    ========================================================================== */
 
 body {
+  position:relative;
+  color:$gray;
+  font-family: "Open Sans", sans-serif;
+  margin:0 auto;
 
 }
+
+a {
+  color:$green;
+  text-decoration: none;
+  
+  &:hover, &:focus {
+    text-decoration:underline;
+    color:darken($green,10%);
+    //color:darken($orange,20%);
+  }
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight:800;
+  text-transform: uppercase;
+  letter-spacing: 0.066666667em;
+  margin-top:2em;
+}
+
+h1 {
+  font-size:2.5em;
+  line-height: 1.125em;
+}
+
+
+li {
+  margin:1em 0;
+}
+
+blockquote {
+  font-size:1.25em;
+  font-style: italic;
+  font-weight: 300;
+  margin:1em 1em 1em 0;
+  padding:0 1em 0 1.5em;
+  border-left:0.5em solid $orange;
+  
+  p { margin-top:0}
+
+  footer {
+    font-style: normal;
+    font-size: 0.875em;
+    text-align: right;
+  }
+}
+
+.wrap {
+  padding:0 1em;
+}
+
+
