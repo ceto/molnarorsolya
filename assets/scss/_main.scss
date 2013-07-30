@@ -1,4 +1,14 @@
 .entry-side {
+  @include box-sizing('border-box');
+  padding:0 1em;
+  @include breakpoint($s2) {
+    float:left;
+    width:34%;
+  }
+  @include breakpoint($s3) {
+    float:left;
+    width:34%;
+  }
 }
 
 .entry-intro {
@@ -22,9 +32,21 @@
   line-height:1em;
 
   .tel, .online {
-    margin:0.5em 0em;
+    margin:0.75em 0em;
     position:relative;
     padding-left:3em;
+    display: block;
+    color:$orange;
+    text-decoration: none;
+    display:block;
+    &:hover, &:focus {
+      color:darken($orange,20%);
+    }
+
+    &:hover:before, &:focus:before {
+      background:darken($orange,20%);
+
+    }
 
     &:before {
       @include box-sizing('border-box');
@@ -33,6 +55,7 @@
       //top:-0.25em;
       text-align: center;
       font-family: 'EntypoRegular';
+      font-weight: normal;
       content:'\1F4DE';
       color:$white;
       background: $orange;
@@ -45,9 +68,6 @@
     }
   }
   .tel {
-
-
-    
     span {
       font-size:1em;
       font-weight: 300;
@@ -59,27 +79,21 @@
   .online {
     &:before {
       content:'\E789';
-      z-index:-1;
     }
-    &:hover:before {
-      background:darken($orange,20%);
-    }
-    a {
-        color:$orange;
-        text-decoration: none;
-        display:block;
-        margin-left:-3em;
-        padding-left:3em;
-        &:hover, &:focus {
-          color:darken($orange,20%);
-        }
-        
-    }
-
   }
 
 }
 
 .entry-content {
+  @include box-sizing('border-box');
   margin-bottom:8em;
+  padding:1em 1em;
+  @include breakpoint($s2) {
+    float:left;
+    width:66%;
+  }
+  @include breakpoint($s3) {
+    float:left;
+    width:66%;
+  }
 } 

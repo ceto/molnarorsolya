@@ -24,13 +24,13 @@ Template Name: Kezelés Template
       </div>
       <div class="entry-testimon">
         <blockquote>
-          <p>Nagyon féltem először mert allergiás vagyok jónéhány növényre, de végül rá kellet jönnöm, hogy ez csúcs amit orsi művelt velem.</p>
-          <footer>&mdash; Csabainé Rozi</footer>          
+          <p>Nagyon féltem először mert allergiás vagyok jónéhány növényre, de rá kellet jönnöm, hogy a gyógynövényes gőz az életem.</p>
+          <footer>&mdash; Csámpás Rozi</footer>          
         </blockquote>
       </div>
       <div class="entry-actionblock">
-        <p class="tel">Foglalj időpontot <span>+36 70 7705653</span></p>
-        <p class="online"><a href="#">vagy jelentkezz Online</a></p>
+        <a href="tel:+36707705653" class="tel">Foglalj időpontot <span>+36 70 7705653</span></a>
+        <a href="#" class="online">vagy jelentkezz Online</a>
       </div>
     </div>
     <div class="entry-content">

@@ -1,13 +1,37 @@
-#menu-primary-navigation {
+.nav-main {
+  //margin:0 auto;
+  //max-width: $maximum;
 
-  font-size: 1.125em;
-  list-style-type: none;
-  padding:0;
+  ul {
+    font-size: 1.125em;
+    list-style-type: none;
+    padding:0;
+  }
   li {
-    display: inline-block;
+    @include box-sizing('border-box');
+    display: block;
     text-align: center;
-    width:49%;
+    width:50%;
+    float:left;
     margin:0.66666667em 0;
+    
+    @include breakpoint($s1) {
+      width:25%;
+    }
+
+    @include breakpoint($s2) {
+      width:20%;
+      &:nth-child(3) {
+        margin-left:20%;
+      }
+    }
+  
+    @include breakpoint($s3) {
+      width:20%;
+      &:nth-child(3) {
+        margin-left:20%;
+      }
+    }
   }
 
   

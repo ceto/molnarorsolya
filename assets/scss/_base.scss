@@ -56,7 +56,10 @@ blockquote {
 }
 
 .wrap {
-  padding:0 1em;
+  .row {
+    max-width:$maximum;
+    margin:0 auto;
+  }
 }
 
 

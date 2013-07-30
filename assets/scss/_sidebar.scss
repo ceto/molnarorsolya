@@ -2,6 +2,7 @@
   background: $gray;
   color:$white;
   font-size:0.875em;
+  padding-bottom:4em;
 
   a {
   color:$orange;
@@ -20,17 +21,39 @@
     margin:2em 6%;
     padding:0 4em 2em 0;
     border-bottom: 1px solid $gray-dark;
+    @include breakpoint($s2) {
+      margin:1em 3%;
+      width:44%;
+      float:left;
+      &:nth-child(2n) {
+        clear:left;
+      }
+    }
+
+    @include breakpoint($s3) {
+      margin:1em 3%;
+      width:44%;
+      float:left;
+      &:nth-child(2n) {
+        clear:left;
+      }
+    }
+
+
     &:after {
         content:'';
         position:absolute;
         left:0;bottom:0;right:0;
           border-top: 1px solid $gray-darker;
     }
+
+
+
     h3{
       font-size: 1.25em;
       text-transform: none;
       font-weight: 700;
-      margin-bottom:0;
+      margin:0 0;
 
     }
     p {
@@ -58,6 +81,7 @@
         line-height: 0.8em;
         right:0.2em;
         font-family: EntypoRegular;
+        font-weight: normal;
         
       }
     }
@@ -69,11 +93,25 @@
     color:$green;
     font-weight:bold;
     font-style: italic;
-    margin:2em 2em 4em 2em;
-     &:hover, &:focus {
+    margin:2em 6% 4em 6%;
+    &:hover, &:focus {
       text-decoration:underline;
       //color:darken($green,10%);
       color:darken($orange,20%);
+    }
+    @include breakpoint($s2) {
+          float:left;
+          text-align: right;
+          width:44%;
+          margin:2em 3% 4em 3%;
+    
+    }
+    @include breakpoint($s3) {
+          float:left;
+          text-align: right;
+          width:44%;
+          margin:2em 3% 4em 3%;
+    
     }
 
   }

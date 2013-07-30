@@ -5,7 +5,7 @@
   <div class="content row">
   <aside>
     <header>
-      <h2>További kezelések</h2>
+      <h2>További arckezelések</h2>
     </header>
     <div class="tovkez">
       <h3>Aromaterápiás wellness élménykezelések</h3>
@@ -32,7 +32,7 @@
       <p>A felhasznált termékek a hévízi tó vizét, gabonakivonatokat, biológiai tisztaságú illóolajokat és gyógyiszapot tartalmaznak</p>
       <a class="read-more hide-text" href="#">Tini</a>
     </div>
-    <a class="more" href="#">Vissza a kezelésekhez ...</a>
+    <a class="more" href="#">Még több kezelés ...</a>
   </aside>
     </div><!-- /.content -->
   </div><!-- /.wrap.tovabbiak -->
