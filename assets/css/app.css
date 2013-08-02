@@ -2288,1148 +2288,1150 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   font-family: 'EntypoRegular';
   font-size: 2em;
   font-weight: normal;
-  line-height: 0; }
+  line-height: 0;
+  font-style: normal; }
 
-/* line 35, ../scss/_font.scss */
+/* line 36, ../scss/_font.scss */
 .entypo-social {
   font-family: 'EntypoSocialRegular';
   font-size: 2em;
   font-weight: normal;
-  line-height: 0; }
+  line-height: 0;
+  font-style: normal; }
 
-/* line 42, ../scss/_font.scss */
+/* line 44, ../scss/_font.scss */
 .entypo.phone:before {
   content: '\1F4DE'; }
 
-/* line 43, ../scss/_font.scss */
+/* line 45, ../scss/_font.scss */
 .entypo.mobile:before {
   content: '\1F4F1'; }
 
-/* line 44, ../scss/_font.scss */
+/* line 46, ../scss/_font.scss */
 .entypo.mouse:before {
   content: '\E789'; }
 
-/* line 45, ../scss/_font.scss */
+/* line 47, ../scss/_font.scss */
 .entypo.address:before {
   content: '\E723'; }
 
-/* line 46, ../scss/_font.scss */
+/* line 48, ../scss/_font.scss */
 .entypo.mail:before {
   content: '\2709'; }
 
-/* line 47, ../scss/_font.scss */
+/* line 49, ../scss/_font.scss */
 .entypo.paper-plane:before {
   content: '\1F53F'; }
 
-/* line 48, ../scss/_font.scss */
+/* line 50, ../scss/_font.scss */
 .entypo.pencil:before {
   content: '\270E'; }
 
-/* line 49, ../scss/_font.scss */
+/* line 51, ../scss/_font.scss */
 .entypo.feather:before {
   content: '\2712'; }
 
-/* line 50, ../scss/_font.scss */
+/* line 52, ../scss/_font.scss */
 .entypo.attach:before {
   content: '\1F4CE'; }
 
-/* line 51, ../scss/_font.scss */
+/* line 53, ../scss/_font.scss */
 .entypo.inbox:before {
   content: '\E777'; }
 
-/* line 52, ../scss/_font.scss */
+/* line 54, ../scss/_font.scss */
 .entypo.reply:before {
   content: '\E712'; }
 
-/* line 53, ../scss/_font.scss */
+/* line 55, ../scss/_font.scss */
 .entypo.reply-all:before {
   content: '\E713'; }
 
-/* line 54, ../scss/_font.scss */
+/* line 56, ../scss/_font.scss */
 .entypo.forward:before {
   content: '\27A6'; }
 
-/* line 55, ../scss/_font.scss */
+/* line 57, ../scss/_font.scss */
 .entypo.user:before {
   content: '\1F464'; }
 
-/* line 56, ../scss/_font.scss */
+/* line 58, ../scss/_font.scss */
 .entypo.users:before {
   content: '\1F465'; }
 
-/* line 57, ../scss/_font.scss */
+/* line 59, ../scss/_font.scss */
 .entypo.add-user:before {
   content: '\E700'; }
 
-/* line 58, ../scss/_font.scss */
+/* line 60, ../scss/_font.scss */
 .entypo.vcard:before {
   content: '\E722'; }
 
-/* line 59, ../scss/_font.scss */
+/* line 61, ../scss/_font.scss */
 .entypo.export:before {
   content: '\E715'; }
 
-/* line 60, ../scss/_font.scss */
+/* line 62, ../scss/_font.scss */
 .entypo.location:before {
   content: '\E724'; }
 
-/* line 61, ../scss/_font.scss */
+/* line 63, ../scss/_font.scss */
 .entypo.map:before {
   content: '\E727'; }
 
-/* line 62, ../scss/_font.scss */
+/* line 64, ../scss/_font.scss */
 .entypo.compass:before {
   content: '\E728'; }
 
-/* line 63, ../scss/_font.scss */
+/* line 65, ../scss/_font.scss */
 .entypo.direction:before {
   content: '\27A2'; }
 
-/* line 64, ../scss/_font.scss */
+/* line 66, ../scss/_font.scss */
 .entypo.hair-cross:before {
   content: '\1F3AF'; }
 
-/* line 65, ../scss/_font.scss */
+/* line 67, ../scss/_font.scss */
 .entypo.share:before {
   content: '\E73C'; }
 
-/* line 66, ../scss/_font.scss */
+/* line 68, ../scss/_font.scss */
 .entypo.shareable:before {
   content: '\E73E'; }
 
-/* line 67, ../scss/_font.scss */
+/* line 69, ../scss/_font.scss */
 .entypo.heart:before {
   content: '\2665'; }
 
-/* line 68, ../scss/_font.scss */
+/* line 70, ../scss/_font.scss */
 .entypo.heart-empty:before {
   content: '\2661'; }
 
-/* line 69, ../scss/_font.scss */
+/* line 71, ../scss/_font.scss */
 .entypo.star:before {
   content: '\2605'; }
 
-/* line 70, ../scss/_font.scss */
+/* line 72, ../scss/_font.scss */
 .entypo.star-empty:before {
   content: '\2606'; }
 
-/* line 71, ../scss/_font.scss */
+/* line 73, ../scss/_font.scss */
 .entypo.thumbs-up:before {
   content: '\1F44D'; }
 
-/* line 72, ../scss/_font.scss */
+/* line 74, ../scss/_font.scss */
 .entypo.thumbs-down:before {
   content: '\1F44E'; }
 
-/* line 73, ../scss/_font.scss */
+/* line 75, ../scss/_font.scss */
 .entypo.chat:before {
   content: '\E720'; }
 
-/* line 74, ../scss/_font.scss */
+/* line 76, ../scss/_font.scss */
 .entypo.comment:before {
   content: '\E718'; }
 
-/* line 75, ../scss/_font.scss */
+/* line 77, ../scss/_font.scss */
 .entypo.quote:before {
   content: '\275E'; }
 
-/* line 76, ../scss/_font.scss */
+/* line 78, ../scss/_font.scss */
 .entypo.home:before {
   content: '\2302'; }
 
-/* line 77, ../scss/_font.scss */
+/* line 79, ../scss/_font.scss */
 .entypo.popup:before {
   content: '\E74C'; }
 
-/* line 78, ../scss/_font.scss */
+/* line 80, ../scss/_font.scss */
 .entypo.search:before {
   content: '\1F50D'; }
 
-/* line 79, ../scss/_font.scss */
+/* line 81, ../scss/_font.scss */
 .entypo.flashlight:before {
   content: '\1F526'; }
 
-/* line 80, ../scss/_font.scss */
+/* line 82, ../scss/_font.scss */
 .entypo.print:before {
   content: '\E716'; }
 
-/* line 81, ../scss/_font.scss */
+/* line 83, ../scss/_font.scss */
 .entypo.bell:before {
   content: '\1F514'; }
 
-/* line 82, ../scss/_font.scss */
+/* line 84, ../scss/_font.scss */
 .entypo.link:before {
   content: '\1F517'; }
 
-/* line 83, ../scss/_font.scss */
+/* line 85, ../scss/_font.scss */
 .entypo.flag:before {
   content: '\2691'; }
 
-/* line 84, ../scss/_font.scss */
+/* line 86, ../scss/_font.scss */
 .entypo.cog:before {
   content: '\2699'; }
 
-/* line 85, ../scss/_font.scss */
+/* line 87, ../scss/_font.scss */
 .entypo.tools:before {
   content: '\2692'; }
 
-/* line 86, ../scss/_font.scss */
+/* line 88, ../scss/_font.scss */
 .entypo.trophy:before {
   content: '\1F3C6'; }
 
-/* line 87, ../scss/_font.scss */
+/* line 89, ../scss/_font.scss */
 .entypo.tag:before {
   content: '\E70C'; }
 
-/* line 88, ../scss/_font.scss */
+/* line 90, ../scss/_font.scss */
 .entypo.camera:before {
   content: '\1F4F7'; }
 
-/* line 89, ../scss/_font.scss */
+/* line 91, ../scss/_font.scss */
 .entypo.megaphone:before {
   content: '1F4E3'; }
 
-/* line 90, ../scss/_font.scss */
+/* line 92, ../scss/_font.scss */
 .entypo.moon:before {
   content: '\0045'; }
 
-/* line 91, ../scss/_font.scss */
+/* line 93, ../scss/_font.scss */
 .entypo.palette:before {
   content: '\1F3A8'; }
 
-/* line 92, ../scss/_font.scss */
+/* line 94, ../scss/_font.scss */
 .entypo.leaf:before {
   content: '\1F342'; }
 
-/* line 93, ../scss/_font.scss */
+/* line 95, ../scss/_font.scss */
 .entypo.note:before {
   content: '\266A'; }
 
-/* line 94, ../scss/_font.scss */
+/* line 96, ../scss/_font.scss */
 .entypo.beamed-note:before {
   content: '\266B'; }
 
-/* line 95, ../scss/_font.scss */
+/* line 97, ../scss/_font.scss */
 .entypo.new:before {
   content: '\1F4A5'; }
 
-/* line 96, ../scss/_font.scss */
+/* line 98, ../scss/_font.scss */
 .entypo.graduation-cap:before {
   content: '\1F393'; }
 
-/* line 97, ../scss/_font.scss */
+/* line 99, ../scss/_font.scss */
 .entypo.book:before {
   content: '\1F4D5'; }
 
-/* line 98, ../scss/_font.scss */
+/* line 100, ../scss/_font.scss */
 .entypo.newspaper:before {
   content: '\1F4F0'; }
 
-/* line 99, ../scss/_font.scss */
+/* line 101, ../scss/_font.scss */
 .entypo.bag:before {
   content: '\1F45C'; }
 
-/* line 100, ../scss/_font.scss */
+/* line 102, ../scss/_font.scss */
 .entypo.airplane:before {
   content: '\2708'; }
 
-/* line 101, ../scss/_font.scss */
+/* line 103, ../scss/_font.scss */
 .entypo.lifebuoy:before {
   content: '\E788'; }
 
-/* line 102, ../scss/_font.scss */
+/* line 104, ../scss/_font.scss */
 .entypo.eye:before {
   content: '\E70A'; }
 
-/* line 103, ../scss/_font.scss */
+/* line 105, ../scss/_font.scss */
 .entypo.clock:before {
   content: '\1F554'; }
 
-/* line 104, ../scss/_font.scss */
+/* line 106, ../scss/_font.scss */
 .entypo.mic:before {
   content: '\1F3A4'; }
 
-/* line 105, ../scss/_font.scss */
+/* line 107, ../scss/_font.scss */
 .entypo.calendar:before {
   content: '\1F4C5'; }
 
-/* line 106, ../scss/_font.scss */
+/* line 108, ../scss/_font.scss */
 .entypo.flash:before {
   content: '\26A1'; }
 
-/* line 107, ../scss/_font.scss */
+/* line 109, ../scss/_font.scss */
 .entypo.thunder-cloud:before {
   content: '\26C8'; }
 
-/* line 108, ../scss/_font.scss */
+/* line 110, ../scss/_font.scss */
 .entypo.droplet:before {
   content: '\1F4A7'; }
 
-/* line 109, ../scss/_font.scss */
+/* line 111, ../scss/_font.scss */
 .entypo.cd:before {
   content: '\1F4BF'; }
 
-/* line 110, ../scss/_font.scss */
+/* line 112, ../scss/_font.scss */
 .entypo.briefcase:before {
   content: '\1F4BC'; }
 
-/* line 111, ../scss/_font.scss */
+/* line 113, ../scss/_font.scss */
 .entypo.air:before {
   content: '\1F4A8'; }
 
-/* line 112, ../scss/_font.scss */
+/* line 114, ../scss/_font.scss */
 .entypo.hourglass:before {
   content: '\23F3'; }
 
-/* line 113, ../scss/_font.scss */
+/* line 115, ../scss/_font.scss */
 .entypo.gauge:before {
   content: '\1F6C7'; }
 
-/* line 114, ../scss/_font.scss */
+/* line 116, ../scss/_font.scss */
 .entypo.language:before {
   content: '\1F394'; }
 
-/* line 115, ../scss/_font.scss */
+/* line 117, ../scss/_font.scss */
 .entypo.network:before {
   content: '\E776'; }
 
-/* line 116, ../scss/_font.scss */
+/* line 118, ../scss/_font.scss */
 .entypo.key:before {
   content: '\1F511'; }
 
-/* line 117, ../scss/_font.scss */
+/* line 119, ../scss/_font.scss */
 .entypo.battery:before {
   content: '\1F50B'; }
 
-/* line 118, ../scss/_font.scss */
+/* line 120, ../scss/_font.scss */
 .entypo.bucket:before {
   content: '\1F4FE'; }
 
-/* line 119, ../scss/_font.scss */
+/* line 121, ../scss/_font.scss */
 .entypo.magnet:before {
   content: '\E7A1'; }
 
-/* line 120, ../scss/_font.scss */
+/* line 122, ../scss/_font.scss */
 .entypo.drive:before {
   content: '\1F4FD'; }
 
-/* line 121, ../scss/_font.scss */
+/* line 123, ../scss/_font.scss */
 .entypo.cup:before {
   content: '\2615'; }
 
-/* line 122, ../scss/_font.scss */
+/* line 124, ../scss/_font.scss */
 .entypo.rocket:before {
   content: '\1F680'; }
 
-/* line 123, ../scss/_font.scss */
+/* line 125, ../scss/_font.scss */
 .entypo.brush:before {
   content: '\E79A'; }
 
-/* line 124, ../scss/_font.scss */
+/* line 126, ../scss/_font.scss */
 .entypo.suitcase:before {
   content: '\1F6C6'; }
 
-/* line 125, ../scss/_font.scss */
+/* line 127, ../scss/_font.scss */
 .entypo.traffic-cone:before {
   content: '\1F6C8'; }
 
-/* line 126, ../scss/_font.scss */
+/* line 128, ../scss/_font.scss */
 .entypo.globe:before {
   content: '\1F30E'; }
 
-/* line 127, ../scss/_font.scss */
+/* line 129, ../scss/_font.scss */
 .entypo.keyboard:before {
   content: '\2328'; }
 
-/* line 128, ../scss/_font.scss */
+/* line 130, ../scss/_font.scss */
 .entypo.browser:before {
   content: '\E74E'; }
 
-/* line 129, ../scss/_font.scss */
+/* line 131, ../scss/_font.scss */
 .entypo.publish:before {
   content: '\E74D'; }
 
-/* line 130, ../scss/_font.scss */
+/* line 132, ../scss/_font.scss */
 .entypo.progress-3:before {
   content: '\E76B'; }
 
-/* line 131, ../scss/_font.scss */
+/* line 133, ../scss/_font.scss */
 .entypo.progress-2:before {
   content: '\E76A'; }
 
-/* line 132, ../scss/_font.scss */
+/* line 134, ../scss/_font.scss */
 .entypo.progress-1:before {
   content: '\E769'; }
 
-/* line 133, ../scss/_font.scss */
+/* line 135, ../scss/_font.scss */
 .entypo.progress-0:before {
   content: '\E768'; }
 
-/* line 134, ../scss/_font.scss */
+/* line 136, ../scss/_font.scss */
 .entypo.light-down:before {
   content: '\1F505'; }
 
-/* line 135, ../scss/_font.scss */
+/* line 137, ../scss/_font.scss */
 .entypo.light-up:before {
   content: '\1F506'; }
 
-/* line 136, ../scss/_font.scss */
+/* line 138, ../scss/_font.scss */
 .entypo.adjust:before {
   content: '\25D1'; }
 
-/* line 137, ../scss/_font.scss */
+/* line 139, ../scss/_font.scss */
 .entypo.code:before {
   content: '\E714'; }
 
-/* line 138, ../scss/_font.scss */
+/* line 140, ../scss/_font.scss */
 .entypo.monitor:before {
   content: '\1F4BB'; }
 
-/* line 139, ../scss/_font.scss */
+/* line 141, ../scss/_font.scss */
 .entypo.infinity:before {
   content: '\221E'; }
 
-/* line 140, ../scss/_font.scss */
+/* line 142, ../scss/_font.scss */
 .entypo.light-bulb:before {
   content: '\1F4A1'; }
 
-/* line 141, ../scss/_font.scss */
+/* line 143, ../scss/_font.scss */
 .entypo.credit-card:before {
   content: '\1F4B3'; }
 
-/* line 142, ../scss/_font.scss */
+/* line 144, ../scss/_font.scss */
 .entypo.database:before {
   content: '\1F4F8'; }
 
-/* line 143, ../scss/_font.scss */
+/* line 145, ../scss/_font.scss */
 .entypo.voicemail:before {
   content: '\2707'; }
 
-/* line 144, ../scss/_font.scss */
+/* line 146, ../scss/_font.scss */
 .entypo.clipboard:before {
   content: '\1F4CB'; }
 
-/* line 145, ../scss/_font.scss */
+/* line 147, ../scss/_font.scss */
 .entypo.cart:before {
   content: '\E73D'; }
 
-/* line 146, ../scss/_font.scss */
+/* line 148, ../scss/_font.scss */
 .entypo.box:before {
   content: '\1F4E6'; }
 
-/* line 147, ../scss/_font.scss */
+/* line 149, ../scss/_font.scss */
 .entypo.ticket:before {
   content: '\1F3AB'; }
 
-/* line 148, ../scss/_font.scss */
+/* line 150, ../scss/_font.scss */
 .entypo.rss:before {
   content: '\E73A'; }
 
-/* line 149, ../scss/_font.scss */
+/* line 151, ../scss/_font.scss */
 .entypo.signal:before {
   content: '\1F4F6'; }
 
-/* line 150, ../scss/_font.scss */
+/* line 152, ../scss/_font.scss */
 .entypo.thermometer:before {
   content: '\1F4FF'; }
 
-/* line 151, ../scss/_font.scss */
+/* line 153, ../scss/_font.scss */
 .entypo.water:before {
   content: '\1F4A6'; }
 
-/* line 152, ../scss/_font.scss */
+/* line 154, ../scss/_font.scss */
 .entypo.sweden:before {
   content: '\F601'; }
 
-/* line 153, ../scss/_font.scss */
+/* line 155, ../scss/_font.scss */
 .entypo.line-graph:before {
   content: '\1F4C8'; }
 
-/* line 154, ../scss/_font.scss */
+/* line 156, ../scss/_font.scss */
 .entypo.pie-chart:before {
   content: '\25F4'; }
 
-/* line 155, ../scss/_font.scss */
+/* line 157, ../scss/_font.scss */
 .entypo.bar-graph:before {
   content: '\1F4CA'; }
 
-/* line 156, ../scss/_font.scss */
+/* line 158, ../scss/_font.scss */
 .entypo.area-graph:before {
   content: '\1F53E'; }
 
-/* line 157, ../scss/_font.scss */
+/* line 159, ../scss/_font.scss */
 .entypo.lock:before {
   content: '\1F512'; }
 
-/* line 158, ../scss/_font.scss */
+/* line 160, ../scss/_font.scss */
 .entypo.lock-open:before {
   content: '\1F513'; }
 
-/* line 159, ../scss/_font.scss */
+/* line 161, ../scss/_font.scss */
 .entypo.logout:before {
   content: '\E741'; }
 
-/* line 160, ../scss/_font.scss */
+/* line 162, ../scss/_font.scss */
 .entypo.login:before {
   content: '\E740'; }
 
-/* line 161, ../scss/_font.scss */
+/* line 163, ../scss/_font.scss */
 .entypo.check:before {
   content: '\2713'; }
 
-/* line 162, ../scss/_font.scss */
+/* line 164, ../scss/_font.scss */
 .entypo.cross:before {
   content: '\274C'; }
 
-/* line 163, ../scss/_font.scss */
+/* line 165, ../scss/_font.scss */
 .entypo.squared-minus:before {
   content: '\229F'; }
 
-/* line 164, ../scss/_font.scss */
+/* line 166, ../scss/_font.scss */
 .entypo.squared-plus:before {
   content: '\229E'; }
 
-/* line 165, ../scss/_font.scss */
+/* line 167, ../scss/_font.scss */
 .entypo.squared-cross:before {
   content: '\274E'; }
 
-/* line 166, ../scss/_font.scss */
+/* line 168, ../scss/_font.scss */
 .entypo.circled-minus:before {
   content: '\2296'; }
 
-/* line 167, ../scss/_font.scss */
+/* line 169, ../scss/_font.scss */
 .entypo.circled-plus:before {
   content: '\2295'; }
 
-/* line 168, ../scss/_font.scss */
+/* line 170, ../scss/_font.scss */
 .entypo.circled-cross:before {
   content: '\2716'; }
 
-/* line 169, ../scss/_font.scss */
+/* line 171, ../scss/_font.scss */
 .entypo.minus:before {
   content: '\2796'; }
 
-/* line 170, ../scss/_font.scss */
+/* line 172, ../scss/_font.scss */
 .entypo.plus:before {
   content: '\2795'; }
 
-/* line 171, ../scss/_font.scss */
+/* line 173, ../scss/_font.scss */
 .entypo.erase:before {
   content: '\232B'; }
 
-/* line 172, ../scss/_font.scss */
+/* line 174, ../scss/_font.scss */
 .entypo.block:before {
   content: '\1F6AB'; }
 
-/* line 173, ../scss/_font.scss */
+/* line 175, ../scss/_font.scss */
 .entypo.info:before {
   content: '\2139'; }
 
-/* line 174, ../scss/_font.scss */
+/* line 176, ../scss/_font.scss */
 .entypo.circled-info:before {
   content: '\E705'; }
 
-/* line 175, ../scss/_font.scss */
+/* line 177, ../scss/_font.scss */
 .entypo.help:before {
   content: '\2753'; }
 
-/* line 176, ../scss/_font.scss */
+/* line 178, ../scss/_font.scss */
 .entypo.circled-help:before {
   content: '\E704'; }
 
-/* line 177, ../scss/_font.scss */
+/* line 179, ../scss/_font.scss */
 .entypo.warning:before {
   content: '\26A0'; }
 
-/* line 178, ../scss/_font.scss */
+/* line 180, ../scss/_font.scss */
 .entypo.cycle:before {
   content: '\1F504'; }
 
-/* line 179, ../scss/_font.scss */
+/* line 181, ../scss/_font.scss */
 .entypo.cw:before {
   content: '\27F3'; }
 
-/* line 180, ../scss/_font.scss */
+/* line 182, ../scss/_font.scss */
 .entypo.ccw:before {
   content: '\27F2'; }
 
-/* line 181, ../scss/_font.scss */
+/* line 183, ../scss/_font.scss */
 .entypo.shuffle:before {
   content: '\1F500'; }
 
-/* line 182, ../scss/_font.scss */
+/* line 184, ../scss/_font.scss */
 .entypo.back:before {
   content: '\1F519'; }
 
-/* line 183, ../scss/_font.scss */
+/* line 185, ../scss/_font.scss */
 .entypo.level-down:before {
   content: '\21B3'; }
 
-/* line 184, ../scss/_font.scss */
+/* line 186, ../scss/_font.scss */
 .entypo.retweet:before {
   content: '\E717'; }
 
-/* line 185, ../scss/_font.scss */
+/* line 187, ../scss/_font.scss */
 .entypo.loop:before {
   content: '\1F501'; }
 
-/* line 186, ../scss/_font.scss */
+/* line 188, ../scss/_font.scss */
 .entypo.back-in-time:before {
   content: '\E771'; }
 
-/* line 187, ../scss/_font.scss */
+/* line 189, ../scss/_font.scss */
 .entypo.level-up:before {
   content: '\21B0'; }
 
-/* line 188, ../scss/_font.scss */
+/* line 190, ../scss/_font.scss */
 .entypo.switch:before {
   content: '\21C6'; }
 
-/* line 189, ../scss/_font.scss */
+/* line 191, ../scss/_font.scss */
 .entypo.numbered-list:before {
   content: '\E005'; }
 
-/* line 190, ../scss/_font.scss */
+/* line 192, ../scss/_font.scss */
 .entypo.add-to-list:before {
   content: '\E003'; }
 
-/* line 191, ../scss/_font.scss */
+/* line 193, ../scss/_font.scss */
 .entypo.layout:before {
   content: '\268F'; }
 
-/* line 192, ../scss/_font.scss */
+/* line 194, ../scss/_font.scss */
 .entypo.list:before {
   content: '\2630'; }
 
-/* line 193, ../scss/_font.scss */
+/* line 195, ../scss/_font.scss */
 .entypo.text-doc:before {
   content: '\1F4C4'; }
 
-/* line 194, ../scss/_font.scss */
+/* line 196, ../scss/_font.scss */
 .entypo.text-doc-inverted:before {
   content: '\E731'; }
 
-/* line 195, ../scss/_font.scss */
+/* line 197, ../scss/_font.scss */
 .entypo.doc:before {
   content: '\E730'; }
 
-/* line 196, ../scss/_font.scss */
+/* line 198, ../scss/_font.scss */
 .entypo.docs:before {
   content: '\E736'; }
 
-/* line 197, ../scss/_font.scss */
+/* line 199, ../scss/_font.scss */
 .entypo.landscape-doc:before {
   content: '\E737'; }
 
-/* line 198, ../scss/_font.scss */
+/* line 200, ../scss/_font.scss */
 .entypo.picture:before {
   content: '\1F304'; }
 
-/* line 199, ../scss/_font.scss */
+/* line 201, ../scss/_font.scss */
 .entypo.video:before {
   content: '\1F3AC'; }
 
-/* line 200, ../scss/_font.scss */
+/* line 202, ../scss/_font.scss */
 .entypo.music:before {
   content: '\1F3B5'; }
 
-/* line 201, ../scss/_font.scss */
+/* line 203, ../scss/_font.scss */
 .entypo.folder:before {
   content: '\1F4C1'; }
 
-/* line 202, ../scss/_font.scss */
+/* line 204, ../scss/_font.scss */
 .entypo.archive:before {
   content: '\E800'; }
 
-/* line 203, ../scss/_font.scss */
+/* line 205, ../scss/_font.scss */
 .entypo.trash:before {
   content: '\E729'; }
 
-/* line 204, ../scss/_font.scss */
+/* line 206, ../scss/_font.scss */
 .entypo.upload:before {
   content: '\1F4E4'; }
 
-/* line 205, ../scss/_font.scss */
+/* line 207, ../scss/_font.scss */
 .entypo.download:before {
   content: '\1F4E5'; }
 
-/* line 206, ../scss/_font.scss */
+/* line 208, ../scss/_font.scss */
 .entypo.save:before {
   content: '\1F4BE'; }
 
-/* line 207, ../scss/_font.scss */
+/* line 209, ../scss/_font.scss */
 .entypo.install:before {
   content: '\E778'; }
 
-/* line 208, ../scss/_font.scss */
+/* line 210, ../scss/_font.scss */
 .entypo.cloud:before {
   content: '\2601'; }
 
-/* line 209, ../scss/_font.scss */
+/* line 211, ../scss/_font.scss */
 .entypo.upload-cloud:before {
   content: '\E711'; }
 
-/* line 210, ../scss/_font.scss */
+/* line 212, ../scss/_font.scss */
 .entypo.bookmark:before {
   content: '\1F516'; }
 
-/* line 211, ../scss/_font.scss */
+/* line 213, ../scss/_font.scss */
 .entypo.bookmarks:before {
   content: '\1F4D1'; }
 
-/* line 212, ../scss/_font.scss */
+/* line 214, ../scss/_font.scss */
 .entypo.open-book:before {
   content: '\1F4D6'; }
 
-/* line 213, ../scss/_font.scss */
+/* line 215, ../scss/_font.scss */
 .entypo.play:before {
   content: '\25B6'; }
 
-/* line 214, ../scss/_font.scss */
+/* line 216, ../scss/_font.scss */
 .entypo.paus:before {
   content: '\2016'; }
 
-/* line 215, ../scss/_font.scss */
+/* line 217, ../scss/_font.scss */
 .entypo.record:before {
   content: '\25CF'; }
 
-/* line 216, ../scss/_font.scss */
+/* line 218, ../scss/_font.scss */
 .entypo.stop:before {
   content: '\25A0'; }
 
-/* line 217, ../scss/_font.scss */
+/* line 219, ../scss/_font.scss */
 .entypo.ff:before {
   content: '\23E9'; }
 
-/* line 218, ../scss/_font.scss */
+/* line 220, ../scss/_font.scss */
 .entypo.fb:before {
   content: '\23EA'; }
 
-/* line 219, ../scss/_font.scss */
+/* line 221, ../scss/_font.scss */
 .entypo.to-start:before {
   content: '\23EE'; }
 
-/* line 220, ../scss/_font.scss */
+/* line 222, ../scss/_font.scss */
 .entypo.to-end:before {
   content: '\23ED'; }
 
-/* line 221, ../scss/_font.scss */
+/* line 223, ../scss/_font.scss */
 .entypo.resize-full:before {
   content: '\E744'; }
 
-/* line 222, ../scss/_font.scss */
+/* line 224, ../scss/_font.scss */
 .entypo.resize-small:before {
   content: '\E746'; }
 
-/* line 223, ../scss/_font.scss */
+/* line 225, ../scss/_font.scss */
 .entypo.volume:before {
   content: '\23F7'; }
 
-/* line 224, ../scss/_font.scss */
+/* line 226, ../scss/_font.scss */
 .entypo.sound:before {
   content: '\1F50A'; }
 
-/* line 225, ../scss/_font.scss */
+/* line 227, ../scss/_font.scss */
 .entypo.mute:before {
   content: '\1F507'; }
 
-/* line 226, ../scss/_font.scss */
+/* line 228, ../scss/_font.scss */
 .entypo.flow-cascade:before {
   content: '\1F568'; }
 
-/* line 227, ../scss/_font.scss */
+/* line 229, ../scss/_font.scss */
 .entypo.flow-branch:before {
   content: '\1F569'; }
 
-/* line 228, ../scss/_font.scss */
+/* line 230, ../scss/_font.scss */
 .entypo.flow-tree:before {
   content: '\1F56A'; }
 
-/* line 229, ../scss/_font.scss */
+/* line 231, ../scss/_font.scss */
 .entypo.flow-line:before {
   content: '\1F56B'; }
 
-/* line 230, ../scss/_font.scss */
+/* line 232, ../scss/_font.scss */
 .entypo.flow-parallel:before {
   content: '\1F56C'; }
 
-/* line 231, ../scss/_font.scss */
+/* line 233, ../scss/_font.scss */
 .entypo.left-bold:before {
   content: '\E4AD'; }
 
-/* line 232, ../scss/_font.scss */
+/* line 234, ../scss/_font.scss */
 .entypo.down-bold:before {
   content: '\E4B0'; }
 
-/* line 233, ../scss/_font.scss */
+/* line 235, ../scss/_font.scss */
 .entypo.up-bold:before {
   content: '\E4AF'; }
 
-/* line 234, ../scss/_font.scss */
+/* line 236, ../scss/_font.scss */
 .entypo.right-bold:before {
   content: '\E4AE'; }
 
-/* line 235, ../scss/_font.scss */
+/* line 237, ../scss/_font.scss */
 .entypo.left:before {
   content: '\2B05'; }
 
-/* line 236, ../scss/_font.scss */
+/* line 238, ../scss/_font.scss */
 .entypo.down:before {
   content: '\2B07'; }
 
-/* line 237, ../scss/_font.scss */
+/* line 239, ../scss/_font.scss */
 .entypo.up:before {
   content: '\2B06'; }
 
-/* line 238, ../scss/_font.scss */
+/* line 240, ../scss/_font.scss */
 .entypo.right:before {
   content: '\27A1'; }
 
-/* line 239, ../scss/_font.scss */
+/* line 241, ../scss/_font.scss */
 .entypo.circled-left:before {
   content: '\E759'; }
 
-/* line 240, ../scss/_font.scss */
+/* line 242, ../scss/_font.scss */
 .entypo.circled-down:before {
   content: '\E758'; }
 
-/* line 241, ../scss/_font.scss */
+/* line 243, ../scss/_font.scss */
 .entypo.circled-up:before {
   content: '\E75B'; }
 
-/* line 242, ../scss/_font.scss */
+/* line 244, ../scss/_font.scss */
 .entypo.circled-right:before {
   content: '\E75A'; }
 
-/* line 243, ../scss/_font.scss */
+/* line 245, ../scss/_font.scss */
 .entypo.triangle-left:before {
   content: '\25C2'; }
 
-/* line 244, ../scss/_font.scss */
+/* line 246, ../scss/_font.scss */
 .entypo.triangle-down:before {
   content: '\25BE'; }
 
-/* line 245, ../scss/_font.scss */
+/* line 247, ../scss/_font.scss */
 .entypo.triangle-up:before {
   content: '\25B4'; }
 
-/* line 246, ../scss/_font.scss */
+/* line 248, ../scss/_font.scss */
 .entypo.triangle-right:before {
   content: '\25B8'; }
 
-/* line 247, ../scss/_font.scss */
+/* line 249, ../scss/_font.scss */
 .entypo.chevron-left:before {
   content: '\E75D'; }
 
-/* line 248, ../scss/_font.scss */
+/* line 250, ../scss/_font.scss */
 .entypo.chevron-down:before {
   content: '\E75C'; }
 
-/* line 249, ../scss/_font.scss */
+/* line 251, ../scss/_font.scss */
 .entypo.chevron-up:before {
   content: '\E75F'; }
 
-/* line 250, ../scss/_font.scss */
+/* line 252, ../scss/_font.scss */
 .entypo.chevron-right:before {
   content: '\E75E'; }
 
-/* line 251, ../scss/_font.scss */
+/* line 253, ../scss/_font.scss */
 .entypo.chevron-small-left:before {
   content: '\E761'; }
 
-/* line 252, ../scss/_font.scss */
+/* line 254, ../scss/_font.scss */
 .entypo.chevron-small-down:before {
   content: '\E760'; }
 
-/* line 253, ../scss/_font.scss */
+/* line 255, ../scss/_font.scss */
 .entypo.chevron-small-up:before {
   content: '\E763'; }
 
-/* line 254, ../scss/_font.scss */
+/* line 256, ../scss/_font.scss */
 .entypo.chevron-small-right:before {
   content: '\E762'; }
 
-/* line 255, ../scss/_font.scss */
+/* line 257, ../scss/_font.scss */
 .entypo.chevron-thin-left:before {
   content: '\E765'; }
 
-/* line 256, ../scss/_font.scss */
+/* line 258, ../scss/_font.scss */
 .entypo.chevron-thin-down:before {
   content: '\E764'; }
 
-/* line 257, ../scss/_font.scss */
+/* line 259, ../scss/_font.scss */
 .entypo.chevron-thin-up:before {
   content: '\E767'; }
 
-/* line 258, ../scss/_font.scss */
+/* line 260, ../scss/_font.scss */
 .entypo.chevron-thin-right:before {
   content: '\E766'; }
 
-/* line 259, ../scss/_font.scss */
+/* line 261, ../scss/_font.scss */
 .entypo.left-thin:before {
   content: '\2190'; }
 
-/* line 260, ../scss/_font.scss */
+/* line 262, ../scss/_font.scss */
 .entypo.down-thin:before {
   content: '\2193'; }
 
-/* line 261, ../scss/_font.scss */
+/* line 263, ../scss/_font.scss */
 .entypo.up-thin:before {
   content: '\2191'; }
 
-/* line 262, ../scss/_font.scss */
+/* line 264, ../scss/_font.scss */
 .entypo.right-thin:before {
   content: '\2192'; }
 
-/* line 263, ../scss/_font.scss */
+/* line 265, ../scss/_font.scss */
 .entypo.arrow-combo:before {
   content: '\E74F'; }
 
-/* line 264, ../scss/_font.scss */
+/* line 266, ../scss/_font.scss */
 .entypo.three-dots:before {
   content: '\23F6'; }
 
-/* line 265, ../scss/_font.scss */
+/* line 267, ../scss/_font.scss */
 .entypo.two-dots:before {
   content: '\23F5'; }
 
-/* line 266, ../scss/_font.scss */
+/* line 268, ../scss/_font.scss */
 .entypo.dot:before {
   content: '\23F4'; }
 
-/* line 267, ../scss/_font.scss */
+/* line 269, ../scss/_font.scss */
 .entypo.cc:before {
   content: '\1F545'; }
 
-/* line 268, ../scss/_font.scss */
+/* line 270, ../scss/_font.scss */
 .entypo.cc-by:before {
   content: '\1F546'; }
 
-/* line 269, ../scss/_font.scss */
+/* line 271, ../scss/_font.scss */
 .entypo.cc-nc:before {
   content: '\1F547'; }
 
-/* line 270, ../scss/_font.scss */
+/* line 272, ../scss/_font.scss */
 .entypo.cc-nc-eu:before {
   content: '\1F548'; }
 
-/* line 271, ../scss/_font.scss */
+/* line 273, ../scss/_font.scss */
 .entypo.cc-nc-jp:before {
   content: '\1F549'; }
 
-/* line 272, ../scss/_font.scss */
+/* line 274, ../scss/_font.scss */
 .entypo.cc-sa:before {
   content: '\1F54A'; }
 
-/* line 273, ../scss/_font.scss */
+/* line 275, ../scss/_font.scss */
 .entypo.cc-nd:before {
   content: '\1F54B'; }
 
-/* line 274, ../scss/_font.scss */
+/* line 276, ../scss/_font.scss */
 .entypo.cc-pd:before {
   content: '\1F54C'; }
 
-/* line 275, ../scss/_font.scss */
+/* line 277, ../scss/_font.scss */
 .entypo.cc-zero:before {
   content: '\1F54D'; }
 
-/* line 276, ../scss/_font.scss */
+/* line 278, ../scss/_font.scss */
 .entypo.cc-share:before {
   content: '\1F54E'; }
 
-/* line 277, ../scss/_font.scss */
+/* line 279, ../scss/_font.scss */
 .entypo.cc-remix:before {
   content: '\1F54F'; }
 
-/* line 278, ../scss/_font.scss */
+/* line 280, ../scss/_font.scss */
 .entypo.db-logo:before {
   content: '\1F5F9'; }
 
-/* line 279, ../scss/_font.scss */
+/* line 281, ../scss/_font.scss */
 .entypo.db-shape:before {
   content: '\1F5FA'; }
 
-/* line 281, ../scss/_font.scss */
+/* line 283, ../scss/_font.scss */
 .entypo-social.github:before {
   content: '\F300'; }
 
-/* line 282, ../scss/_font.scss */
+/* line 284, ../scss/_font.scss */
 .entypo-social.c-github:before {
   content: '\F301'; }
 
-/* line 283, ../scss/_font.scss */
+/* line 285, ../scss/_font.scss */
 .entypo-social.flickr:before {
   content: '\F303'; }
 
-/* line 284, ../scss/_font.scss */
+/* line 286, ../scss/_font.scss */
 .entypo-social.c-flickr:before {
   content: '\F304'; }
 
-/* line 285, ../scss/_font.scss */
+/* line 287, ../scss/_font.scss */
 .entypo-social.vimeo:before {
   content: '\F306'; }
 
-/* line 286, ../scss/_font.scss */
+/* line 288, ../scss/_font.scss */
 .entypo-social.c-vimeo:before {
   content: '\F307'; }
 
-/* line 287, ../scss/_font.scss */
+/* line 289, ../scss/_font.scss */
 .entypo-social.twitter:before {
   content: '\F309'; }
 
-/* line 288, ../scss/_font.scss */
+/* line 290, ../scss/_font.scss */
 .entypo-social.c-twitter:before {
   content: '\F30A'; }
 
-/* line 289, ../scss/_font.scss */
+/* line 291, ../scss/_font.scss */
 .entypo-social.facebook:before {
   content: '\F30C'; }
 
-/* line 290, ../scss/_font.scss */
+/* line 292, ../scss/_font.scss */
 .entypo-social.c-facebook:before {
   content: '\F30D'; }
 
-/* line 291, ../scss/_font.scss */
+/* line 293, ../scss/_font.scss */
 .entypo-social.s-facebook:before {
   content: '\F30E'; }
 
-/* line 292, ../scss/_font.scss */
+/* line 294, ../scss/_font.scss */
 .entypo-social.google + :before {
   content: '\F30F'; }
 
-/* line 293, ../scss/_font.scss */
+/* line 295, ../scss/_font.scss */
 .entypo-social.c-google + :before {
   content: '\F310'; }
 
-/* line 294, ../scss/_font.scss */
+/* line 296, ../scss/_font.scss */
 .entypo-social.pinterest:before {
   content: '\F312'; }
 
-/* line 295, ../scss/_font.scss */
+/* line 297, ../scss/_font.scss */
 .entypo-social.c-pinterest:before {
   content: '\F313'; }
 
-/* line 296, ../scss/_font.scss */
+/* line 298, ../scss/_font.scss */
 .entypo-social.tumblr:before {
   content: '\F315'; }
 
-/* line 297, ../scss/_font.scss */
+/* line 299, ../scss/_font.scss */
 .entypo-social.c-tumblr:before {
   content: '\F316'; }
 
-/* line 298, ../scss/_font.scss */
+/* line 300, ../scss/_font.scss */
 .entypo-social.linkedin:before {
   content: '\F318'; }
 
-/* line 299, ../scss/_font.scss */
+/* line 301, ../scss/_font.scss */
 .entypo-social.c-linkedin:before {
   content: '\F319'; }
 
-/* line 300, ../scss/_font.scss */
+/* line 302, ../scss/_font.scss */
 .entypo-social.dribbble:before {
   content: '\F31B'; }
 
-/* line 301, ../scss/_font.scss */
+/* line 303, ../scss/_font.scss */
 .entypo-social.c-dribbble:before {
   content: '\F31C'; }
 
-/* line 302, ../scss/_font.scss */
+/* line 304, ../scss/_font.scss */
 .entypo-social.stumbleupon:before {
   content: '\F31E'; }
 
-/* line 303, ../scss/_font.scss */
+/* line 305, ../scss/_font.scss */
 .entypo-social.c-stumbleupon:before {
   content: '\F31F'; }
 
-/* line 304, ../scss/_font.scss */
+/* line 306, ../scss/_font.scss */
 .entypo-social.lastfm:before {
   content: '\F321'; }
 
-/* line 305, ../scss/_font.scss */
+/* line 307, ../scss/_font.scss */
 .entypo-social.c-lastfm:before {
   content: '\F322'; }
 
-/* line 306, ../scss/_font.scss */
+/* line 308, ../scss/_font.scss */
 .entypo-social.rdio:before {
   content: '\F324'; }
 
-/* line 307, ../scss/_font.scss */
+/* line 309, ../scss/_font.scss */
 .entypo-social.c-rdio:before {
   content: '\F325'; }
 
-/* line 308, ../scss/_font.scss */
+/* line 310, ../scss/_font.scss */
 .entypo-social.spotify:before {
   content: '\F327'; }
 
-/* line 309, ../scss/_font.scss */
+/* line 311, ../scss/_font.scss */
 .entypo-social.c-spotify:before {
   content: '\F328'; }
 
-/* line 310, ../scss/_font.scss */
+/* line 312, ../scss/_font.scss */
 .entypo-social.qq:before {
   content: '\F32A'; }
 
-/* line 311, ../scss/_font.scss */
+/* line 313, ../scss/_font.scss */
 .entypo-social.instagram:before {
   content: '\F32D'; }
 
-/* line 312, ../scss/_font.scss */
+/* line 314, ../scss/_font.scss */
 .entypo-social.dropbox:before {
   content: '\F330'; }
 
-/* line 313, ../scss/_font.scss */
+/* line 315, ../scss/_font.scss */
 .entypo-social.evernote:before {
   content: '\F333'; }
 
-/* line 314, ../scss/_font.scss */
+/* line 316, ../scss/_font.scss */
 .entypo-social.flattr:before {
   content: '\F336'; }
 
-/* line 315, ../scss/_font.scss */
+/* line 317, ../scss/_font.scss */
 .entypo-social.skype:before {
   content: '\F339'; }
 
-/* line 316, ../scss/_font.scss */
+/* line 318, ../scss/_font.scss */
 .entypo-social.c-skype:before {
   content: '\F33A'; }
 
-/* line 317, ../scss/_font.scss */
+/* line 319, ../scss/_font.scss */
 .entypo-social.renren:before {
   content: '\F33C'; }
 
-/* line 318, ../scss/_font.scss */
+/* line 320, ../scss/_font.scss */
 .entypo-social.sina-weibo:before {
   content: '\F33F'; }
 
-/* line 319, ../scss/_font.scss */
+/* line 321, ../scss/_font.scss */
 .entypo-social.paypal:before {
   content: '\F342'; }
 
-/* line 320, ../scss/_font.scss */
+/* line 322, ../scss/_font.scss */
 .entypo-social.picasa:before {
   content: '\F345'; }
 
-/* line 321, ../scss/_font.scss */
+/* line 323, ../scss/_font.scss */
 .entypo-social.soundcloud:before {
   content: '\F348'; }
 
-/* line 322, ../scss/_font.scss */
+/* line 324, ../scss/_font.scss */
 .entypo-social.mixi:before {
   content: '\F34B'; }
 
-/* line 323, ../scss/_font.scss */
+/* line 325, ../scss/_font.scss */
 .entypo-social.behance:before {
   content: '\F34E'; }
 
-/* line 324, ../scss/_font.scss */
+/* line 326, ../scss/_font.scss */
 .entypo-social.google-circles:before {
   content: '\F351'; }
 
-/* line 325, ../scss/_font.scss */
+/* line 327, ../scss/_font.scss */
 .entypo-social.vk:before {
   content: '\F354'; }
 
-/* line 326, ../scss/_font.scss */
+/* line 328, ../scss/_font.scss */
 .entypo-social.smashing:before {
   content: '\F357'; }
 
@@ -3711,33 +3713,45 @@ blockquote {
     border: 5px solid #cccccc; }
   /* line 18, ../scss/_main.scss */
   .blogitemwrap .entry-figure img, .articlewrap .entry-figure img {
+    -webkit-transition-property: border;
+    -moz-transition-property: border;
+    -o-transition-property: border;
+    transition-property: border;
+    -webkit-transition-duration: 200ms;
+    -moz-transition-duration: 200ms;
+    -o-transition-duration: 200ms;
+    transition-duration: 200ms;
+    -webkit-transition-timing-function: ease-in;
+    -moz-transition-timing-function: ease-in;
+    -o-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
     border-radius: 50%;
     border: 5px solid #f2f2f2; }
 
-/* line 26, ../scss/_main.scss */
+/* line 29, ../scss/_main.scss */
 .entry-side {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0 1em; }
   @media (min-width: 768px) and (max-width: 1023px) {
-    /* line 26, ../scss/_main.scss */
+    /* line 29, ../scss/_main.scss */
     .entry-side {
       float: left;
       width: 34%; } }
   @media (min-width: 1024px) {
-    /* line 26, ../scss/_main.scss */
+    /* line 29, ../scss/_main.scss */
     .entry-side {
       float: left;
       width: 34%; } }
 
-/* line 39, ../scss/_main.scss */
+/* line 42, ../scss/_main.scss */
 .entry-intro {
   font-size: 1.75em;
   font-weight: bold;
   margin-bottom: 2em; }
 
-/* line 50, ../scss/_main.scss */
+/* line 53, ../scss/_main.scss */
 .entry-actionblock {
   margin: 1.5em 0 2em;
   font-size: 2em;
@@ -3746,7 +3760,7 @@ blockquote {
   color: #ecc4aa;
   text-transform: uppercase;
   line-height: 1em; }
-  /* line 59, ../scss/_main.scss */
+  /* line 62, ../scss/_main.scss */
   .entry-actionblock .tel, .entry-actionblock .online {
     margin: 0.75em 0em;
     position: relative;
@@ -3755,13 +3769,13 @@ blockquote {
     color: #ecc4aa;
     text-decoration: none;
     display: block; }
-    /* line 67, ../scss/_main.scss */
+    /* line 70, ../scss/_main.scss */
     .entry-actionblock .tel:hover, .entry-actionblock .tel:focus, .entry-actionblock .online:hover, .entry-actionblock .online:focus {
       color: #d98a57; }
-    /* line 71, ../scss/_main.scss */
+    /* line 74, ../scss/_main.scss */
     .entry-actionblock .tel:hover:before, .entry-actionblock .tel:focus:before, .entry-actionblock .online:hover:before, .entry-actionblock .online:focus:before {
       background: #d98a57; }
-    /* line 76, ../scss/_main.scss */
+    /* line 79, ../scss/_main.scss */
     .entry-actionblock .tel:before, .entry-actionblock .online:before {
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
@@ -3779,17 +3793,17 @@ blockquote {
       border-radius: 1em;
       width: 1.2em;
       height: 1.2em; }
-  /* line 96, ../scss/_main.scss */
+  /* line 99, ../scss/_main.scss */
   .entry-actionblock .tel span {
     font-size: 1em;
     font-weight: 300;
     display: block;
     margin-top: 0.125em; }
-  /* line 105, ../scss/_main.scss */
+  /* line 108, ../scss/_main.scss */
   .entry-actionblock .online:before {
     content: '\E789'; }
 
-/* line 112, ../scss/_main.scss */
+/* line 115, ../scss/_main.scss */
 .entry-content {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -3797,19 +3811,209 @@ blockquote {
   margin-bottom: 4em;
   padding: 1em 1em; }
   @media (min-width: 768px) and (max-width: 1023px) {
-    /* line 112, ../scss/_main.scss */
+    /* line 115, ../scss/_main.scss */
     .entry-content {
       float: right;
       width: 66%; } }
   @media (min-width: 1024px) {
-    /* line 112, ../scss/_main.scss */
+    /* line 115, ../scss/_main.scss */
     .entry-content {
       float: right;
       width: 66%; } }
 
-/* line 127, ../scss/_main.scss */
+/* line 130, ../scss/_main.scss */
 .commentswrap {
   background: #f2f2f2; }
+
+/* line 135, ../scss/_main.scss */
+.actionwrap {
+  background: #ecc4aa; }
+
+/* line 141, ../scss/_main.scss */
+.homegyujtowrap header {
+  padding: 1em;
+  text-align: center; }
+  /* line 144, ../scss/_main.scss */
+  .homegyujtowrap header h2 {
+    margin-bottom: 0; }
+  /* line 147, ../scss/_main.scss */
+  .homegyujtowrap header h3 {
+    margin-top: 0;
+    font-weight: 400; }
+/* line 153, ../scss/_main.scss */
+.homegyujtowrap .homekezike {
+  padding: 1em 1em;
+  margin-bottom: 1em;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    /* line 153, ../scss/_main.scss */
+    .homegyujtowrap .homekezike {
+      float: left;
+      width: 50%; } }
+  @media (min-width: 1024px) {
+    /* line 153, ../scss/_main.scss */
+    .homegyujtowrap .homekezike {
+      float: left;
+      width: 50%; } }
+  /* line 167, ../scss/_main.scss */
+  .homegyujtowrap .homekezike a.hentry {
+    display: inline-block;
+    font-size: 5em;
+    text-decoration: none;
+    background-color: lightblue;
+    width: 1.8em;
+    height: 1.8em;
+    border-radius: 50%;
+    color: #747474;
+    -webkit-transition-property: border-radius, background-color;
+    -moz-transition-property: border-radius, background-color;
+    -o-transition-property: border-radius, background-color;
+    transition-property: border-radius, background-color;
+    -webkit-transition-duration: 100ms;
+    -moz-transition-duration: 100ms;
+    -o-transition-duration: 100ms;
+    transition-duration: 100ms;
+    -webkit-transition-timing-function: ease-in;
+    -moz-transition-timing-function: ease-in;
+    -o-transition-timing-function: ease-in;
+    transition-timing-function: ease-in; }
+    /* line 183, ../scss/_main.scss */
+    .homegyujtowrap .homekezike a.hentry:hover, .homegyujtowrap .homekezike a.hentry:focus {
+      background-color: #e6e6e6;
+      color: #58595b;
+      border-radius: 0; }
+    @media (min-width: 1024px) {
+      /* line 167, ../scss/_main.scss */
+      .homegyujtowrap .homekezike a.hentry {
+        float: left;
+        margin-top: 7%;
+        margin-right: 5%;
+        margin-bottom: 10%; } }
+    /* line 199, ../scss/_main.scss */
+    .homegyujtowrap .homekezike a.hentry i {
+      line-height: 1.8em; }
+  /* line 204, ../scss/_main.scss */
+  .homegyujtowrap .homekezike h3 {
+    font-weight: 400; }
+    @media (min-width: 1024px) {
+      /* line 204, ../scss/_main.scss */
+      .homegyujtowrap .homekezike h3 {
+        text-align: left; } }
+    /* line 211, ../scss/_main.scss */
+    .homegyujtowrap .homekezike h3 a {
+      color: #747474;
+      text-decoration: none; }
+      /* line 214, ../scss/_main.scss */
+      .homegyujtowrap .homekezike h3 a:hover, .homegyujtowrap .homekezike h3 a:focus {
+        color: #4e4e4e; }
+  /* line 220, ../scss/_main.scss */
+  .homegyujtowrap .homekezike .intro {
+    text-align: left; }
+  /* line 225, ../scss/_main.scss */
+  .homegyujtowrap .homekezike .buti {
+    display: block;
+    text-align: right;
+    font-size: 0.875em;
+    font-weight: bold;
+    font-style: italic; }
+    @media (min-width: 1024px) {
+      /* line 225, ../scss/_main.scss */
+      .homegyujtowrap .homekezike .buti {
+        text-align: left; } }
+
+/* line 243, ../scss/_main.scss */
+.eszkozokwrap {
+  background: #f2f2f2; }
+  /* line 248, ../scss/_main.scss */
+  .eszkozokwrap header {
+    padding: 1em;
+    text-align: center; }
+    /* line 251, ../scss/_main.scss */
+    .eszkozokwrap header h2 {
+      margin-bottom: 0; }
+    /* line 254, ../scss/_main.scss */
+    .eszkozokwrap header h3 {
+      margin-top: 0;
+      font-weight: 400; }
+  /* line 259, ../scss/_main.scss */
+  .eszkozokwrap .eszkoz {
+    padding: 1em 1em;
+    margin-bottom: 2em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      /* line 259, ../scss/_main.scss */
+      .eszkozokwrap .eszkoz {
+        float: left;
+        width: 33%; } }
+    @media (min-width: 1024px) {
+      /* line 259, ../scss/_main.scss */
+      .eszkozokwrap .eszkoz {
+        float: left;
+        width: 33%; } }
+    /* line 273, ../scss/_main.scss */
+    .eszkozokwrap .eszkoz figure {
+      text-align: center; }
+      /* line 277, ../scss/_main.scss */
+      .eszkozokwrap .eszkoz figure a:hover img, .eszkozokwrap .eszkoz figure a:focus img {
+        -webkit-transition-property: border;
+        -moz-transition-property: border;
+        -o-transition-property: border;
+        transition-property: border;
+        -webkit-transition-duration: 200ms;
+        -moz-transition-duration: 200ms;
+        -o-transition-duration: 200ms;
+        transition-duration: 200ms;
+        -webkit-transition-timing-function: ease-in;
+        -moz-transition-timing-function: ease-in;
+        -o-transition-timing-function: ease-in;
+        transition-timing-function: ease-in;
+        border: 5px solid #747474; }
+      /* line 285, ../scss/_main.scss */
+      .eszkozokwrap .eszkoz figure img {
+        border-radius: 50%;
+        border: 5px solid #cccccc; }
+    /* line 290, ../scss/_main.scss */
+    .eszkozokwrap .eszkoz h3 {
+      font-weight: 400;
+      text-transform: none;
+      text-align: center; }
+      /* line 294, ../scss/_main.scss */
+      .eszkozokwrap .eszkoz h3 a {
+        color: #58595b;
+        letter-spacing: 0;
+        text-decoration: none; }
+        /* line 298, ../scss/_main.scss */
+        .eszkozokwrap .eszkoz h3 a:hover, .eszkozokwrap .eszkoz h3 a:focus {
+          color: #4e4e4e; }
+    /* line 304, ../scss/_main.scss */
+    .eszkozokwrap .eszkoz .buti {
+      font-size: 0.875em;
+      font-weight: bold;
+      font-style: italic;
+      text-align: right;
+      display: block; }
+
+/* line 325, ../scss/_main.scss */
+.kezgyujtowrap header {
+  padding: 1em; }
+/* line 328, ../scss/_main.scss */
+.kezgyujtowrap .kezike {
+  padding: 1em 1em; }
+
+/* line 334, ../scss/_main.scss */
+.arlistawrap article {
+  margin: 0 auto; }
+/* line 337, ../scss/_main.scss */
+.arlistawrap header {
+  padding: 1em; }
+/* line 340, ../scss/_main.scss */
+.arlistawrap .entry-content {
+  padding: 1em 1em; }
 
 /* line 1, ../scss/_sidebar.scss */
 .tovabbiak {
