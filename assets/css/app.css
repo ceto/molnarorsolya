@@ -3486,7 +3486,7 @@ blockquote {
     text-align: right; }
 
 /* line 59, ../scss/_base.scss */
-.wrap .row {
+.wrap .wrapped {
   max-width: 1100px;
   margin: 0 auto; }
 
@@ -3580,7 +3580,7 @@ blockquote {
       /* line 31, ../scss/_navigation.scss */
       .nav-main li:nth-child(3) {
         margin-left: 20%; } }
-/* line 38, ../scss/_navigation.scss */
+/* line 39, ../scss/_navigation.scss */
 .nav-main a {
   padding: 3px 3px;
   color: #747474;
@@ -3588,35 +3588,156 @@ blockquote {
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.066666667em; }
-  /* line 45, ../scss/_navigation.scss */
+  /* line 46, ../scss/_navigation.scss */
   .nav-main a:hover, .nav-main a:focus {
     color: white;
     background: #5d5d5d; }
+/* line 52, ../scss/_navigation.scss */
+.nav-main .active a {
+  color: white;
+  background: #747474; }
 
-/* line 1, ../scss/_main.scss */
+/* line 65, ../scss/_navigation.scss */
+.nav-sub {
+  background: #747474;
+  padding: 3% 1% 0; }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    /* line 65, ../scss/_navigation.scss */
+    .nav-sub {
+      padding: 3% 0 0; } }
+  @media (min-width: 1024px) {
+    /* line 65, ../scss/_navigation.scss */
+    .nav-sub {
+      padding: 3% 0 0; } }
+  /* line 76, ../scss/_navigation.scss */
+  .nav-sub h3 {
+    text-align: center;
+    color: white; }
+  /* line 81, ../scss/_navigation.scss */
+  .nav-sub ul {
+    font-size: 1.125em;
+    list-style-type: none;
+    padding: 0;
+    margin: 0; }
+  /* line 88, ../scss/_navigation.scss */
+  .nav-sub li {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    width: 46%;
+    margin: 3% 2% 40px 2%;
+    text-align: center; }
+    @media (min-width: 480px) and (max-width: 767px) {
+      /* line 88, ../scss/_navigation.scss */
+      .nav-sub li {
+        width: 29%; } }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      /* line 88, ../scss/_navigation.scss */
+      .nav-sub li {
+        width: 16%; } }
+    @media (min-width: 1024px) {
+      /* line 88, ../scss/_navigation.scss */
+      .nav-sub li {
+        width: 16%; } }
+  /* line 118, ../scss/_navigation.scss */
+  .nav-sub a {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    bottom: 0;
+    display: block;
+    padding-top: 110%;
+    color: #4e4e4e;
+    text-transform: uppercase;
+    font-size: 0.875em;
+    font-weight: 700;
+    text-decoration: none; }
+    /* line 131, ../scss/_navigation.scss */
+    .nav-sub a:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      display: block;
+      height: 0;
+      padding-top: 100%;
+      background: #ecc4aa;
+      border-radius: 50%;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      border: 2px solid transparent; }
+    /* line 145, ../scss/_navigation.scss */
+    .nav-sub a:hover:before, .nav-sub a:focus:before {
+      border: 2px solid white; }
+    /* line 148, ../scss/_navigation.scss */
+    .nav-sub a:hover, .nav-sub a:focus {
+      color: white; }
+  /* line 153, ../scss/_navigation.scss */
+  .nav-sub li.active a:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 35%;
+    right: 35%;
+    bottom: -40px;
+    width: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 25px solid white; }
+  /* line 168, ../scss/_navigation.scss */
+  .nav-sub li:nth-child(2) a:before {
+    background: #99cc00; }
+  /* line 171, ../scss/_navigation.scss */
+  .nav-sub li:nth-child(3) a:before {
+    background: #cccccc; }
+  /* line 174, ../scss/_navigation.scss */
+  .nav-sub li:nth-child(4) a:before {
+    background: #58595b; }
+  /* line 177, ../scss/_navigation.scss */
+  .nav-sub li:nth-child(5) a:before {
+    background: lightblue; }
+
+/* line 3, ../scss/_main.scss */
+.blogitemwrap .entry-figure, .articlewrap .entry-figure {
+  text-align: center;
+  padding: 3em 0 0; }
+  /* line 12, ../scss/_main.scss */
+  .blogitemwrap .entry-figure a:hover img, .blogitemwrap .entry-figure a:focus img, .articlewrap .entry-figure a:hover img, .articlewrap .entry-figure a:focus img {
+    border: 5px solid #cccccc; }
+  /* line 18, ../scss/_main.scss */
+  .blogitemwrap .entry-figure img, .articlewrap .entry-figure img {
+    border-radius: 50%;
+    border: 5px solid #f2f2f2; }
+
+/* line 26, ../scss/_main.scss */
 .entry-side {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0 1em; }
   @media (min-width: 768px) and (max-width: 1023px) {
-    /* line 1, ../scss/_main.scss */
+    /* line 26, ../scss/_main.scss */
     .entry-side {
       float: left;
       width: 34%; } }
   @media (min-width: 1024px) {
-    /* line 1, ../scss/_main.scss */
+    /* line 26, ../scss/_main.scss */
     .entry-side {
       float: left;
       width: 34%; } }
 
-/* line 14, ../scss/_main.scss */
+/* line 39, ../scss/_main.scss */
 .entry-intro {
   font-size: 1.75em;
   font-weight: bold;
   margin-bottom: 2em; }
 
-/* line 25, ../scss/_main.scss */
+/* line 50, ../scss/_main.scss */
 .entry-actionblock {
   margin: 1.5em 0 2em;
   font-size: 2em;
@@ -3625,7 +3746,7 @@ blockquote {
   color: #ecc4aa;
   text-transform: uppercase;
   line-height: 1em; }
-  /* line 34, ../scss/_main.scss */
+  /* line 59, ../scss/_main.scss */
   .entry-actionblock .tel, .entry-actionblock .online {
     margin: 0.75em 0em;
     position: relative;
@@ -3634,13 +3755,13 @@ blockquote {
     color: #ecc4aa;
     text-decoration: none;
     display: block; }
-    /* line 42, ../scss/_main.scss */
+    /* line 67, ../scss/_main.scss */
     .entry-actionblock .tel:hover, .entry-actionblock .tel:focus, .entry-actionblock .online:hover, .entry-actionblock .online:focus {
       color: #d98a57; }
-    /* line 46, ../scss/_main.scss */
+    /* line 71, ../scss/_main.scss */
     .entry-actionblock .tel:hover:before, .entry-actionblock .tel:focus:before, .entry-actionblock .online:hover:before, .entry-actionblock .online:focus:before {
       background: #d98a57; }
-    /* line 51, ../scss/_main.scss */
+    /* line 76, ../scss/_main.scss */
     .entry-actionblock .tel:before, .entry-actionblock .online:before {
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
@@ -3658,33 +3779,37 @@ blockquote {
       border-radius: 1em;
       width: 1.2em;
       height: 1.2em; }
-  /* line 71, ../scss/_main.scss */
+  /* line 96, ../scss/_main.scss */
   .entry-actionblock .tel span {
     font-size: 1em;
     font-weight: 300;
     display: block;
     margin-top: 0.125em; }
-  /* line 80, ../scss/_main.scss */
+  /* line 105, ../scss/_main.scss */
   .entry-actionblock .online:before {
     content: '\E789'; }
 
-/* line 87, ../scss/_main.scss */
+/* line 112, ../scss/_main.scss */
 .entry-content {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  margin-bottom: 8em;
+  margin-bottom: 4em;
   padding: 1em 1em; }
   @media (min-width: 768px) and (max-width: 1023px) {
-    /* line 87, ../scss/_main.scss */
+    /* line 112, ../scss/_main.scss */
     .entry-content {
-      float: left;
+      float: right;
       width: 66%; } }
   @media (min-width: 1024px) {
-    /* line 87, ../scss/_main.scss */
+    /* line 112, ../scss/_main.scss */
     .entry-content {
-      float: left;
+      float: right;
       width: 66%; } }
+
+/* line 127, ../scss/_main.scss */
+.commentswrap {
+  background: #f2f2f2; }
 
 /* line 1, ../scss/_sidebar.scss */
 .tovabbiak {
@@ -3797,6 +3922,30 @@ blockquote {
         text-align: right;
         width: 44%;
         margin: 2em 3% 4em 3%; } }
+
+/* line 121, ../scss/_sidebar.scss */
+.sidebarwrap {
+  background: #5d5d5d;
+  color: white;
+  font-size: 0.875em;
+  padding-bottom: 4em; }
+  /* line 128, ../scss/_sidebar.scss */
+  .sidebarwrap a {
+    color: #ecc4aa; }
+    /* line 130, ../scss/_sidebar.scss */
+    .sidebarwrap a:hover, .sidebarwrap a:focus {
+      color: #99cc00; }
+  /* line 135, ../scss/_sidebar.scss */
+  .sidebarwrap .widget {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 1em 1em; }
+    @media (min-width: 1024px) {
+      /* line 135, ../scss/_sidebar.scss */
+      .sidebarwrap .widget {
+        width: 33%;
+        float: left; } }
 
 /* line 1, ../scss/_footer.scss */
 .content-info {

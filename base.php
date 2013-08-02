@@ -13,16 +13,17 @@
     }
   ?>
   
-    <div class="nagywrap clearfix" role="document">
-    <div class="wrap container clearfix" role="main">
-      <div class="content row">
-        <div class="main <?php echo roots_main_class(); ?>">
-          <?php include roots_template_path(); ?>
-        </div><!-- /.main -->
-      </div><!-- /.content -->
-    </div><!-- /.wrap -->
+    
+
+
+
+
+  <div class="docwrap clearfix" role="document">
+    <?php include roots_template_path(); ?>
     <?php include roots_sidebar_path(); ?>
-  </div><!-- /.nagywrap -->
+  </div> <!-- /.docwrap -->
+  
+
   <?php get_template_part('templates/footer'); ?>
 
 </body>

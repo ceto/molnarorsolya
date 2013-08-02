@@ -2,8 +2,10 @@
   if (post_password_required()) {
     return;
   }
-
- if (have_comments()) : ?>
+?>
+<div class="wrap commentswrap clearfix">
+  <div class="wrapped">
+<?php if (have_comments()) : ?>
   <section id="comments">
     <h3><?php printf(_n('One Response to &ldquo;%2$s&rdquo;', '%1$s Responses to &ldquo;%2$s&rdquo;', get_comments_number(), 'roots'), number_format_i18n(get_comments_number()), get_the_title()); ?></h3>
 
@@ -70,3 +72,5 @@
     <?php endif; ?>
   </section><!-- /#respond -->
 <?php endif; ?>
+  </div><!-- / .wrapped --> 
+</div><!-- / .commentswrap -->

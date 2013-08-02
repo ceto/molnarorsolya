@@ -118,4 +118,30 @@
 
 }
 
+.sidebarwrap {
+  background: $gray-dark;
+  //background: lighten($gray-lighter,15%);
+  color:$white;
+  font-size:0.875em;
+  padding-bottom:4em;
+
+  a {
+  color:$orange;
+  &:hover, &:focus {
+      color:$green;
+    }
+  }
+  
+  .widget {
+    @include box-sizing('border-box');
+    padding:1em 1em;
+    @include breakpoint($s3) {
+      width:33%;
+      float:left;
+    
+    }
+  }
+
+}
+
 
