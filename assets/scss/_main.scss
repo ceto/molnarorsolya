@@ -1,9 +1,15 @@
+.blogitemwrap {
+  padding:1em 0;
+}
+.articlewrap {
+  padding:1em 0 3em;
+}
 .blogitemwrap, .articlewrap{
   
   .entry-figure {
     text-align: center;
     //@include box-sizing('border-box');
-    padding:3em 0 0;
+    padding:0.75em 0 0;
     
     
     a {
@@ -21,6 +27,20 @@
       @include transition-timing-function(ease-in); 
       border-radius: 50%;
       border:5px solid lighten($gray-lighter,15%);
+    }
+
+  }
+
+  footer {
+    @include box-sizing('border-box');
+    padding:0 1em;
+    @include breakpoint($s2) {
+      float:right;
+      width:66%;
+    }
+    @include breakpoint($s3) {
+      float:right;
+      width:66%;
     }
 
   }
@@ -114,7 +134,7 @@
 
 .entry-content {
   @include box-sizing('border-box');
-  margin-bottom:4em;
+  margin-bottom:2em;
   padding:1em 1em;
   @include breakpoint($s2) {
     float:right;
@@ -124,16 +144,157 @@
     float:right;
     width:66%;
   }
+
+  .entry-title {
+    margin-top:0;
+    a{
+      color:$gray-light;
+      text-decoration: none;
+      &:hover, &:focus {
+          color:$gray-darker;
+      }
+
+    }
+  }
 } 
 
+.kommentnyito {
+  @include box-sizing('border-box');
+  position:absolute;
+  bottom:0;
+  padding:1.125em 1em 1em;
+  margin: 2em 0 0 0;
+  display: inline-block;
+  //width:4em;
+  //height:4em;
+  text-align: center;
+  background: lighten($gray-lighter,15%);
+  color:$gray;
+ 
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  &:hover, &:focus {
+    text-decoration: none;
+    background:$gray-lighter;
+    color:$gray-darker;
+  }
+
+  i{
+    font-size:3em;
+    //line-height: 0;
+    //padding-top: 1.75em;
+  }
+
+}
 
 .commentswrap {
-   background: lighten($gray-lighter,15%);
+  //display: none;
+  background: lighten($gray-lighter,15%);
+  //background: $gray-darker;
+  .cucu {
+    @include box-sizing('border-box');
+    padding:1em 1em 4em;
+    @include breakpoint($s2) {
+      float:right;
+      width:66%;
+    }
+    @include breakpoint($s3) {
+      float:right;
+      width:66%;
+    }
+  }
  }
 
 
 .actionwrap{
   background: $orange;
+
+  .akcio {
+    @include box-sizing('border-box');
+    padding:1em;
+    
+    @include breakpoint($s2) {
+      float:left;
+      width:66%;
+    }
+    @include breakpoint($s3) {
+      float:left;
+      width:66%;
+    }
+
+    
+    h3 {
+      margin-bottom:0;
+
+    }
+
+    .megtak {
+      margin-top:0;
+      font-size: 0.875em;
+      font-style:italic;
+    }
+
+    .akcio-title {
+      margin:0.5em 0 0.5em;
+      font-size:2.5em;
+      font-weight: 400;
+      font-style:italic;
+      text-transform:none;
+      letter-spacing: 0;
+      line-height: 1.125em;
+      a {
+        color:$gray-dark;
+        text-decoration: none;
+      }
+
+    }
+    .btn {
+
+     
+      
+    }
+
+    .idotartam {
+      margin:2em 0 1em;
+      font-size: 0.875em;
+      font-style: italic;
+      i {   
+        margin-right:0.125em;
+      }
+
+      span {
+          //display: block;
+      }
+    }
+  
+
+  }
+
+  .ajandekut {
+    @include box-sizing('border-box');
+    padding:1em;
+
+    @include breakpoint($s2) {
+      float:left;
+      width:33%;
+    }
+    @include breakpoint($s3) {
+      float:left;
+      width:33%;
+    }
+
+  }
+
+  
+
+
+
+
+
+
+
 }
 
  .homegyujtowrap {

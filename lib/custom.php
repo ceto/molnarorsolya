@@ -38,7 +38,7 @@ function cmb_metadata_metaboxes( array $meta_boxes ) {
       // ),
       array(
         'name' => 'Intro, bevezető',
-        'desc' => 'Rövid frappáns kivonat, vagy bevezető (kötelező).<br />Akció esetén az nyereség kiemelésére. (pl.: megtakarítás 3000 Ft)',
+        'desc' => 'Rövid frappáns kivonat, vagy bevezető (kötelező).',
         'id'   => $prefix . 'intro',
         'type' => 'textarea_small',
       ),
@@ -52,6 +52,13 @@ function cmb_metadata_metaboxes( array $meta_boxes ) {
       array(
         'name' => 'Ügyfél neve',
         'id'   => $prefix . 'ugyfel_nev',
+        'type' => 'text_medium',
+      ),
+
+      array(
+        'name' => 'Akció csali',
+        'desc' => 'Akció esetén az nyereség kiemelésére. (pl.: megtakarítás 3000 Ft)',
+        'id'   => $prefix . 'csali',
         'type' => 'text_medium',
       ),
 

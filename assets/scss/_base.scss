@@ -56,6 +56,7 @@ blockquote {
 }
 
 .wrap {
+  position: relative;
   .wrapped {
     max-width:$maximum;
     margin:0 auto;

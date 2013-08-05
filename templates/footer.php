@@ -2,16 +2,32 @@
   
   <div class="f1 wrap clearfix">
     <div class="wrapped">
+      <?php $the_fact=new WP_Query ( array (
+        'cat' => 7,
+        'post_type' => 'post',
+        'posts_per_page' => 1
+      )); ?>
       <section class="widget widget_action">
-          <h3>Aktuális akció</h3>
-          <h4>Nappali sminket kaptok ajándékba!</h4>
-          <a href="#" class="details">Akció részletei</a>
+          <?php if (!$the_fact->have_posts()) : ?>
+              <h4>
+                <h3>Akció</h3>
+                <h4>Jelenleg nincs kiemelt akció, iratkozz fel hírlevelünkre ha értesülni akarsz a következőröl.</h4>
+            <?php else : ?>
+              <?php while ($the_fact->have_posts()) : $the_fact->the_post(); ?>
+                <h3>Aktuális akció</h3>
+                <h4><?php the_title(); ?></h4>
+                <a href="<?php the_permalink(); ?>" class="details">Akció részletei</a>
+              <?php endwhile; ?>
+            <?php endif; ?>
       </section>
       <?php dynamic_sidebar('sidebar-footer-1'); ?>
       <section class="widget widget_action">
           <h3>Tudtad-e?</h3>
-          <h4>Ingyenes arcdiognasztika és megajándékozhatod barátnődet ajándékutalvánnyal.</h4>
-          <a href="#" class="details">Akció részletei</a>
+          <a href="#" class="details">Ajándékutalvány szeretteidnek</a>
+          <h4>Ha először jársz nálunk, </h4>
+          <a href="#" class="details">Az arcdiagnosztika ingyenes</a>
+
+
       </section>
     </div><!-- /.wrapped -->
   </div><!-- / .wrap / .f1 -->
