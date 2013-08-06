@@ -64,32 +64,37 @@
 
 .nav-sub {
     background: $gray-light;
-    padding:3% 1% 0;
+
     
+  .wrapped {
+    padding:3em 1em; 
     @include breakpoint($s2) {
-      padding: 3% 0 0;
+      padding: 2em 0 0 0;
     }
     @include breakpoint($s3) {
-      padding: 3% 0 0;
+      padding: 2em 0 0 0;
     }
+  }
 
-    h3 {
-      text-align: center;
-      color:$white;
-      //margin-bottom:0;
-    }
+  h3 {
+    text-align: center;
+    color:$white;
+    margin:0 0;
+  }
+
   ul {
-    font-size: 1.125em;
+    //font-size: 1.125em;
     list-style-type: none;
     padding:0;
-    margin:0;
+    margin:0 0;
+    text-align: center;
   }
 
   li {
     @include box-sizing('border-box');
     float:left;
     width:46%;
-    margin:3% 2% 40px 2%;
+    margin:3% 2% 3% 2%;
     text-align: center;
     
 
@@ -117,10 +122,7 @@
   }
   a {
     @include box-sizing('border-box');
-    position: relative;
-    bottom:0;
     display: block;
-    padding-top:110%;
     color:$gray-darker;
     text-transform: uppercase;
     font-size:0.875em;
@@ -129,13 +131,12 @@
 
     
     &:before {
-      content: "";
-      position:absolute;
-      top:0;bottom:0;
-      right:0;left:0;
+      content: "ikon";
+      line-height:8em;
       display: block;
-      height:0;
-      padding-top:100%;
+      width:8em;
+      height:8em;
+      margin:0 auto 1em auto;
       background: $orange;
       border-radius: 50%;
       @include box-sizing('border-box');
@@ -150,16 +151,32 @@
     }
   }
   
-  li.active a:after {
+  li.active:after {
     content: "";
     display: block;
     position:absolute;
-    left:35%;right:35%;
-    bottom:-40px;
+    //left:35%;right:35%;
+    bottom:0;
     width:0;
+    margin-left: 16%;
+
     border-left: 25px solid transparent;
     border-right: 25px solid transparent;
     border-bottom: 25px solid $white;
+
+    @include breakpoint($s1) {
+      margin-left: 10.66666%;
+
+    }
+
+    @include breakpoint($s2) {
+      margin-left: 5.66666%;
+    }
+  
+    @include breakpoint($s3) {
+      margin-left: 5.66666%;
+
+    }
 
     
 

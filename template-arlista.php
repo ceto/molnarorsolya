@@ -4,8 +4,8 @@ Template Name: Árlista Sablon
 */
 ?>
 <?php while (have_posts()) : the_post(); ?>
-<nav class="nav-sub clearfix wrap" role="navigation">
-  <div class="wrapped">
+<nav class="nav-sub wrap" role="navigation">
+  <div class="wrapped clearfix">
     <h3>Kozmetikai kezelések árai</h3>
     <?php
       if (has_nav_menu('arlista_navigation')) :

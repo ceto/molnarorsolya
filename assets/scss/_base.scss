@@ -58,6 +58,7 @@ blockquote {
 .wrap {
 
   .wrapped {
+    @include box-sizing('border-box');
     position: relative;
     max-width:$maximum;
     margin:0 auto;
