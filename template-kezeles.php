@@ -5,8 +5,8 @@ Template Name: Kezelés Szimpla Sablon
 ?>
 <div class="main <?php echo roots_main_class(); ?>" role="main"> 
   <?php while (have_posts()) : the_post(); ?>
-  <div class="kezeleswrap wrap clearfix">
-    <div class="wrapped">
+  <div class="kezeleswrap wrap">
+    <div class="wrapped clearfix">
     <article <?php post_class(); ?>>
       <?php get_template_part('templates/page', 'header'); ?>
       
@@ -33,9 +33,7 @@ Template Name: Kezelés Szimpla Sablon
           </div>
           <footer>
             <?php wp_link_pages(array('before' => '<nav class="page-nav"><p>' . __('Pages:', 'roots'), 'after' => '</p></nav>')); ?>
-            <a href="#" class="kommentnyito" data-target="kommentek"><i class="entypo plus"></i>Komment</a>
           </footer>
-         
     </article>
     </div><!-- /.wrapped -->
   </div><!-- /.kezeleswrap -->
@@ -43,38 +41,30 @@ Template Name: Kezelés Szimpla Sablon
   <?php endwhile; ?>
 </div><!-- /.main -->
 
-<div class="wrap tovabbiak clearfix" role="complementary">
-  <div class="wrapped">
+<?php
+  $father=$post->post_parent;
+  $kat=get_the_title( $father);
+  $the_kezeles=new WP_Query( array(
+    'post_type' => 'page',
+    'post_parent' => $father,
+    )
+  );
+?>
+
+<div class="wrap tovabbiak" role="complementary">
+  <div class="wrapped clearfix">
       <aside>
         <header>
-          <h2>További arckezelések</h2>
+          <h2>További <?php echo $kat ?></h2>
         </header>
-        <div class="tovkez">
-          <h3>Aromaterápiás wellness élménykezelések</h3>
-          <p>Külső-belső megújulás és teljes kikapcsolódás aromaterápia segítségével.</p>
-          <a class="read-more hide-text" href="#">Aromaterápiás wellness élménykezelések</a>
-        </div>
-        <div class="tovkez">
-          <h3>Hévízi iszapos-gyógyvizes kezelések</h3>
-          <p>A felhasznált termékek a hévízi tó vizét, gabonakivonatokat, biológiai tisztaságú illóolajokat és gyógyiszapot tartalmaznak</p>
-          <a class="read-more hide-text" href="#">Hévizes</a>
-        </div>
-        <div class="tovkez">
-          <h3>Mélyhámasztások</h3>
-          <p>Ezt igazából gépekkel végezzük, szóval szerintem ezt gépi kezelések közé kellene tenni, átnavigálással</p>
-          <a class="read-more hide-text" href="#">Mélyhámlasztások</a>
-        </div>
-        <div class="tovkez">
-          <h3>Hévízi iszapos-gyógyvizes kezelések</h3>
-          <p>A felhasznált termékek a hévízi tó vizét, gabonakivonatokat, biológiai tisztaságú illóolajokat és gyógyiszapot tartalmaznak</p>
-          <a class="read-more hide-text" href="#">Hévizes</a>
-        </div>
-        <div class="tovkez">
-          <h3>Tini kezelések</h3>
-          <p>A felhasznált termékek a hévízi tó vizét, gabonakivonatokat, biológiai tisztaságú illóolajokat és gyógyiszapot tartalmaznak</p>
-          <a class="read-more hide-text" href="#">Tini</a>
-        </div>
-        <a class="more" href="#">Még több kezelés ...</a>
+         <?php while ($the_kezeles->have_posts()) : $the_kezeles->the_post(); ?>
+          <div class="tovkez">
+            <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+            <p>Külső-belső megújulás és teljes kikapcsolódás aromaterápia segítségével.</p>
+            <a class="read-more hide-text" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+          </div>
+        <?php endwhile; ?>                  
+        <a class="more" href="<?php echo get_permalink($father); ?>">Még több kezelés ...</a>
       </aside>
    </div><!-- /.wrapped -->
 </div><!-- /.wrap.tovabbiak -->

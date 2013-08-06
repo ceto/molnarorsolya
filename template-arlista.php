@@ -6,7 +6,7 @@ Template Name: Árlista Sablon
 <?php while (have_posts()) : the_post(); ?>
 <nav class="nav-sub clearfix wrap" role="navigation">
   <div class="wrapped">
-    <h3>Árlista</h3>
+    <h3>Kozmetikai kezelések árai</h3>
     <?php
       if (has_nav_menu('arlista_navigation')) :
         wp_nav_menu(array('theme_location' => 'arlista_navigation', 'menu_class' => 'nav nav-pills'));

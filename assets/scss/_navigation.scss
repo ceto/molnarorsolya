@@ -181,3 +181,49 @@
 
 
 }
+
+
+
+.nav-post {
+  @include box-sizing('border-box');
+  padding:0 1em;
+
+  margin-bottom: 4em;
+  @include breakpoint($s2) {
+    float:left;
+    width:34%;
+    position:absolute;
+    bottom:0;
+    margin-bottom:1em;
+
+  }
+  @include breakpoint($s3) {
+    float:left;
+    width:34%;
+    position:absolute;
+    bottom:0;
+    margin-bottom:1em;
+
+  }
+
+  a{
+    font-size: 0.75em;
+    max-width:49%;
+    display: inline-block;
+    color:$gray-light;
+    &[rel="prev"] {
+      text-align: left;
+      float:left;
+    }
+    &[rel="next"] {
+      text-align: right;
+      float:right;
+    }
+    &:hover, &:focus {
+      text-decoration: none;
+      color:$gray-darker;
+    }
+  }
+
+
+}

@@ -1,9 +1,16 @@
 .blogitemwrap {
-  padding:1em 0;
+ 
 }
 .articlewrap {
-  padding:1em 0 3em;
 }
+
+.pagewrap {
+  article {
+    padding:0 1em;
+  }
+
+}
+
 .blogitemwrap, .articlewrap{
   
   .entry-figure {
@@ -52,10 +59,12 @@
   @include breakpoint($s2) {
     float:left;
     width:34%;
+    margin-bottom:7em;
   }
   @include breakpoint($s3) {
     float:left;
     width:34%;
+    margin-bottom:7em;
   }
 }
 
@@ -161,9 +170,10 @@
 .kommentnyito {
   @include box-sizing('border-box');
   position:absolute;
-  bottom:0;
+  bottom:100%;
+  left:35.66666%;
   padding:1.125em 1em 1em;
-  margin: 2em 0 0 0;
+  margin-bottom: 12px;
   display: inline-block;
   //width:4em;
   //height:4em;
@@ -191,9 +201,11 @@
 
 .commentswrap {
   //display: none;
+  border-top:12px solid lighten($gray-lighter,15%);
   background: lighten($gray-lighter,15%);
   //background: $gray-darker;
   .cucu {
+    //display: none;
     @include box-sizing('border-box');
     padding:1em 1em 4em;
     @include breakpoint($s2) {
@@ -208,277 +220,6 @@
  }
 
 
-.actionwrap{
-  background: $orange;
-
-  .akcio {
-    @include box-sizing('border-box');
-    padding:1em;
-    
-    @include breakpoint($s2) {
-      float:left;
-      width:66%;
-    }
-    @include breakpoint($s3) {
-      float:left;
-      width:66%;
-    }
-
-    
-    h3 {
-      margin-bottom:0;
-
-    }
-
-    .megtak {
-      margin-top:0;
-      font-size: 0.875em;
-      font-style:italic;
-    }
-
-    .akcio-title {
-      margin:0.5em 0 0.5em;
-      font-size:2.5em;
-      font-weight: 400;
-      font-style:italic;
-      text-transform:none;
-      letter-spacing: 0;
-      line-height: 1.125em;
-      a {
-        color:$gray-dark;
-        text-decoration: none;
-      }
-
-    }
-    .btn {
-
-     
-      
-    }
-
-    .idotartam {
-      margin:2em 0 1em;
-      font-size: 0.875em;
-      font-style: italic;
-      i {   
-        margin-right:0.125em;
-      }
-
-      span {
-          //display: block;
-      }
-    }
-  
-
-  }
-
-  .ajandekut {
-    @include box-sizing('border-box');
-    padding:1em;
-
-    @include breakpoint($s2) {
-      float:left;
-      width:33%;
-    }
-    @include breakpoint($s3) {
-      float:left;
-      width:33%;
-    }
-
-  }
-
-  
-
-
-
-
-
-
-
-}
-
- .homegyujtowrap {
-
-  header{
-    padding:1em;
-    text-align: center;
-    h2{
-      margin-bottom: 0;
-    }
-    h3 {
-      margin-top:0;
-      font-weight: 400;
-    }
-  }
-
-  .homekezike {
-    padding:1em 1em;
-    margin-bottom:1em;
-    text-align: center;
-    @include box-sizing('border-box');
-    @include breakpoint($s2) {
-      float:left;
-      width:50%;
-    }
-    @include breakpoint($s3) {
-      float:left;
-      width:50%;
-    }
-  
-    a.hentry{
-      display:inline-block;
-      font-size: 5em;
-      text-decoration: none;
-      background-color: lightblue;
-      width:1.8em;
-      height:1.8em;
-      border-radius: 50%;
-      color:$gray-light;
-
-      @include transition-property(border-radius,background-color);
-      @include transition-duration(100ms);
-      @include transition-timing-function(ease-in); 
- 
-
-
-      &:hover, &:focus {
-        background-color:lighten($gray-lighter,10%);
-        color:$gray;
-        border-radius: 0;
-      }
-      
-
-      @include breakpoint($s3) {
-        float:left;
-        margin-top:7%;
-        margin-right:5%;
-        margin-bottom:10%;
-      }
-
-
-
-      i{
-        line-height:1.8em;       
-      }
-    }
-    
-    h3 {
-      font-weight: 400;
-
-      @include breakpoint($s3) {
-        text-align: left;
-      }
-
-      a {
-        color:$gray-light;
-        text-decoration: none;
-        &:hover, &:focus {
-          color:$gray-darker;
-        }
-      }
-    }
-
-    .intro {
-      text-align: left;
-    }
-    
-
-    .buti {
-      display:block;
-      text-align:right;
-      font-size: 0.875em;
-      font-weight: bold;
-      font-style: italic;
-      
-
-
-      //clear:both;
-      @include breakpoint($s3) {
-       text-align: left;
-      }
-    }
-
-  }
- }
-
-.eszkozokwrap {
-  background: lighten($gray-lighter,15%);
-
-
-
-  header{
-    padding:1em;
-    text-align: center;
-    h2{
-      margin-bottom: 0;
-    }
-    h3 {
-      margin-top:0;
-      font-weight: 400;
-    }
-  }
-  .eszkoz {
-    padding:1em 1em;
-    margin-bottom:2em;
-    @include box-sizing('border-box');
-    @include breakpoint($s2) {
-      float:left;
-      width:33%;
-    }
-    @include breakpoint($s3) {
-      float:left;
-      width:33%;
-    }
-  
-
-    figure {
-      text-align: center;
-      a {
-        &:hover, &:focus {
-          img{
-            @include transition-property(border);
-            @include transition-duration(200ms);
-            @include transition-timing-function(ease-in); 
-            border:5px solid $gray-light;
-          }
-        }
-      }
-      img{
-        border-radius: 50%;
-        border:5px solid $gray-lighter;
-      }
-    }
-    h3 {
-      font-weight: 400;
-      text-transform: none;
-      text-align: center;
-      a {
-        color:$gray;
-        letter-spacing: 0;
-        text-decoration: none;
-        &:hover, &:focus {
-          color:$gray-darker;
-        }
-      }
-    }
-
-    .buti {
-      font-size: 0.875em;
-      font-weight: bold;
-      font-style: italic;
-      text-align: right;
-      display: block;
-    }
-
-
-  }
-
-
-
-
-
- 
- }
 
 
 

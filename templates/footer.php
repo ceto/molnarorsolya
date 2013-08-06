@@ -1,7 +1,7 @@
 <footer class="content-info" role="contentinfo">
   
-  <div class="f1 wrap clearfix">
-    <div class="wrapped">
+  <div class="f1 wrap">
+    <div class="wrapped clearfix">
       <?php $the_fact=new WP_Query ( array (
         'cat' => 7,
         'post_type' => 'post',
@@ -32,8 +32,8 @@
     </div><!-- /.wrapped -->
   </div><!-- / .wrap / .f1 -->
   
-  <div class="f2 wrap clearfix">
-    <div class="wrapped">
+  <div class="f2 wrap">
+    <div class="wrapped clearfix">
       <section class="widget widget_impr">
           <p>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?><br />
             Hand crafted site with love by <a target="_blank" href="http://hydrogene.hu">Hydrogene</a></p>

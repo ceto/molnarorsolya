@@ -1,6 +1,6 @@
 <?php while (have_posts()) : the_post(); ?>
-<div class="wrap articlewrap clearfix">
-  <div class="wrapped">
+<div class="wrap articlewrap">
+  <div class="wrapped clearfix">
     <article <?php post_class(); ?>>
       <div class="entry-side">
         <?php if (has_post_thumbnail()) : ?>
@@ -20,8 +20,12 @@
       <footer>
         <?php related_posts(); ?>
         <?php wp_link_pages(array('before' => '<nav class="page-nav"><p>' . __('Pages:', 'roots'), 'after' => '</p></nav>')); ?>
-         <a href="#" class="kommentnyito" data-target="kommentek"><i class="entypo plus"></i>Komment</a>
       </footer>
+      <nav class="nav-post clearfix">
+        <?php previous_post_link('%link','<i class="entypo circled-left"></i> %title'); ?>
+        <?php next_post_link('%link','%title <i class="entypo circled-right"></i>'); ?>
+        
+      </nav>
      </article>
   </div><!-- / .wrapped --> 
 </div><!-- / .articlewrap -->

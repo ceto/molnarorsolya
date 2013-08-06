@@ -78,7 +78,7 @@ Template Name: Home Page
   </div><!-- /.homegyujtowrap -->
 
 <?php 
-  $the_kezeles=new WP_Query( array(
+  $the_eszkoz=new WP_Query( array(
     'post_type' => 'post',
     'category__or' => array( 6,8,9 ),
     'posts_per_page' => 3
@@ -92,9 +92,9 @@ Template Name: Home Page
       <article <?php post_class(); ?>>
         <header class="entry-header">
           <h2>Amivel dolgozom</h2>
-          <h3>Krémek, ápolószerek, eszközök</h3>
+          <h3>Kozmetikumok és eszközök</h3>
         </header>
-        <?php while ($the_kezeles->have_posts()) : $the_kezeles->the_post(); ?>
+        <?php while ($the_eszkoz->have_posts()) : $the_eszkoz->the_post(); ?>
           <div class="eszkoz">
             <figure>
               <a href="<?php the_permalink(); ?>"><img src="http://lorempixel.com/150/150" alt="<?php the_title(); ?>"></a>
@@ -104,10 +104,54 @@ Template Name: Home Page
             <a class="buti" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
           </div>
         <?php endwhile; ?>       
-        <?php // comments_template('/templates/comments.php'); ?>
       </article>
       </div><!-- /.wrapped -->
     </div><!-- /.homegyujtowrap -->
+
+<?php 
+    $the_bemutatkozas=new WP_Query( array(
+    'post_type' => 'page',
+    'page_id' => 124
+    )
+  );
+?>
+
+    <div class="bemutatkozowrap wrap">
+      <div class="wrapped clearfix">
+        <?php while ($the_bemutatkozas->have_posts()) : $the_bemutatkozas->the_post(); ?>
+           <figure>
+              <img src="http://lorempixel.com/250/250" alt="Molnár Orsolya - A kozmetikusom">
+            </figure>
+            <div class="colcsi">
+              <h3><?php the_title(); ?></h3>
+              <?php the_content(); ?>
+            </div>
+        <?php endwhile; ?>       
+
+      </div><!-- /.wrapped -->
+    </div><!-- /.bemutatkozowrap -->
+
+
+
+<?php 
+    $the_brands=new WP_Query( array(
+    'post_type' => 'page',
+     'page_id' => 127
+    )
+  );
+?>
+    <div class="brandswrap wrap">
+      <div class="wrapped clearfix">
+        <?php while ($the_brands->have_posts()) : $the_brands->the_post(); ?>
+            <div class="colcsi1">
+              <h3><?php the_title(); ?></h3>
+             <div class="conti"><?php the_content(); ?></div> 
+             
+            </div>
+        <?php endwhile; ?>       
+
+      </div><!-- /.wrapped -->
+    </div><!-- /.brandswrap -->
 
 
 
