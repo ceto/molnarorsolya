@@ -3,7 +3,21 @@
 Template Name: Home Page
 */
 ?>
+
 <?php while (have_posts()) : the_post(); ?>
+
+
+
+<div class="herowrap wrap">
+  <div class="wrapped clearfix">
+    <div class="heroblokk">
+      <h3>Cimsor a formázásra</h3>
+      <p>Lorem ipsum dolor sita amet, természetes alapanyagok használata és Monár Orsolya vagyok és buzditalak arra, hogy nézd meg a szolgáltatásaimat</p>
+      <a href="#" class="btn">Kezelések megtekintése</a>
+    </div>
+  </div><!-- /.wrapped -->
+</div><!-- /.heroswrap -->
+
 <section class="actionwrap clearfix wrap">
   <div class="wrapped">
     <div class="akcio">  

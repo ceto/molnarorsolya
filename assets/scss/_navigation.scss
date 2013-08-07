@@ -63,9 +63,8 @@
 
 
 .nav-sub {
-    background: $gray-light;
-
-    
+    background: $gray-lighter;
+     
   .wrapped {
     padding:3em 1em; 
     @include breakpoint($s2) {
@@ -186,10 +185,10 @@
     background: $green;
   }
   li:nth-child(3) a:before {
-    background: $gray-lighter;
+    background: cyan;
   }
   li:nth-child(4) a:before {
-    background: $gray;
+    background: magenta;
   }
   li:nth-child(5) a:before {
     background: lightblue;
@@ -204,6 +203,7 @@
 .nav-post {
   @include box-sizing('border-box');
   padding:0 1em;
+
 
   margin-bottom: 4em;
   @include breakpoint($s2) {

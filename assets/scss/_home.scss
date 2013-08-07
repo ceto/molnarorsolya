@@ -1,3 +1,22 @@
+.herowrap {
+  z-index:-1;
+  margin-top:-395px;
+  padding-top: 400px;
+  padding-bottom: 50px;
+  background: url('../img/hero_bg.jpg') no-repeat;
+  background-size: 100%;
+  background-position: 50% 0px;
+  background-color: #fff5d1;
+  position: relative;
+  overflow: hidden;
+
+  .heroblokk {
+    padding:1em 1em;
+    p{
+      font-size:1.5em;
+    }
+  }
+}
 .actionwrap{
   background: $orange;
 

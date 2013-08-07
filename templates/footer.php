@@ -21,11 +21,14 @@
             <?php endif; ?>
       </section>
       <?php dynamic_sidebar('sidebar-footer-1'); ?>
-      <section class="widget widget_action">
+      <section class="widget widget_tudtade">
           <h3>Tudtad-e?</h3>
-          <a href="#" class="details">Ajándékutalvány szeretteidnek</a>
-          <h4>Ha először jársz nálunk, </h4>
-          <a href="#" class="details">Az arcdiagnosztika ingyenes</a>
+          <ol>
+            <li>Ajándékba is adhatsz kozmetikai kezelést. <a href="#" >Vásárolj ajándékutalványt</a></li>
+            <li>Ha először jársz nálunk, vendégünk vagy egy <a href="#">ingyenes arcidiagnosztikára.</a></li>
+            <li>Hírlevél feliratkozóink között havonta kisorsolunk egy <a href="#">dekoltázsmasszázst.</a></li>
+          </ol>
+
 
 
       </section>
@@ -37,7 +40,7 @@
       <section class="widget widget_impr">
           <p>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?><br />
             Hand crafted site with love by <a target="_blank" href="http://hydrogene.hu">Hydrogene</a></p>
-          <p>Oszd meg ismerőseiddel<br>
+          <p><strong>Kövesd nyomon Orsolyát</strong><br>
             <a href="#" class="face">&#62221;</a>
             <a href="#" class="gplus">&#62224;</a>
             <a href="#" class="twitter">&#62218;</a>
