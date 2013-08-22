@@ -1,50 +1,85 @@
+.banner {
+  position:relative;
+  margin-bottom: 4em;
+
+
+  .page-header {
+    border-bottom:0.5em solid $gray;
+    padding:0 1em;
+    margin-bottom:-4em;
+    
+    
+    .entry-title {
+      font-size: 2.5em;
+      margin:0 0 1em 0;
+      
+      @include breakpoint($s1) {
+        //margin-top:2em;
+      }
+
+      @include breakpoint($s2) {
+        width:66%;
+        //margin-top:4em;
+      }
+      @include breakpoint($s3) {
+          width:66%;
+          //margin-top:5em;
+      }
+   
+  }
+
+  }
+
+
+  .parent-pageid-31 & {
+      background: $purple;
+      }
+  .parent-pageid-33 & {
+        background: $sand;
+      }
+  .parent-pageid-34 & {
+        background: $skin;
+      }
+  .parent-pageid-36 & {
+        background: $cyan;
+      }
+  .parent-pageid-38 & {
+        background: $sky;
+      }
+
+
+
+}
+
+
+
+
+
+
 .brand {
+  @include box-sizing('border-box');
   text-align: center;
   display: block;
+  //background: $sky;  
   //width:75%;
-  margin:2em auto 0 auto;
+  margin:0 auto;
+  //padding:1em 1em;
   @include breakpoint($s2) {
-      width:20%;
-       margin:2em auto -5.5em auto;
+    position:absolute;
+    left:0; right:0;
+    width:25%;
+    margin:2em auto 0 auto;
   }
   @include breakpoint($s3) {
-      width:20%;
-      margin:2em auto -6.5em auto;
+    position:absolute;
+    left:0; right:0;
+    width:30%;
+    margin:2em auto 0 auto;
       
   }
 }
 
-.page-header {
-  border-bottom:0.5em solid $gray;
-  //background: lighten(lightblue,15%);
-  padding:0 1em;
-  header {
-    margin-top:3em;
 
-    .kategoria {
-      color:$white;
-      background: $gray;
-      font-size: 0.875em;
-      font-weight: 700;
-      text-transform: lowercase;
-      text-decoration: none;
-      padding:2px 5px;
-       &:hover, &:focus {
-        background-color:$green;
-        //color:$gray;
-      }
-    }
-    .entry-title {
-      margin-top:0;
-      margin-bottom:1em;
-    
-    }
-
-
-  }
-
-
-}
 
 .akcio-fej {
   font-size: 0.875em;

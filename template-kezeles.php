@@ -8,8 +8,6 @@ Template Name: Kezelés Szimpla Sablon
   <div class="kezeleswrap wrap">
     <div class="wrapped clearfix">
     <article <?php post_class(); ?>>
-      <?php get_template_part('templates/page', 'header'); ?>
-      
           <div class="entry-side">
             <div class="entry-intro">
               <p><?php echo get_post_meta( $post->ID, '_meta_intro', true ); ?></p>

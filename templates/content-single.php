@@ -13,8 +13,11 @@
       </div>
       <div class="entry-content">
         <header>
-        <h1 class="entry-title"><?php the_title(); ?></h1>
-      </header>
+          <h1 class="entry-title"><?php the_title(); ?></h1>
+          <?php if(get_post_meta( $post->ID, '_meta_intro', true )!='') : ?>
+            <p class="entry-lead"><?php echo get_post_meta( $post->ID, '_meta_intro', true ); ?></p>
+          <?php endif; ?>
+        </header>
         <?php the_content(); ?>
       </div>
       <footer>
