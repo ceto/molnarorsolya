@@ -11,16 +11,16 @@ Template Name: Home Page
 <div class="herowrap wrap">
   <div class="wrapped clearfix">
     <div class="heroblokk">
-      <h3>Cimsor a formázásra</h3>
-      <p>Lorem ipsum dolor sita amet, természetes alapanyagok használata és Monár Orsolya vagyok és buzditalak arra, hogy nézd meg a szolgáltatásaimat</p>
-      <a href="#" class="btn">Kezelések megtekintése</a>
+     <!--  <h3>Cimsor a formázásra</h3> -->
+      <p>A professzionális szakmai tudás alkalmazása mellett vendégeim kezelésénél természetes anyagokat használok és  fontosnak tartom megteremteni a nyugodt légkört, hogy ez is elősegítse a kiváló minőségű szolgáltatást.</p>
+      <br /><a href="?page_id=31" class="btn">Kezelések megtekintése</a>
     </div>
   </div><!-- /.wrapped -->
 </div><!-- /.heroswrap -->
 
 <section class="actionwrap clearfix wrap">
   <div class="wrapped">
-    <div class="akcio">  
+    <div class="akcio clearfix">  
       <?php $the_fact=new WP_Query ( array (
         'cat' => 7,
         'post_type' => 'post',
@@ -42,7 +42,7 @@ Template Name: Home Page
             </a>
           </h4>
           <!-- <p class="intro"><?php echo get_post_meta( $post->ID, '_meta_intro', true ); ?></p> -->
-          <a href="<?php the_permalink(); ?>" class="btn">Akció részletei</a>
+          <a href="<?php the_permalink(); ?>" class="btn">&nbsp;</a>
           <?php setlocale(LC_ALL, "hu_HU"); ?>
           <p class="idotartam"><i class="entypo star"></i>Az akció időtartama:
             <span><?php echo strftime('%Y. %B %d. %A', get_post_meta( $post->ID, '_meta_akcio_kezdet', true )); ?> &mdash; <?php echo strftime('%Y. %B %d. %A',get_post_meta( $post->ID, '_meta_akcio_veg', true )); ?></span>
@@ -50,9 +50,9 @@ Template Name: Home Page
         <?php endwhile; ?>
       <?php endif; ?>
     </div>
-    <div class="ajandekut">
-      <h3>Ajándékozz kozmetikai kezelést</h3>
-      <a href="<?php the_permalink(); ?>">Ajándékutalvány bemutatása</a>
+    <div class="ajandekut clearfix">
+      <h3>Tudtad-e?</h3>
+      <h4 class="akcio-title">Ha először jársz nálunk vendégünk vagy egy <a href="#">ingyenes arcdiagnosztikára</a></h4>
     </div>
   </div><!-- /.wrapped -->
 </section>
@@ -80,8 +80,8 @@ Template Name: Home Page
       <?php $i=1; 
        while ($the_kezeles->have_posts()) : $the_kezeles->the_post(); ?>
         <div class="homekezike">
-          <a href="<?php the_permalink(); ?>" <?php post_class(); ?>>
-            <i><?php echo $i++ ?></i>
+          <a href="<?php the_permalink(); ?>" <?php post_class('gomboc'); ?>>
+            &nbsp;
           </a>
           <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
           <p class="intro"><?php echo get_post_meta( $post->ID, '_meta_intro', true ); ?></p>
@@ -116,7 +116,13 @@ Template Name: Home Page
         <?php while ($the_eszkoz->have_posts()) : $the_eszkoz->the_post(); ?>
           <div class="eszkoz">
             <figure>
-              <a href="<?php the_permalink(); ?>"><img src="http://lorempixel.com/150/150" alt="<?php the_title(); ?>"></a>
+              <a href="<?php the_permalink(); ?>">
+                <?php if (has_post_thumbnail()): ?>
+                <?php the_post_thumbnail('tiny11') ?>
+                <?php else: ?>
+                <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/ikon_ruzs.png" width="150" height="150" alt="<?php the_title(); ?>">
+                <?php endif; ?>
+              </a>
             </figure>
             <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
             <p class="intro">
@@ -142,6 +148,10 @@ Template Name: Home Page
         <?php while ($the_bemutatkozas->have_posts()) : $the_bemutatkozas->the_post(); ?>
            <figure>
               <img src="http://lorempixel.com/250/250" alt="Molnár Orsolya - A kozmetikusom">
+              <figcaption>
+                <h4>Molnár Orsolya</h4>
+                <em>Kozmetikus, gyakorlati oktató, szépségterapeuta.</em>
+              </figcaption>
             </figure>
             <div class="colcsi">
               <h3><?php the_title(); ?></h3>

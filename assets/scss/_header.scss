@@ -3,10 +3,19 @@
   margin-bottom: 4em;
 
 
+  
+  background-repeat: no-repeat;
+  background-position: center top;
+  @include background-size(cover);
+
+
   .page-header {
     border-bottom:0.5em solid $gray;
     padding:0 1em;
     margin-bottom:-4em;
+
+
+
     
     
     .entry-title {
@@ -30,21 +39,30 @@
 
   }
 
+  .blog & {
+     // background-color: $purple;
+     // background-image: url('../img/head_bg_purple.jpg');
+  }
 
   .parent-pageid-31 & {
-      background: $purple;
-      }
+      background-color: $purple;
+      background-image: url('../img/head_bg_purple.jpg');
+  }
   .parent-pageid-33 & {
-        background: $sand;
+        background-color: $sand;
+        background-image: url('../img/head_bg_sand.jpg');
       }
   .parent-pageid-34 & {
-        background: $skin;
-      }
+      background-color: $skin;
+      background-image: url('../img/head_bg_skin.jpg');
+    }
   .parent-pageid-36 & {
-        background: $cyan;
+        background-color: $cyan;
+        background-image: url('../img/head_bg_cyan.jpg');
       }
   .parent-pageid-38 & {
-        background: $sky;
+        background-color: $sky;
+        background-image: url('../img/head_bg_sky.jpg');
       }
 
 

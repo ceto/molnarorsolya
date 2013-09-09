@@ -66,7 +66,8 @@ function roots_display_sidebar() {
       'template-custom.php',
       'template-kezeles.php',
       'template-kezelesgyujto.php',
-      'template-arlista.php'
+      'template-arlista.php',
+      'template-contact.php'
     )
   );
 

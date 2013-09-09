@@ -21,7 +21,6 @@ Template Name: Árlista Sablon
     <article <?php post_class(); ?>>
       <header>
         <h1><?php echo roots_title(); ?></h1>
-        <p class="kivonka"><?php the_content(); ?></p>
       </header>
       <div class="entry-content">
         <?php the_content(); ?>

@@ -38,9 +38,9 @@
   <div class="f2 wrap">
     <div class="wrapped clearfix">
       <section class="widget widget_impr">
-          <p>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?><br />
+          <p>&copy; <?php echo date('Y'); ?> <strong><?php bloginfo('name'); ?></strong><br />
             Hand crafted site with love by <a target="_blank" href="http://hydrogene.hu">Hydrogene</a></p>
-          <p><strong>Kövesd nyomon Orsolyát</strong><br>
+          <p><strong>Megtalálsz még itt is</strong><br>
             <a href="#" class="face">&#62221;</a>
             <a href="#" class="gplus">&#62224;</a>
             <a href="#" class="twitter">&#62218;</a>
@@ -49,29 +49,29 @@
       <?php dynamic_sidebar('sidebar-footer-2'); ?>
 
       <section class="widget widget_newsletter">
+
+
 <!-- Begin MailChimp Signup Form -->
-<link href="http://cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-  #mc_embed_signup{}
-  /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-     We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-</style>
 <div id="mc_embed_signup">
-<form action="http://hydrogene.us4.list-manage.com/subscribe/post?u=81493c12a97275eec1a7e2ef5&amp;id=0822041584" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-  <h2>Subscribe to our mailing list</h2>
-<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+<form action="http://molnarorsolya.us7.list-manage.com/subscribe/post?u=bdc266f9fef1502dcc0a3a5ed&amp;id=8e7bed2111" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+  <h3>Érdemes feliratkozni</h3>
+  <h4>Hírlevelünkből az újdonságainkról és az akcióinkról értesülhetsz</h4>
 <div class="mc-field-group">
-  <label for="mce-EMAIL">Email cím  <span class="asterisk">*</span>
-</label>
-  <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+  <label for="mce-EMAIL">Email cím </label>
+  <input type="email" value="" placeholder="Add meg az email címed" name="EMAIL" class="required email" id="mce-EMAIL">
+  <input type="submit" value="Ok" name="subscribe" id="mc-embedded-subscribe" class="button">
 </div>
-  <div id="mce-responses" class="clear">
+<!-- p><a href="http://us7.campaign-archive1.com/home/?u=bdc266f9fef1502dcc0a3a5ed&id=8e7bed2111" title="View previous campaigns">
+  Korábbi hírlevelek
+</a></p -->
+  <div id="mce-responses">
     <div class="response" id="mce-error-response" style="display:none"></div>
     <div class="response" id="mce-success-response" style="display:none"></div>
-  </div>  <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+  </div>
+  
+
 </form>
 </div>
-
 <!--End mc_embed_signup-->
       </section>
 

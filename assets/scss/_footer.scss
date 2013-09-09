@@ -5,7 +5,8 @@
 
 
 .f1 {
-  background: $gray-light;
+  
+  background: url('../img/patt_ecsetek_nagy.png') repeat left top $gray-light;
   color:$white;
   a {
     color:$gray-lighter;
@@ -18,14 +19,24 @@
 
   .widget:nth-child(2) {
     background: $green;
-    padding:6em 2em 6em;
+    //padding:2em 2em 2em;
     text-align: center;
+  }
+
+  .widget.text-3 {
+    h4 {
+      margin-bottom:0;
+    }
+    p{
+      margin-top:0.5em;
+    }
+
   }
 
 }
 
 .f2 {
-  background: $gray-lighter;
+  background:$gray-lighter;
   color:$gray-darker;
   a {
     color:$orange;
@@ -40,6 +51,9 @@
     text-align: center;
 
   }
+
+
+
 }
 
 .content-info {

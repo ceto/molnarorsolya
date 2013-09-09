@@ -29,13 +29,13 @@ Template Name: Kezelés Gyűjtő Sablon
     <article <?php post_class(); ?>>
       <header>
         <h1><?php echo roots_title(); ?></h1>
-        <p class="kivonka"><?php the_content(); ?></p>
+        <!-- <p class="kivonka"><?php the_content(); ?></p> -->
       </header>
       <?php while ($the_kezeles->have_posts()) : $the_kezeles->the_post(); ?>
         <div class="kezike">
           <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
           <p class="intro"><?php echo get_post_meta( $post->ID, '_meta_intro', true ); ?></p>
-          <a class="buti" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+          <a class="buti hide-text" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
         </div>
       <?php endwhile; ?>       
       <footer>

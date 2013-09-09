@@ -1,24 +1,102 @@
 .herowrap {
-  z-index:-1;
-  margin-top:-395px;
-  padding-top: 400px;
+  //position: relative;
+  //overflow: hidden;
+  //z-index:-1;
+  margin-top:-362px;
+  padding-top: 280px;
   padding-bottom: 50px;
-  background: url('../img/hero_bg.jpg') no-repeat;
-  background-size: 100%;
-  background-position: 50% 0px;
-  background-color: #fff5d1;
-  position: relative;
-  overflow: hidden;
+  background-image: url('../img/head_bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  //background-attachment: fixed;
+  background-color:$white;
+  @include background-size(cover);
+
+  @include breakpoint($s1) {
+    margin-top:-312px;
+
+  }
+
+  @include breakpoint($s2) {
+     margin-top:-240px;
+
+  }
+  @include breakpoint($s3) {
+      margin-top:-240px;
+
+  }
+
+
+
 
   .heroblokk {
     padding:1em 1em;
-    p{
-      font-size:1.5em;
+    margin:0 auto;
+    
+    @include breakpoint($s1) {
+    
+
     }
+
+    @include breakpoint($s2) {
+        width:75%;
+
+    }
+    @include breakpoint($s3) {
+        width:66%;
+
+    }
+
+    
+    p{
+
+      display: inline;
+      font-size:2em;
+      background: rgba($gray-light,0.50);
+      line-height: 1.75em;
+      font-weight: 700;
+      color:$white-light;
+    }
+
   }
 }
 .actionwrap{
-  background: $orange;
+
+  border-top:0.5em solid $gray;
+
+  background: $skin;
+  
+  @include breakpoint($s2) {
+    @include background(linear-gradient(to right, $skin 50%, $white-light 50%));
+  }
+  
+  @include breakpoint($s3) {
+    @include background(linear-gradient(to right, $skin 50%, $white-light 50%));
+  }
+
+  .btn {
+      font-size:1em;
+      float:right;
+      padding-right:1.5em;
+
+     
+      
+  }
+
+  .akcio-title {
+      margin:0.5em 0 0.5em;
+      font-size:1.5em;
+      font-weight: 400;
+      font-style:italic;
+      text-transform:none;
+      letter-spacing: 0;
+      line-height: 1.125em;
+      a {
+        color:$gray-dark;
+        text-decoration: none;
+      }
+    }
+  
 
   .akcio {
     @include box-sizing('border-box');
@@ -26,15 +104,16 @@
     
     @include breakpoint($s2) {
       float:left;
-      width:66%;
+      width:50%;
     }
     @include breakpoint($s3) {
       float:left;
-      width:66%;
+      width:50%;
     }
 
     
     h3 {
+      margin-top:1em;
       margin-bottom:0;
 
     }
@@ -45,29 +124,12 @@
       font-style:italic;
     }
 
-    .akcio-title {
-      margin:0.5em 0 0.5em;
-      font-size:2.5em;
-      font-weight: 400;
-      font-style:italic;
-      text-transform:none;
-      letter-spacing: 0;
-      line-height: 1.125em;
-      a {
-        color:$gray-dark;
-        text-decoration: none;
-      }
 
-    }
-    .btn {
-
-     
-      
-    }
+   
 
     .idotartam {
       margin:2em 0 1em;
-      font-size: 0.875em;
+      font-size: 0.75em;
       font-style: italic;
       i {   
         margin-right:0.125em;
@@ -84,14 +146,26 @@
   .ajandekut {
     @include box-sizing('border-box');
     padding:1em;
+    background: $white-light;
 
     @include breakpoint($s2) {
       float:left;
-      width:33%;
+      width:50%;
+      background: none;
     }
     @include breakpoint($s3) {
       float:left;
-      width:33%;
+      width:50%;
+      background: none;
+    }
+
+    h3 {
+      margin:1em 0;
+    }
+    .akcio-title{
+      a {
+        color:$skin;
+      }
     }
 
   }
@@ -129,22 +203,6 @@
       width:50%;
     }
 
-    li.menu-arckezelesek a:before {
-    background: $purple;
-    }
-    li.menu-gepi-kezelesek a:before {
-      background: $sand;
-    }
-    li.menu-smink-es-tetovalas a:before {
-      background: $skin;
-    }
-    li.menu-szortelenites a:before, li.menu-szortelenitesek a:before {
-      background: $cyan;
-    }
-    li.menu-egyeb-kezelesek a:before {
-      background: $sky;
-    }
-  
     a.hentry{
       display:inline-block;
       font-size: 5em;
@@ -168,21 +226,24 @@
       }
       
 
+
+
       &.post-31 {
-      background: $purple;
+        background:url('../img/ikon_tukor.png') no-repeat center center $purple;
       }
       &.post-33 {
-        background: $sand;
+        background:url('../img/ikon_anya.png') no-repeat center center $sand;
       }
       &.post-34 {
-        background: $skin;
+        background:url('../img/ikon_spiral.png') no-repeat center center $skin;
       }
       &.post-36 {
-        background: $cyan;
+        background:url('../img/ikon_szor.png') no-repeat center center $cyan;
       }
       &.post-38 {
-        background: $sky;
+        background:url('../img/ikon_pumpa.png') no-repeat center center $sky;
       }
+
 
       @include breakpoint($s3) {
         float:left;

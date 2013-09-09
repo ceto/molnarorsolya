@@ -1,5 +1,6 @@
 .blogitemwrap {
  
+
 }
 .articlewrap {
 }
@@ -59,19 +60,19 @@
   @include breakpoint($s2) {
     float:left;
     width:34%;
-    margin-bottom:7em;
+    margin-bottom:2em;
   }
   @include breakpoint($s3) {
     float:left;
     width:34%;
-    margin-bottom:7em;
+    margin-bottom:4em;
   }
 }
 
 .entry-intro {
-  font-size:1.75em;
+  font-size:1.5em;
   font-weight: bold;
-  margin-bottom: 2em;
+  margin-bottom: 4em;
 
 }
 
@@ -141,6 +142,27 @@
 
 }
 
+
+.akcio-int {
+  padding:0.5em 1em;
+  display: inline-block;
+  margin-top:0.5em;
+  color:$white;
+  h4 {
+    margin: 0;
+    font-size: 0.875em;
+    color:$gray;
+    //display: inline
+  }
+  background: $purple;
+  .kezd, .veg {
+    font-size: 0.875em;
+    font-style: italic;
+    color:$white;
+    font-weight: bold;
+  }
+
+}
 .entry-content {
   @include box-sizing('border-box');
   margin-bottom:2em;
@@ -165,6 +187,7 @@
 
     }
   }
+
 } 
 
 .kommentnyito {
@@ -205,7 +228,8 @@
   background: lighten($gray-lighter,15%);
   //background: $gray-darker;
   .cucu {
-    //display: none;
+    overflow: hidden;
+    display:none;
     @include box-sizing('border-box');
     padding:1em 1em 4em;
     @include breakpoint($s2) {
@@ -216,6 +240,12 @@
       float:right;
       width:66%;
     }
+    
+    &.nyitva {
+      display:block;
+    }
+
+
   }
  }
 
@@ -224,22 +254,218 @@
 
 
 .kezgyujtowrap {
+  padding-bottom:8em;
+  //background: url('../img/smink_es_tetovalas.png') no-repeat right bottom $skin;
   header{
-    padding:1em;
+    padding:0 1em;
   }
+  
+  h1 {
+    margin:1em 0 1em;
+    text-align: center;
+    font-size: 2em;
+  }
+
   .kezike {
+    @include box-sizing('border-box');
     padding:1em 1em;
+    position:relative;
+
+    @include breakpoint($s1) {
+      margin-left:auto;
+      margin-right:auto;
+      width:80%;
+    }
+
+    @include breakpoint($s2) {
+      margin-left:auto;
+      margin-right:auto;
+      width:66%;
+    }
+
+    @include breakpoint($s3) {
+      float:left;
+      width:50%;
+      &:nth-child(2n) {
+        clear:left;
+      }
+
+    }
+
+
+    h2 {
+      margin-top:1em;
+      a {
+        color:$gray;
+        &:hover, &:focus {
+          text-decoration: none;
+          background:$gray-lighter;
+          color:$gray-darker;
+        }
+      }
+
+    }
+    .intro {
+      font-size: 1.25em;
+      
+    }
+
+    .buti {
+      background: $orange;
+      color:$gray;
+      font-size: 4em;
+      display: block;
+      position:absolute;
+      right:0.25em;
+      top:0.5em;
+      @include box-sizing('border-box');
+      width:0.8em;
+      height:0.8em;
+      border-radius:0.4em;
+      &:hover, &:focus {
+        background:$green;
+      }
+      &:after {
+        content:'\E766';
+        position:absolute;
+        text-align: center;
+        line-height: 0.8em;
+        right:0.2em;
+        font-family: EntypoRegular;
+        font-weight: normal;
+        
+      }
+
+    }
   }
  }
 
- .arlistawrap {
+.felez {
+  
+  @include breakpoint($s2) {
+    width:50%;
+    float:left;
+    @include box-sizing('border-box');
+    padding:0 1em;
+    }
+  @include breakpoint($s3) {
+    width:50%;
+    float:left;
+    @include box-sizing('border-box');
+    padding:0 2em;
+  }
+}
+
+.arlistawrap {
+  padding-bottom:6em;
   article {
     margin:0 auto;
   }
   header{
-    padding:1em;
+    padding:0 1em;
+    text-align: center;
+  }
+  h1 {
+    margin:2em 0 0;
+
   }
   .entry-content{
     padding:1em 1em;
+    @include breakpoint($s2) {
+      float:none;
+      width:auto;
+      margin:0 auto
+    }
+  @include breakpoint($s3) {
+      float:none;
+      width:auto;
+      margin:0 auto;
+    }
+  
+  h3 {
+    //background: $gray-light;
+    //color:$white;
+    clear:both;
+    //padding:0.5em 1em;
+    margin: 3em 0 1em 0;
+    font-size: 1.125em;
+    a {
+      display: block;
+      color:$gray;
+      position: relative;
+      &:hover, &:focus {
+        color:$gray-darker;
+        text-decoration: none;
+        background: $gray-light;
+      }
+      &:after {
+        content:">";
+        right:0;
+        position: absolute;
+
+      }
+
+    }
+
+    /***** clearfix *****/
+      *zoom: 1;
+      &:before,
+      &:after {
+        display: table;
+        content: "";
+        // Fixes Opera/contenteditable bug:
+        // http://nicolasgallagher.com/micro-clearfix-hack/#comment-36952
+        line-height: 0;
+      }
+      &:after {
+        clear: both;
+      }
+  }
+  
+
+
+  h4 {
+    font-size: 1.125em;
+    width:80%;
+    float:left;
+    margin:1em 0 0 0;
+    @include box-sizing('border-box');
+    padding:0 0;
+    font-size: 1em;
+    font-weight: 400;
+
+
+  }
+
+  p {
+    @include box-sizing('border-box');
+    padding:0 0;
+    width:80%;
+
+
+  }
+
+  p.ar {
+    float:left;
+    //float:right;
+    width:20%;
+    margin:1em 0 0 0;
+    padding:0 0 0 0;
+    font-size: 1em;
+    font-weight:400;
+    font-style: italic;
+    text-align: right;
+    
+
+  }
+  
+
+
+
+
+
+
+
+
   }
  }

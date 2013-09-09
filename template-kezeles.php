@@ -22,8 +22,8 @@ Template Name: Kezelés Szimpla Sablon
             <?php endif; ?>
             
             <div class="entry-actionblock">
-              <a href="tel:+36707705653" class="tel">Foglalj időpontot <span>+36 70 7705653</span></a>
-              <a href="#" class="online">vagy jelentkezz Online</a>
+              <a href="tel:+36704337511" class="tel">Foglalj időpontot <span>+36 70 433 7511</span></a>
+              <a href="?page_id=11&ap_id=<?php echo get_the_ID(); ?>#respond" class="online">vagy jelentkezz Online</a>
             </div>
           </div>
           <div class="entry-content">

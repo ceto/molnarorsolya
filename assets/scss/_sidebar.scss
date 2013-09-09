@@ -42,16 +42,80 @@
 
 }
 
+
+.entry-content {
+
+   .updated{
+      font-style: italic;
+      display: block;
+    }
+    .hcat {
+      float:left;
+      margin-bottom: 0;
+      margin-top:0.5em;
+      margin-right:0.5em;
+      //font-size:0.875em;
+    }
+    .entry-title {
+      margin-bottom: 0.125em;
+      font-size:2em;
+    
+      
+    }
+  .entry-meta {
+    //margin:2em 0 2em;
+   
+    .byline {
+      display:inline;
+      margin:0;
+      font-size: 0.875em;
+      font-style: italic;
+     
+      a {
+        font-style: normal;
+        color:$gray-light;
+        font-size: 1.5em;
+        font-weight: 700; 
+        &:hover, &:focus {
+          color:$gray-darker;
+          text-decoration: none;
+        }
+      }
+
+    }
+  }
+}
+
 .entry-side {
   .entry-meta {
     text-align:center;
-    margin-top:2em;
+    margin:2em 0 2em;
     .updated{
-      font-size: 1.25em;
+      //font-size: 0.875em;
+      font-style: italic;
+      margin-bottom: 2em;
     }
     .byline {
+      margin-top:0;
+      font-size: 0.875em;
+      font-style: italic;
+     
+      a {
+        font-style: normal;
+        color:$gray-light;
+        font-size: 1.5em;
+        font-weight: 700; 
+        &:hover, &:focus {
+          color:$gray-darker;
+          text-decoration: none;
+        }
+      }
 
     }
+  }
+
+  .entry-categories {
+    margin-top:2em;
   }
 }
 
@@ -71,7 +135,7 @@
 }
 
 .entry-categories{
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
   a {
     text-transform: uppercase;
     background:$gray;
@@ -84,7 +148,10 @@
       background: $gray-lighter;
       text-decoration: none;
     }
-
+    
+    .category-akcio & {
+          background: $purple;
+    }
   }
 }
 .entry-tags {
@@ -274,4 +341,38 @@
 
 }
 
+
+.widget_search {
+  label {
+    display: none;
+  }
+
+  .csipi {
+    background: $gray-light;
+    padding:0.5em;
+  }
+  input[type="text"] {
+    @include box-sizing('border-box');
+    display: block;
+    float: left;
+    font-size: 1.125em;
+    color:$gray;
+    border:0;
+    height:40px;
+    width:70%;
+    padding:0.25em 0.5em;
+  }
+  input[type="submit"] {
+    @include box-sizing('border-box');
+    display: block;
+    float:left;
+    font-size: 1.5em;
+    border:0;
+    height:40px;
+    width:30%;
+    font-size: 1em;
+    background: $green;
+    color: $white;
+    }
+}
 

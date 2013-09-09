@@ -80,7 +80,8 @@
 
 
 .nav-sub {
-    background: $gray-flat;
+    background: url('../img/patt_szigno.jpg') no-repeat center center $gray-flat;
+    @include background-size(cover);
      
   .wrapped {
     padding:3em 1em; 
@@ -139,7 +140,7 @@
   a {
     @include box-sizing('border-box');
     display: block;
-    color:$gray-darker;
+    color:$gray-lighter;
     text-transform: uppercase;
     font-size:0.875em;
     font-weight: 700;
@@ -147,8 +148,8 @@
 
     
     &:before {
-      content: "ikon";
-      line-height:8em;
+      content: "";
+      //line-height:8em;
       display: block;
       width:8em;
       height:8em;
@@ -164,6 +165,13 @@
     }
     &:hover, &:focus {
       color:$white;
+    }
+  }
+
+  li.active a {
+    color:$white;
+    &:before {
+      border:2px solid $white;
     }
   }
   
@@ -199,19 +207,19 @@
   }
 
   li.menu-arckezelesek a:before {
-    background: $purple;
+    background:url('../img/ikon_tukor.png') no-repeat center center $purple;
   }
   li.menu-gepi-kezelesek a:before {
-    background: $sand;
+    background:url('../img/ikon_anya.png') no-repeat center center $sand;
   }
   li.menu-smink-es-tetovalas a:before {
-    background: $skin;
+    background:url('../img/ikon_spiral.png') no-repeat center center $skin;
   }
   li.menu-szortelenites a:before, li.menu-szortelenitesek a:before {
-    background: $cyan;
+    background:url('../img/ikon_szor.png') no-repeat center center $cyan;
   }
   li.menu-egyeb-kezelesek a:before {
-    background: $sky;
+    background:url('../img/ikon_pumpa.png') no-repeat center center $sky;
   }
 
 
@@ -275,10 +283,10 @@
   }
 
   @include breakpoint($s2) {
-    margin-top:10em;
+    margin-top:5em;
   }
   @include breakpoint($s3) {
-    margin-top:12em;
+    margin-top:5em;
   }
   .breadcrumb_last {
     display:none;
