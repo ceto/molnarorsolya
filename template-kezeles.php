@@ -22,8 +22,8 @@ Template Name: Kezelés Szimpla Sablon
             <?php endif; ?>
             
             <div class="entry-actionblock">
-              <a href="tel:+36704337511" class="tel">Foglalj időpontot <span>+36 70 433 7511</span></a>
-              <a href="?page_id=11&ap_id=<?php echo get_the_ID(); ?>#respond" class="online">vagy jelentkezz Online</a>
+              <a href="tel:+36704337511" class="tel"><i class="entypo phone"></i>Foglalj időpontot <span>+36 70 433 7511</span></a>
+              <a href="?page_id=11&ap_id=<?php echo get_the_ID(); ?>#respond" class="online"><i class="entypo mouse"></i>vagy jelentkezz Online</a>
             </div>
           </div>
           <div class="entry-content">
@@ -59,7 +59,7 @@ Template Name: Kezelés Szimpla Sablon
           <div class="tovkez">
             <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
             <p>Külső-belső megújulás és teljes kikapcsolódás aromaterápia segítségével.</p>
-            <a class="read-more hide-text" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+            <a class="read-more" title="<?php the_title(); ?>" href="<?php the_permalink(); ?>"><i class="entypo chevron-thin-right"></i></a>
           </div>
         <?php endwhile; ?>                  
         <a class="more" href="<?php echo get_permalink($father); ?>">Még több kezelés ...</a>

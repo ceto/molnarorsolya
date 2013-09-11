@@ -17,3 +17,63 @@
       text-decoration: none;
     } 
 }
+
+.single .entry-content {
+    ul, ol {
+        list-style-type: none;
+        padding-left:0;
+    }
+
+    li {
+        position: relative;
+        padding-left:1.5em;
+        padding-right: 1em;
+        color:$gray-light;
+        &:before {
+            position: absolute;
+            left:0;
+            top:0.3em;
+            content: "";
+            display: block;
+            background: $gray-light;
+            width: 0.75em;
+            height: 0.75em;
+            @include border-radius(50%);
+        }
+        @include breakpoint($s2) {
+            
+        }
+        @include breakpoint($s3) {
+            padding-left:3.5em;
+            padding-right: 3em; 
+            &:before {
+                left:2em;
+            }  
+        } 
+
+    }
+    
+    ol {
+        counter-reset: my-awesome-counter;
+    }
+    ol li {
+        counter-increment: my-awesome-counter;
+        &:before {
+            position: absolute;
+            //left:3em;
+            top:0;
+            //content: "2.";
+            content: counter(my-awesome-counter)".";
+            font-size: 0.75em;
+            line-height: 1.666667em;
+            font-weight: 700;
+            text-align: center;
+            display: block;
+            color:$white;
+            background: $gray-light;
+            width: 1.666667em;
+            height: 1.666667em;
+            @include border-radius(50%);
+        }
+    }
+}

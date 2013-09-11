@@ -80,9 +80,18 @@
 
 
 .nav-sub {
-    background: url('../img/patt_szigno.jpg') no-repeat center center $gray-flat;
+    @include box-shadow($black 0 0 8px 3px inset);
+    
+    background: url('../img/subnav_bg_varo.jpg') no-repeat center center $gray-flat;
     @include background-size(cover);
-     
+    
+
+    .parent-pageid-16 & {
+      background: url('../img/subnav_bg_cassa.jpg') no-repeat center center $gray-flat;
+      @include background-size(cover);
+    }
+
+
   .wrapped {
     padding:3em 1em; 
     @include breakpoint($s2) {
@@ -97,6 +106,8 @@
     text-align: center;
     color:$white;
     margin:0 0;
+    @include text-shadow($black 0 0 4px);
+
   }
 
   ul {
@@ -145,20 +156,23 @@
     font-size:0.875em;
     font-weight: 700;
     text-decoration: none;
+    @include text-shadow($black 0 0 4px);
 
     
     &:before {
       content: "";
       //line-height:8em;
       display: block;
-      width:8em;
-      height:8em;
+      width:5em;
+      height:5em;
       margin:0 auto 1em auto;
       background: $orange;
       border-radius: 50%;
       @include box-sizing('border-box');
       border:2px solid transparent;
-    
+      @include box-shadow($black 0 0 8px);
+
+
     }
     &:hover:before, &:focus:before {
       border:2px solid $white;
@@ -208,18 +222,24 @@
 
   li.menu-arckezelesek a:before {
     background:url('../img/ikon_tukor.png') no-repeat center center $purple;
+     @include background-size(100%);
+    
   }
   li.menu-gepi-kezelesek a:before {
-    background:url('../img/ikon_anya.png') no-repeat center center $sand;
+    background:url('../img/ikon_szaj.png') no-repeat center center $sand;
+    @include background-size(100%);
   }
   li.menu-smink-es-tetovalas a:before {
     background:url('../img/ikon_spiral.png') no-repeat center center $skin;
+           @include background-size(100%);
   }
   li.menu-szortelenites a:before, li.menu-szortelenitesek a:before {
     background:url('../img/ikon_szor.png') no-repeat center center $cyan;
+           @include background-size(100%);
   }
   li.menu-egyeb-kezelesek a:before {
     background:url('../img/ikon_pumpa.png') no-repeat center center $sky;
+           @include background-size(100%);
   }
 
 
@@ -270,8 +290,6 @@
       color:$gray-darker;
     }
   }
-
-
 }
 
 .breadcrumb {

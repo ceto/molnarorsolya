@@ -42,7 +42,7 @@ Template Name: Home Page
             </a>
           </h4>
           <!-- <p class="intro"><?php echo get_post_meta( $post->ID, '_meta_intro', true ); ?></p> -->
-          <a href="<?php the_permalink(); ?>" class="btn">&nbsp;</a>
+          <a href="<?php the_permalink(); ?>" class="btn"><i class="entypo chevron-thin-right"></i></a>
           <?php setlocale(LC_ALL, "hu_HU"); ?>
           <p class="idotartam"><i class="entypo star"></i>Az akció időtartama:
             <span><?php echo strftime('%Y. %B %d. %A', get_post_meta( $post->ID, '_meta_akcio_kezdet', true )); ?> &mdash; <?php echo strftime('%Y. %B %d. %A',get_post_meta( $post->ID, '_meta_akcio_veg', true )); ?></span>

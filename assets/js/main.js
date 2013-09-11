@@ -9,7 +9,7 @@ function initialize() {
     {
       stylers: [
         { hue: "#aacfec" },
-        { saturation: -85 }
+        { saturation: -95 }
       ]
     }
   ];

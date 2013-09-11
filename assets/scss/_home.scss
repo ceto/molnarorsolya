@@ -2,27 +2,27 @@
   //position: relative;
   //overflow: hidden;
   //z-index:-1;
-  margin-top:-362px;
-  padding-top: 280px;
+  margin-top:-400px;
+  padding-top: 330px;
   padding-bottom: 50px;
   background-image: url('../img/head_bg.jpg');
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: center top;
   //background-attachment: fixed;
   background-color:$white;
   @include background-size(cover);
 
   @include breakpoint($s1) {
-    margin-top:-312px;
+    margin-top:-370px;
 
   }
 
   @include breakpoint($s2) {
-     margin-top:-240px;
+     margin-top:-330px;
 
   }
   @include breakpoint($s3) {
-      margin-top:-240px;
+      margin-top:-340px;
 
   }
 
@@ -39,11 +39,11 @@
     }
 
     @include breakpoint($s2) {
-        width:75%;
+        width:85%;
 
     }
     @include breakpoint($s3) {
-        width:66%;
+        width:75%;
 
     }
 
@@ -51,18 +51,28 @@
     p{
 
       display: inline;
-      font-size:2em;
-      background: rgba($gray-light,0.50);
+      font-size:1.75em;
+      background: rgba($gray,0.7);
+      @include box-shadow( 10px 0 0 rgba($gray,0.7), -10px 0 0 rgba($gray,0.7));
+      padding:2px 0;
       line-height: 1.75em;
       font-weight: 700;
-      color:$white-light;
+      //@include text-shadow(0 0 20px black);
+      //text-transform: uppercase;
+      color:$white;
+    }
+    .btn {
+      margin-top:1.5em;
+      float:right;
     }
 
   }
 }
 .actionwrap{
 
-  border-top:0.5em solid $gray;
+   
+
+  border-top:8px solid $gray;
 
   background: $skin;
   
@@ -77,10 +87,11 @@
   .btn {
       font-size:1em;
       float:right;
-      padding-right:1.5em;
+      width:2em;
+      height:2em;
+      padding:0;
+      text-align: center;
 
-     
-      
   }
 
   .akcio-title {
@@ -205,13 +216,15 @@
 
     a.hentry{
       display:inline-block;
-      font-size: 5em;
+      font-size: 1em;
       text-decoration: none;
       background: $orange;
-      width:1.8em;
-      height:1.8em;
+      width:6em;
+      height:6em;
       border-radius: 50%;
       color:$gray-light;
+
+      @include background-size(cover);
 
       @include transition-property(border-radius,background-color);
       @include transition-duration(100ms);
@@ -230,18 +243,23 @@
 
       &.post-31 {
         background:url('../img/ikon_tukor.png') no-repeat center center $purple;
+        @include background-size(cover);
       }
       &.post-33 {
-        background:url('../img/ikon_anya.png') no-repeat center center $sand;
+        background:url('../img/ikon_szaj.png') no-repeat center center $sand;
+        @include background-size(cover);
       }
       &.post-34 {
         background:url('../img/ikon_spiral.png') no-repeat center center $skin;
+        @include background-size(cover);
       }
       &.post-36 {
         background:url('../img/ikon_szor.png') no-repeat center center $cyan;
+        @include background-size(cover);
       }
       &.post-38 {
         background:url('../img/ikon_pumpa.png') no-repeat center center $sky;
+        @include background-size(cover);
       }
 
 
@@ -298,6 +316,7 @@
       //clear:both;
       @include breakpoint($s3) {
        text-align: left;
+       margin-left:8.66666667em;
       }
     }
 

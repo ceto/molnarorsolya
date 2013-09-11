@@ -41,7 +41,6 @@
       <nav class="nav-post clearfix">
         <?php previous_post_link('%link','<i class="entypo circled-left"></i> %title'); ?>
         <?php next_post_link('%link','%title <i class="entypo circled-right"></i>'); ?>
-        
       </nav>
      </article>
   </div><!-- / .wrapped --> 

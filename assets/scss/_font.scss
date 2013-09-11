@@ -29,17 +29,35 @@
 	font-family: 'EntypoRegular';
 	font-size: 2em;
 	font-weight: normal;
-	line-height: 0;
+	line-height: 1em;
     font-style: normal;
+    
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    *margin-right: .3em; // fixes ie7 issues
 }
  
 .entypo-social {
 	font-family: 'EntypoSocialRegular';
 	font-size: 2em;
 	font-weight: normal;
-	line-height: 0;
+	line-height: 1em;
     font-style: normal;
+    
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    *margin-right: .3em; // fixes ie7 issues
 }
+
+.entypo .entypo-social{
+    &:before{
+        text-decoration: inherit;
+        display: inline-block;
+        speak: none;
+
+    }
+}
+
  
 .entypo.phone:before{ content:'\1F4DE'; }
 .entypo.mobile:before{ content:'\1F4F1'; }

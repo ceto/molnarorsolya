@@ -35,7 +35,7 @@ Template Name: Kezelés Gyűjtő Sablon
         <div class="kezike">
           <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
           <p class="intro"><?php echo get_post_meta( $post->ID, '_meta_intro', true ); ?></p>
-          <a class="buti hide-text" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+          <a class="buti" href="<?php the_permalink(); ?>">Bővebben...</a>
         </div>
       <?php endwhile; ?>       
       <footer>

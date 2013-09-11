@@ -11,12 +11,12 @@ body {
 }
 
 a {
-  color:$green;
+  color:$gray-light;
   text-decoration: none;
   
   &:hover, &:focus {
     text-decoration:underline;
-    color:darken($green,10%);
+    color:$black;
     //color:darken($orange,20%);
   }
 }
@@ -55,6 +55,9 @@ blockquote {
   }
 }
 
+.main {
+  position:relative;
+}
 .wrap {
 
   .wrapped {
@@ -63,6 +66,9 @@ blockquote {
     max-width:$maximum;
     margin:0 auto;
   }
+}
+.kezeleswrap {
+  padding-bottom:4em;
 }
 
 

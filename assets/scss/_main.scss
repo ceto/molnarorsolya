@@ -12,6 +12,21 @@
 
 }
 
+.page-header header {
+  padding:0 1em;
+  @include breakpoint($s2) {
+    margin-left:34%;
+  }
+  @include breakpoint($s3) {
+    margin-left:34%;
+  }
+
+  h1 {
+    margin-top:1em;
+  }
+
+}
+
 .blogitemwrap, .articlewrap{
   
   .entry-figure {
@@ -70,9 +85,12 @@
 }
 
 .entry-intro {
+
   font-size:1.5em;
-  font-weight: bold;
-  margin-bottom: 4em;
+  font-weight: 700;
+  //font-style: italic;
+  margin-bottom: 2em;
+  color:$gray-light;
 
 }
 
@@ -101,28 +119,22 @@
       color:darken($orange,20%);
     }
 
-    &:hover:before, &:focus:before {
+    &:hover i, &:focus i {
       background:darken($orange,20%);
 
     }
 
-    &:before {
-      @include box-sizing('border-box');
+    i {
       position: absolute;
       left:0;
-      //top:-0.25em;
-      text-align: center;
-      font-family: 'EntypoRegular';
-      font-weight: normal;
-      content:'\1F4DE';
+
+      display: block;
       color:$white;
       background: $orange;
-      font-size:2em;
-      //padding-top:0.25em;
-      line-height:1.2em;
-      border-radius:1em;
-      width:1.2em;
-      height:1.2em;
+      border-radius:50%;
+      width:1em;
+      height:1em;
+
     }
   }
   .tel {
@@ -135,9 +147,6 @@
   }
 
   .online {
-    &:before {
-      content:'\E789';
-    }
   }
 
 }
@@ -254,16 +263,43 @@
 
 
 .kezgyujtowrap {
-  padding-bottom:8em;
-  //background: url('../img/smink_es_tetovalas.png') no-repeat right bottom $skin;
+  padding-bottom:12em;
+  background-image:url('../img/main_bg_studio.jpg');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  @include background-size(100% auto);
+  border-bottom: 1px solid $gray-lighter;
+
+  // .page-id-31 & {
+  //   background-image:url('../img/head_bg_purple.jpg');
+  // }
+  // .page-id-33 & {
+  //   background-image:url('../img/head_bg_sand.jpg');
+  // }
+  // .page-id-34 & {
+  //   background-image:url('../img/head_bg_skin.jpg');
+  // }
+  // .page-id-36 & {
+  //   background-image:url('../img/head_bg_cyan.jpg');
+  // }
+  // .page-id-38 & {
+  //   background-image:url('../img/head_bg_sky.jpg');
+  // }
+
+
+
+
+
+
+
   header{
     padding:0 1em;
   }
   
   h1 {
-    margin:1em 0 1em;
+    margin:2em 0 1em;
     text-align: center;
-    font-size: 2em;
+    font-size: 2.5em;
   }
 
   .kezike {
@@ -294,7 +330,9 @@
 
 
     h2 {
+      font-size:1.25em;
       margin-top:1em;
+      margin-bottom:0;
       a {
         color:$gray;
         &:hover, &:focus {
@@ -306,36 +344,22 @@
 
     }
     .intro {
-      font-size: 1.25em;
+      //font-size: 1.25em;
       
     }
 
     .buti {
-      background: $orange;
+      float:right;
       color:$gray;
-      font-size: 4em;
-      display: block;
-      position:absolute;
-      right:0.25em;
-      top:0.5em;
+      display: inline-block;
+      font-weight: 700;
+      font-size: 0.875em;
+      padding:0.25em 0.5em;
       @include box-sizing('border-box');
-      width:0.8em;
-      height:0.8em;
-      border-radius:0.4em;
       &:hover, &:focus {
         background:$green;
+        text-decoration: none;
       }
-      &:after {
-        content:'\E766';
-        position:absolute;
-        text-align: center;
-        line-height: 0.8em;
-        right:0.2em;
-        font-family: EntypoRegular;
-        font-weight: normal;
-        
-      }
-
     }
   }
  }

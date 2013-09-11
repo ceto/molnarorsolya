@@ -16,7 +16,7 @@
               <?php while ($the_fact->have_posts()) : $the_fact->the_post(); ?>
                 <h3>Aktuális akció</h3>
                 <h4><?php the_title(); ?></h4>
-                <a href="<?php the_permalink(); ?>" class="details">Akció részletei</a>
+                <a href="<?php the_permalink(); ?>" class="details">Akció részletei<i class="entypo chevron-thin-right"></i></a>
               <?php endwhile; ?>
             <?php endif; ?>
       </section>
@@ -68,9 +68,8 @@
     <div class="response" id="mce-error-response" style="display:none"></div>
     <div class="response" id="mce-success-response" style="display:none"></div>
   </div>
-  
-
 </form>
+<em>Hírlevél feliratkozóink között havonta kisorsolunk egy dekoltázsmasszázst.</em>
 </div>
 <!--End mc_embed_signup-->
       </section>

@@ -12,12 +12,18 @@
   <?php endwhile; ?>
 
   <?php if ($wp_query->max_num_pages > 1) : ?>
-    <nav class="post-nav">
-      <ul class="pager">
-        <li class="previous"><?php next_posts_link(__('&larr; Older posts', 'roots')); ?></li>
-        <li class="next"><?php previous_posts_link(__('Newer posts &rarr;', 'roots')); ?></li>
-      </ul>
-    </nav>
+      <div class="wrap navwrap">
+        <div class="wrapped">
+          <nav class="nav-post clearfix">
+            <?php // previous_post_link('%link','<i class="entypo circled-left"></i> '.__('Régebbi írások', 'roots')); ?>
+            <?php// next_post_link('%link',__('Újabb írások', 'roots').' <i class="entypo circled-right"></i>'); ?>
+          
+            <?php next_posts_link(__('<i class="entypo circled-left"></i> Régebbi írások', 'roots')); ?>
+            <?php previous_posts_link(__('Újabb írások <i class="entypo circled-right"></i>', 'roots')); ?>
+
+          </nav>
+        </div>
+      </div>
   <?php endif; ?>
 </div><!-- /.main -->
 

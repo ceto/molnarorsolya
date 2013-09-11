@@ -1,24 +1,42 @@
 .contactwrap{
   position: relative;
+  @include box-shadow($black 0 0 8px 3px inset);
 
-
-  background: $white-light;
+  background: url('../img/subnav_bg_signo.jpg') repeat-x center 68% $gray-flat;
+  @include background-size(100% auto);
   
   @include breakpoint($s2) {
-    @include background(linear-gradient(to right, $white-light 50%, $sky 50%));
+    background: url('../img/subnav_bg_signo.jpg') repeat-x -20% bottom $gray-flat;
+    @include background-size(70%);
   }
   
   @include breakpoint($s3) {
-    @include background(linear-gradient(to right, $white-light 50%, $sky 50%));
+    background: url('../img/subnav_bg_signo.jpg') repeat-x -20% bottom $gray-flat;
+    @include background-size(70%);
   }
 
   .wrapped {
     position: static;
+   // background: url('../img/subnav_bg_signo.jpg') repeat-x left bottom $gray-flat;
+   // @include background-size(75%);
+ 
+
   }
+  color:$white-light;
+  a {
+    color:$gray-light;
+    &:hover, &:focus {
+      color:$white;
+      text-decoration: none;
+    }
+
+  }
+
+
 }
 
 .left{
-  padding:1em;
+  padding:1em 1em 4em;
   @include box-sizing('border-box');
   @include breakpoint($s2) {
     float:left;
@@ -33,7 +51,8 @@
 
 }
 .right {
-  padding:1em;
+  padding:4em;
+  background: $white;
   @include box-sizing('border-box');
   @include breakpoint($s2) {
     float:left;
@@ -72,6 +91,7 @@
 .contactwrap .right{
   padding:0;
 }
+
 .gmap {
   height:240px;
 

@@ -6,7 +6,10 @@
 
 .f1 {
   
-  background: url('../img/patt_ecsetek_nagy.png') repeat left top $gray-light;
+  background: $gray-light;
+  background: url('../img/pat_f1.jpg') repeat left top $gray-light;
+  //@include background-size(120px);
+  
   color:$white;
   a {
     color:$gray-lighter;
@@ -19,8 +22,20 @@
 
   .widget:nth-child(2) {
     background: $green;
-    //padding:2em 2em 2em;
+    padding:2em 1em ;
     text-align: center;
+    @include box-shadow(0px 10px 30px -10px black);
+
+
+
+    @include breakpoint($s2) {
+       padding:3em 2em 3em;
+    }
+    @include breakpoint($s3) {
+       padding:0em 2em 2em ;
+    }
+  
+
   }
 
   .widget.text-3 {
@@ -37,18 +52,30 @@
 
 .f2 {
   background:$gray-lighter;
+  background: url('../img/pat_f2.jpg') repeat left top $gray-lighter;
   color:$gray-darker;
   a {
-    color:$orange;
+
+    color:$gray;
     &:hover, &:focus {
-        color:$green;
+        color:darken($orange,25%);
+        text-decoration: none;
     }
   }
 
   .widget:nth-child(2) {
-    background: lighten($gray-lighter,15%);
-    padding:4em 2em;
+    background: url('../img/mo_logo_footer.png') no-repeat center 3em lighten($gray-lighter,15%);
+    padding:9em 2em 2em;
     text-align: center;
+    
+    @include box-shadow(0px 10px 30px -10px black);
+
+    h3{
+      display:none;
+    }
+
+
+
 
   }
 
@@ -96,34 +123,32 @@
       text-decoration: none;
       background: $gray;
       font-size: 1.25em;
+      line-height: 2.5em;
       text-transform: uppercase;
       color:$white;
-      padding:0.5em 4em 0.5em 0.5em;
+      //padding:0.5em 0.5em 0.5em 0.5em;
+      padding:0 0.5em;
       &:hover, &:focus {
         background:$gray-lighter;
         color:$gray-darker;
       } 
+      i {
+        margin: 0 0 0 0.75em;
+        font-size: 1.75em;
+       
+      }
 
-      &:after {
-          content:'\E766';
-          position:absolute;
-          text-align: right;
-          font-size: 3em;
-          line-height: 0em;
-          top:50%;
-          right:0.25em;
-          font-family: EntypoRegular;
-          font-weight: normal;
-          
-      } 
     }
 
   }
   .widget_tudtade {
     font-weight: bold;
+    li {
+      font-size: 1.125em;
+    }
   }
   .widget_impr {
-      padding-top: 5em;
+      padding-top: 2em;
       text-align: center;
 
       p {
