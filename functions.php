@@ -18,3 +18,11 @@ require_once locate_template('/lib/relative-urls.php');   // Root relative URLs
 require_once locate_template('/lib/widgets.php');         // Sidebars and widgets
 require_once locate_template('/lib/scripts.php');         // Scripts and stylesheets
 require_once locate_template('/lib/custom.php');          // Custom functions
+
+// add_filter('site_url',  'wplogin_filter', 10, 3);
+// function wplogin_filter( $url, $path, $orig_scheme )
+// {
+// $old  = array( "/(wp-login\.php)/");
+// $new  = array( "wp-secret-login\.php");
+// return preg_replace( $old, $new, $url, 1);
+// }
