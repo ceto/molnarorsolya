@@ -25,7 +25,7 @@
     padding:0;
   }
   li {
-    @include box-sizing('border-box');
+    box-sizing:border-box;
     display: block;
     text-align: center;
     width:50%;
@@ -75,20 +75,19 @@
   }
   
 
-}
 
 
 
 .nav-sub {
-    @include box-shadow($black 0 0 8px 3px inset);
+    box-shadow:$black 0 0 8px 3px inset;
     
     background: url('../img/subnav_bg_varo.jpg') no-repeat center center $gray-flat;
-    @include background-size(cover);
+    background-size:cover;
     
 
     .parent-pageid-16 & {
       background: url('../img/subnav_bg_cassa.jpg') no-repeat center center $gray-flat;
-      @include background-size(cover);
+      background-size:cover;
     }
 
 
@@ -106,7 +105,7 @@
     text-align: center;
     color:$white;
     margin:0 0;
-    @include text-shadow($black 0 0 4px);
+    text-shadow:$black 0 0 4px;
 
   }
 
@@ -119,7 +118,7 @@
   }
 
   li {
-    @include box-sizing('border-box');
+    box-sizing:border-box;
     float:left;
     width:46%;
     margin:3% 2% 3% 2%;
@@ -149,14 +148,14 @@
 
   }
   a {
-    @include box-sizing('border-box');
+    box-sizing:border-box;
     display: block;
     color:$gray-lighter;
     text-transform: uppercase;
     font-size:0.875em;
     font-weight: 700;
     text-decoration: none;
-    @include text-shadow($black 0 0 4px);
+    text-shadow:$black 0 0 4px;
 
     
     &:before {
@@ -168,9 +167,9 @@
       margin:0 auto 1em auto;
       background: $orange;
       border-radius: 50%;
-      @include box-sizing('border-box');
+      box-sizing:border-box;
       border:2px solid transparent;
-      @include box-shadow($black 0 0 8px);
+      box-shadow:$black 0 0 8px;
 
 
     }
@@ -250,7 +249,7 @@
 
 
 .nav-post {
-  @include box-sizing('border-box');
+  box-sizing:border-box;
   padding:0 1em;
 
 

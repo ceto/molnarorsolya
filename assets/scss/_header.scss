@@ -5,7 +5,7 @@
 
 .parent-pageid-16 .main {
   background: url('../img/main_bg_cassa.jpg') no-repeat center bottom transparent;
-  @include background-size(100% auto);
+  background-size:100% auto;
 }
 .banner {
   position:relative;
@@ -15,7 +15,7 @@
   
   background-repeat: no-repeat;
   background-position: center bottom;
-  @include background-size(cover);
+  background-size: cover;
 
 
   .page-header {
@@ -84,7 +84,7 @@
 
 
 .brand {
-  @include box-sizing('border-box');
+  box-sizing:border-box;
   text-align: center;
   display: block;
   //background: $sky;  
