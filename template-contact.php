@@ -151,7 +151,7 @@ if(!$human == 0){
   </div><!-- /.left -->
 
     <div class="right">
-      <div class="fb-like-box" data-href="https://www.facebook.com/FacebookDevelopers" data-width="400" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>
+      <div class="fb-like-box" data-href="https://www.facebook.com/akozmetikusom" data-width="400" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>
     </div>
   </div><!-- / .wrapped --> 
 </div><!-- / .formwrap -->

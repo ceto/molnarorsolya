@@ -75,7 +75,7 @@
   }
   
 
-
+}
 
 
 .nav-sub {
@@ -221,24 +221,24 @@
 
   li.menu-arckezelesek a:before {
     background:url('../img/ikon_tukor.png') no-repeat center center $purple;
-     @include background-size(100%);
+    background-size:100%;
     
   }
   li.menu-gepi-kezelesek a:before {
     background:url('../img/ikon_szaj.png') no-repeat center center $sand;
-    @include background-size(100%);
+    background-size:100%;
   }
   li.menu-smink-es-tetovalas a:before {
     background:url('../img/ikon_spiral.png') no-repeat center center $skin;
-           @include background-size(100%);
+    background-size:100%;
   }
   li.menu-szortelenites a:before, li.menu-szortelenitesek a:before {
     background:url('../img/ikon_szor.png') no-repeat center center $cyan;
-           @include background-size(100%);
+    background-size:100%;
   }
   li.menu-egyeb-kezelesek a:before {
     background:url('../img/ikon_pumpa.png') no-repeat center center $sky;
-           @include background-size(100%);
+    background-size:100%;
   }
 
 
@@ -321,3 +321,4 @@
     }
   }
 }
+

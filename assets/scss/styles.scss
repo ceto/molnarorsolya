@@ -1,6 +1,6 @@
 @import "normalize";
 @import "variables";
-@import "font";
+@import "ionicon";
 @import "typography";
 @import "base" ;
 @import "header";
@@ -68,10 +68,30 @@
    WordPress Generated Classes
    See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
    ========================================================================== */
-
-.aligncenter { display: block; margin: 0 auto; }
-.alignleft { float: left; }
-.alignright { float: right; }
+.entry-content{
+   .aligncenter {
+      display: block;
+      margin: 0 auto; 
+   }
+   .alignleft { 
+      display: block;
+      @include breakpoint($s1){
+         float: left;
+         display: inline-block;
+         margin-right: 1em;
+         margin-bottom: 1em; 
+      }
+    }
+   .alignright { 
+         display: block;
+      @include breakpoint($s1){
+         float: right;
+         display: inline-block;
+         margin-left:1em;
+         margin-bottom: 1em;  
+      }
+   }
+}
 figure.alignnone { margin-left: 0; margin-right: 0; }
 
 

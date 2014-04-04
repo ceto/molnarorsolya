@@ -44,7 +44,7 @@ Template Name: Home Page
           <!-- <p class="intro"><?php echo get_post_meta( $post->ID, '_meta_intro', true ); ?></p> -->
           <a href="<?php the_permalink(); ?>" class="btn">Akció részletei</a>
           <?php setlocale(LC_ALL, "hu_HU"); ?>
-          <p class="idotartam"><i class="entypo star"></i>Az akció időtartama:
+          <p class="idotartam"><i class="ion-star"></i>Az akció időtartama:
             <span><?php echo strftime('%Y. %B %d. %A', get_post_meta( $post->ID, '_meta_akcio_kezdet', true )); ?> &mdash; <?php echo strftime('%Y. %B %d. %A',get_post_meta( $post->ID, '_meta_akcio_veg', true )); ?></span>
           </p>
         <?php endwhile; ?>

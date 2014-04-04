@@ -16,7 +16,7 @@
               <?php while ($the_fact->have_posts()) : $the_fact->the_post(); ?>
                 <h3>Aktuális akció</h3>
                 <h4><?php the_title(); ?></h4>
-                <a href="<?php the_permalink(); ?>" class="details">Akció részletei<i class="entypo chevron-thin-right"></i></a>
+                <a href="<?php the_permalink(); ?>" class="details">Akció részletei<i class="ion-ios7-arrow-right"></i></a>
               <?php endwhile; ?>
             <?php endif; ?>
       </section>
@@ -24,13 +24,10 @@
       <section class="widget widget_tudtade">
           <h3>Tudtad-e?</h3>
           <ol>
-            <li>Ajándékba is adhatsz kozmetikai kezelést. <a href="#" >Vásárolj ajándékutalványt</a></li>
-            <li>Ha először jársz nálunk, vendégünk vagy egy <a href="#">ingyenes arcidiagnosztikára.</a></li>
-            <li>Hírlevél feliratkozóink között havonta kisorsolunk egy <a href="#">dekoltázsmasszázst.</a></li>
+            <li>Ajándékba is adhatsz kozmetikai kezelést. <a href="<?php echo get_permalink('647'); ?>">Vásárolj ajándékutalványt</a></li>
+            <li>Ha először jársz nálunk, vendégünk vagy egy <a href="<?php echo get_permalink('651'); ?>">ingyenes arcidiagnosztikára.</a></li>
+            <li>Hírlevél feliratkozóink között havonta kisorsolunk egy <a href="<?php echo get_permalink('654'); ?>">kézmasszázst.</a></li>
           </ol>
-
-
-
       </section>
     </div><!-- /.wrapped -->
   </div><!-- / .wrap / .f1 -->
@@ -41,9 +38,9 @@
           <p>&copy; <?php echo date('Y'); ?> <strong><?php bloginfo('name'); ?></strong><br />
             Hand crafted site with love by <a target="_blank" href="http://hydrogene.hu">Hydrogene</a></p>
           <p><strong>Megtalálsz még itt is</strong><br>
-            <a href="#" class="face">&#62221;</a>
-            <a href="#" class="gplus">&#62224;</a>
-            <a href="#" class="twitter">&#62218;</a>
+            <a href="https://www.facebook.com/akozmetikusom" class="face"><i class="ion-social-facebook"></i></a>
+            <a href="#" class="gplus"><i class="ion-social-googleplus"></i></a>
+            <a href="#" class="twitter"><i class="ion-social-twitter"></i></a>
           </p>
       </section>
       <?php dynamic_sidebar('sidebar-footer-2'); ?>
@@ -69,7 +66,7 @@
     <div class="response" id="mce-success-response" style="display:none"></div>
   </div>
 </form>
-<em>Hírlevél feliratkozóink között havonta kisorsolunk egy dekoltázsmasszázst.</em>
+<em>Hírlevél feliratkozóink között havonta kisorsolunk egy <a href="<?php echo get_permalink('654'); ?>">kézmasszázst.</a></em>
 </div>
 <!--End mc_embed_signup-->
       </section>

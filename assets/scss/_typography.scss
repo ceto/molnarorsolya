@@ -38,7 +38,7 @@
             background: $gray-light;
             width: 0.75em;
             height: 0.75em;
-            @include border-radius(50%);
+            border-radius:50%;
         }
         @include breakpoint($s2) {
             
@@ -73,7 +73,7 @@
             background: $gray-light;
             width: 1.666667em;
             height: 1.666667em;
-            @include border-radius(50%);
+            border-radius:50%;
         }
     }
 }

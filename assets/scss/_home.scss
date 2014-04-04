@@ -2,27 +2,30 @@
   //position: relative;
   //overflow: hidden;
   //z-index:-1;
-  margin-top:-400px;
+  margin-top:-395px;
   padding-top: 330px;
   padding-bottom: 50px;
-  background-image: url('../img/head_bg.jpg');
+  background-image: url('../img/head_bg_small.jpg');
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: right bottom;
   //background-attachment: fixed;
-  background-color:$white;
-  @include background-size(cover);
+  background-color:#b2b4a7;
+  background-size:auto 100%;
 
   @include breakpoint($s1) {
-    margin-top:-370px;
+    margin-top:-347px;
+    padding-top: 270px;
 
   }
 
   @include breakpoint($s2) {
-     margin-top:-330px;
+    background-image: url('../img/head_bg.jpg');
+     margin-top:-242px;
+     padding-top: 240px;
 
   }
   @include breakpoint($s3) {
-      margin-top:-340px;
+      //margin-top:-340px;
 
   }
 
@@ -31,7 +34,7 @@
 
   .heroblokk {
     padding:1em 1em;
-    margin:0 auto;
+    //margin:0 auto;
     
     @include breakpoint($s1) {
     
@@ -51,19 +54,29 @@
     p{
 
       display: inline;
-      font-size:1.75em;
-      background: rgba($gray,0.7);
-      @include box-shadow( 10px 0 0 rgba($gray,0.7), -10px 0 0 rgba($gray,0.7));
-      padding:2px 0;
+      font-size:1.25em;
       line-height: 1.75em;
+      background: rgba($gray,0.7);
+      box-shadow: 10px 0 0 rgba($gray,0.7), -10px 0 0 rgba($gray,0.7);
+      padding:2px 0;
+
       font-weight: 700;
       //@include text-shadow(0 0 20px black);
       //text-transform: uppercase;
       color:$white;
+      transform:translateX(10px);
+      @include breakpoint($s1) {
+        font-size:1.25em;
+        line-height: 1.75em;
+      }
+      @include breakpoint($s2) {
+        font-size:1.75em;
+        line-height: 1.75em;
+      }
     }
     .btn {
       margin-top:1.5em;
-      float:right;
+      //float:right;
     }
 
   }
@@ -77,11 +90,11 @@
   background: $skin;
   
   @include breakpoint($s2) {
-    @include background(linear-gradient(to right, $skin 50%, $white-light 50%));
+   background-image: linear-gradient(to right, $skin 50%, $white-light 50%);
   }
   
   @include breakpoint($s3) {
-    @include background(linear-gradient(to right, $skin 50%, $white-light 50%));
+    background-image:linear-gradient(to right, $skin 50%, $white-light 50%);
   }
 
   .btn {
@@ -91,6 +104,9 @@
       height:2em;
       padding:0;
       text-align: center;
+      i{
+        line-height:1.875em;
+      }
 
   }
 
@@ -110,7 +126,7 @@
   
 
   .akcio {
-    @include box-sizing('border-box');
+    box-sizing:border-box;
     padding:1em;
     
     @include breakpoint($s2) {
@@ -155,7 +171,7 @@
   }
 
   .ajandekut {
-    @include box-sizing('border-box');
+    box-sizing:border-box;
     padding:1em;
     background: $white-light;
 
@@ -204,7 +220,7 @@
     padding:1em 1em;
     margin-bottom:1em;
     text-align: center;
-    @include box-sizing('border-box');
+    box-sizing:border-box;
     @include breakpoint($s2) {
       float:left;
       width:50%;
@@ -224,11 +240,11 @@
       border-radius: 50%;
       color:$gray-light;
 
-      @include background-size(cover);
+      background-size:cover;
 
-      @include transition-property(border-radius,background-color);
-      @include transition-duration(100ms);
-      @include transition-timing-function(ease-in); 
+      transition-property:border-radius,background-color;
+      transition-duration:100ms;
+      transition-timing-function:ease-in; 
     
 
 
@@ -243,23 +259,23 @@
 
       &.post-31 {
         background:url('../img/ikon_tukor.png') no-repeat center center $purple;
-        @include background-size(cover);
+        background-size:cover;
       }
       &.post-33 {
         background:url('../img/ikon_szaj.png') no-repeat center center $sand;
-        @include background-size(cover);
+        background-size:cover;
       }
       &.post-34 {
         background:url('../img/ikon_spiral.png') no-repeat center center $skin;
-        @include background-size(cover);
+        background-size:cover;
       }
       &.post-36 {
         background:url('../img/ikon_szor.png') no-repeat center center $cyan;
-        @include background-size(cover);
+        background-size:cover;
       }
       &.post-38 {
         background:url('../img/ikon_pumpa.png') no-repeat center center $sky;
-        @include background-size(cover);
+        background-size:cover;
       }
 
 
@@ -342,7 +358,7 @@
   .eszkoz {
     padding:1em 1em;
     margin-bottom:2em;
-    @include box-sizing('border-box');
+    box-sizing:border-box;
     @include breakpoint($s2) {
       float:left;
       width:33%;
@@ -358,9 +374,9 @@
       a {
         &:hover, &:focus {
           img{
-            @include transition-property(border);
-            @include transition-duration(200ms);
-            @include transition-timing-function(ease-in); 
+            transition-property:border;
+            transition-duration:200ms;
+            transition-timing-function:ease-in; 
             border:5px solid $gray-light;
           }
         }
@@ -405,7 +421,7 @@
   
   figure {
 
-    @include box-sizing('border-box');
+    box-sizing:border-box;
     padding:0 1em;
     text-align: center;
 
@@ -425,7 +441,7 @@
 
   }
   .colcsi {
-    @include box-sizing('border-box');
+    box-sizing:border-box;
     padding:0 1em;
 
 
@@ -451,7 +467,7 @@
   padding:3em 0;
 
   .colcsi1 {
-    @include box-sizing('border-box');
+    box-sizing:border-box;
     padding:1em 1em;
 
 

@@ -39,8 +39,8 @@
         <?php wp_link_pages(array('before' => '<nav class="page-nav"><p>' . __('Pages:', 'roots'), 'after' => '</p></nav>')); ?>
       </footer>
       <nav class="nav-post clearfix">
-        <?php previous_post_link('%link','<i class="entypo circled-left"></i> %title'); ?>
-        <?php next_post_link('%link','%title <i class="entypo circled-right"></i>'); ?>
+        <?php previous_post_link('%link','<i class="ion-arrow-left-c"></i> %title'); ?>
+        <?php next_post_link('%link','%title <i class="ion-arrow-right-c"></i>'); ?>
       </nav>
      </article>
   </div><!-- / .wrapped --> 

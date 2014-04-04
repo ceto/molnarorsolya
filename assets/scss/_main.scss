@@ -15,10 +15,11 @@
 .page-header header {
   padding:0 1em;
   @include breakpoint($s2) {
-    margin-left:34%;
+    //margin-left:34%;
   }
   @include breakpoint($s3) {
-    margin-left:34%;
+    //margin-left:34%;
+    max-width:75%;
   }
 
   h1 {
@@ -31,7 +32,7 @@
   
   .entry-figure {
     text-align: center;
-    //@include box-sizing('border-box');
+    //box-sizing:border-box;
     padding:0.75em 0 0;
     
     
@@ -45,9 +46,9 @@
       }
     }
     img{
-      @include transition-property(border);
-      @include transition-duration(200ms);
-      @include transition-timing-function(ease-in); 
+      transition-property:border;
+      transition-duration:200ms;
+      transition-timing-function:ease-in; 
       border-radius: 50%;
       border:5px solid lighten($gray-lighter,15%);
     }
@@ -55,7 +56,7 @@
   }
 
   footer {
-    @include box-sizing('border-box');
+    box-sizing:border-box;
     padding:0 1em;
     @include breakpoint($s2) {
       float:right;
@@ -70,7 +71,7 @@
 }
 
 .entry-side {
-  @include box-sizing('border-box');
+  box-sizing:border-box;
   padding:0 1em;
   @include breakpoint($s2) {
     float:left;
@@ -127,13 +128,16 @@
     i {
       position: absolute;
       left:0;
-
       display: block;
+      font-size:1.5em;
+      line-height:1.5em;
+      width:1.5em;
+      height:1.5em;
+      text-align:center;
       color:$white;
       background: $orange;
       border-radius:50%;
-      width:1em;
-      height:1em;
+
 
     }
   }
@@ -173,7 +177,7 @@
 
 }
 .entry-content {
-  @include box-sizing('border-box');
+  box-sizing:border-box;
   margin-bottom:2em;
   padding:1em 1em;
   @include breakpoint($s2) {
@@ -200,7 +204,7 @@
 } 
 
 .kommentnyito {
-  @include box-sizing('border-box');
+  box-sizing:border-box;
   position:absolute;
   bottom:100%;
   left:35.66666%;
@@ -224,7 +228,7 @@
   }
 
   i{
-    font-size:3em;
+    font-size:1em;
     //line-height: 0;
     //padding-top: 1.75em;
   }
@@ -239,7 +243,7 @@
   .cucu {
     overflow: hidden;
     display:none;
-    @include box-sizing('border-box');
+    box-sizing:border-box;
     padding:1em 1em 4em;
     @include breakpoint($s2) {
       float:right;
@@ -267,7 +271,7 @@
   background-image:url('../img/main_bg_studio.jpg');
   background-position: center bottom;
   background-repeat: no-repeat;
-  @include background-size(100% auto);
+  background-size:100% auto;
   border-bottom: 1px solid $gray-lighter;
 
   // .page-id-31 & {
@@ -303,7 +307,7 @@
   }
 
   .kezike {
-    @include box-sizing('border-box');
+    box-sizing:border-box;
     padding:1em 1em;
     position:relative;
 
@@ -355,7 +359,7 @@
       font-weight: 700;
       font-size: 0.875em;
       padding:0.25em 0.5em;
-      @include box-sizing('border-box');
+      box-sizing:border-box;
       &:hover, &:focus {
         background:$green;
         text-decoration: none;
@@ -369,13 +373,13 @@
   @include breakpoint($s2) {
     width:50%;
     float:left;
-    @include box-sizing('border-box');
+    box-sizing:border-box;
     padding:0 1em;
     }
   @include breakpoint($s3) {
     width:50%;
     float:left;
-    @include box-sizing('border-box');
+    box-sizing:border-box;
     padding:0 2em;
   }
 }
@@ -453,7 +457,7 @@
     width:80%;
     float:left;
     margin:1em 0 0 0;
-    @include box-sizing('border-box');
+    box-sizing:border-box;
     padding:0 0;
     font-size: 1em;
     font-weight: 400;
@@ -462,7 +466,7 @@
   }
 
   p {
-    @include box-sizing('border-box');
+    box-sizing:border-box;
     padding:0 0;
     width:80%;
 

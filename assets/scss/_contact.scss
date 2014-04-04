@@ -1,18 +1,18 @@
 .contactwrap{
   position: relative;
-  @include box-shadow($black 0 0 8px 3px inset);
+  box-shadow:$black 0 0 8px 3px inset;
 
   background: url('../img/subnav_bg_signo.jpg') repeat-x center 68% $gray-flat;
-  @include background-size(100% auto);
+  background-size:100% auto;
   
   @include breakpoint($s2) {
     background: url('../img/subnav_bg_signo.jpg') repeat-x -20% bottom $gray-flat;
-    @include background-size(70%);
+    background-size:70%;
   }
   
   @include breakpoint($s3) {
     background: url('../img/subnav_bg_signo.jpg') repeat-x -20% bottom $gray-flat;
-    @include background-size(70%);
+    background-size:70%;
   }
 
   .wrapped {
@@ -37,7 +37,7 @@
 
 .left{
   padding:1em 1em 4em;
-  @include box-sizing('border-box');
+  box-sizing:border-box;
   @include breakpoint($s2) {
     float:left;
     width:50%;
@@ -53,7 +53,7 @@
 .right {
   padding:4em;
   background: $white;
-  @include box-sizing('border-box');
+  box-sizing:border-box;
   @include breakpoint($s2) {
     float:left;
     width:50%;
@@ -124,7 +124,7 @@
   }
 
   input[type="text"], input[type="email"], textarea, select {
-    @include box-sizing('border-box');
+    box-sizing:border-box;
     display: block;
     border:none;
     width:100%;

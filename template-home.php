@@ -42,9 +42,9 @@ Template Name: Home Page
             </a>
           </h4>
           <!-- <p class="intro"><?php echo get_post_meta( $post->ID, '_meta_intro', true ); ?></p> -->
-          <a href="<?php the_permalink(); ?>" class="btn"><i class="entypo chevron-thin-right"></i></a>
+          <a href="<?php the_permalink(); ?>" class="btn"><i class="ion-ios7-arrow-right"></i></a>
           <?php setlocale(LC_ALL, "hu_HU"); ?>
-          <p class="idotartam"><i class="entypo star"></i>Az akció időtartama:
+          <p class="idotartam"><i class="ion-star"></i>Az akció időtartama:
             <span><?php echo strftime('%Y. %B %d. %A', get_post_meta( $post->ID, '_meta_akcio_kezdet', true )); ?> &mdash; <?php echo strftime('%Y. %B %d. %A',get_post_meta( $post->ID, '_meta_akcio_veg', true )); ?></span>
           </p>
         <?php endwhile; ?>
@@ -52,7 +52,7 @@ Template Name: Home Page
     </div>
     <div class="ajandekut clearfix">
       <h3>Tudtad-e?</h3>
-      <h4 class="akcio-title">Ha először jársz nálunk vendégünk vagy egy <a href="#">ingyenes arcdiagnosztikára</a></h4>
+      <h4 class="akcio-title">Ha először jársz nálunk vendégünk vagy egy <a href="<?php echo get_permalink('651'); ?>">ingyenes arcdiagnosztikára</a></h4>
     </div>
   </div><!-- /.wrapped -->
 </section>
@@ -96,7 +96,7 @@ Template Name: Home Page
 <?php 
   $the_eszkoz=new WP_Query( array(
     'post_type' => 'post',
-    'category__or' => array( 6,8,9 ),
+    //'category__or' => array( 6,8,9 ),
     //'category__not_in' => array( 7 ),
     'posts_per_page' => 3,
     'ignore_sticky_posts' => true
@@ -110,8 +110,8 @@ Template Name: Home Page
       <div class="wrapped">    
       <article <?php post_class(); ?>>
         <header class="entry-header">
-          <h2>Amivel dolgozom</h2>
-          <h3>Kozmetikumok és eszközök</h3>
+          <h2>Érdekességek, hírek</h2>
+          <h3>Blog bejegyzések</h3>
         </header>
         <?php while ($the_eszkoz->have_posts()) : $the_eszkoz->the_post(); ?>
           <div class="eszkoz">
@@ -128,7 +128,7 @@ Template Name: Home Page
             <p class="intro">
               <?php echo get_post_meta( $post->ID, '_meta_intro', true ); ?>
             </p>
-            <a class="buti" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+            <a class="buti" href="<?php the_permalink(); ?>">További részletek</a>
           </div>
         <?php endwhile; ?>       
       </article>
@@ -147,7 +147,7 @@ Template Name: Home Page
       <div class="wrapped clearfix">
         <?php while ($the_bemutatkozas->have_posts()) : $the_bemutatkozas->the_post(); ?>
            <figure>
-              <img src="http://lorempixel.com/250/250" alt="Molnár Orsolya - A kozmetikusom">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/orsi.jpg" alt="Molnár Orsolya - A kozmetikusom">
               <figcaption>
                 <h4>Molnár Orsolya</h4>
                 <em>Kozmetikus, gyakorlati oktató, szépségterapeuta.</em>
@@ -174,20 +174,10 @@ Template Name: Home Page
     <div class="brandswrap wrap">
       <div class="wrapped clearfix">
         <?php while ($the_brands->have_posts()) : $the_brands->the_post(); ?>
-            <div class="colcsi1">
-              <h3><?php the_title(); ?></h3>
-             <div class="conti"><?php the_content(); ?></div> 
-             
-            </div>
-        <?php endwhile; ?>       
-
+          <?php the_content(); ?></div> 
+        <?php endwhile; ?>      
       </div><!-- /.wrapped -->
     </div><!-- /.brandswrap -->
-
-
-
-
-
 </div><!-- /.main -->
 
 
