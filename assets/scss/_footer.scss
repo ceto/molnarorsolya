@@ -183,3 +183,22 @@
   }
 
 }
+
+.tothetop{
+  display: block;
+  margin:0.5em auto 0 auto;
+  width:1.5em;
+  height:1.5em;
+  font-size:1.25em;
+  line-height: 1.5em;
+  text-align: center;
+  //background-color: $gray-darker;
+  border:1px solid $gray;
+  border-radius: 50%;
+  &:hover, &:focus {
+    color:$white !important;
+    border-color:$white;
+  }
+
+
+}

@@ -59,8 +59,10 @@ Template Name: Kezelés Szimpla Sablon
          <?php while ($the_kezeles->have_posts()) : $the_kezeles->the_post(); ?>
           <div class="tovkez">
             <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-            <p>Külső-belső megújulás és teljes kikapcsolódás aromaterápia segítségével.</p>
-            <a class="read-more" title="<?php the_title(); ?>" href="<?php the_permalink(); ?>"><i class="entypo chevron-thin-right"></i></a>
+            <p class="intro"><?php echo get_post_meta( $post->ID, '_meta_intro', true ); ?></p>
+            <a class="read-more" title="<?php the_title(); ?>" href="<?php the_permalink(); ?>">
+              <i class="ion-ios7-arrow-right"></i>
+            </a>
           </div>
         <?php endwhile; ?>                  
         <a class="more" href="<?php echo get_permalink($father); ?>">Még több kezelés ...</a>

@@ -2982,7 +2982,7 @@ blockquote {
 #mc_embed_signup #mce-error-response {
   display: none; }
 #mc_embed_signup #mce-success-response {
-  color: #4d6600;
+  color: #4e6600;
   display: none; }
 #mc_embed_signup label.error {
   display: block;
@@ -3127,7 +3127,9 @@ blockquote {
   @media only screen and (min-width: 768px) {
     .entry-content {
       float: right;
-      width: 66%; } }
+      width: 66%; }
+      .entry-content > *:first-child {
+        margin-top: 0.875em; } }
   @media only screen and (min-width: 1024px) {
     .entry-content {
       float: right;
@@ -3523,18 +3525,17 @@ blockquote {
       position: absolute;
       right: 0;
       top: 0.06667em;
-      font-size: 4em;
-      width: 0.8em;
-      height: 0.8em;
+      font-size: 2em;
+      line-height: 1.5em;
+      text-align: center;
+      width: 1.5em;
+      height: 1.5em;
       border-radius: 50%; }
       .tovabbiak .tovkez .read-more:hover, .tovabbiak .tovkez .read-more:focus {
         background: #99cc00;
         text-decoration: none; }
       .tovabbiak .tovkez .read-more i {
-        display: block;
-        font-size: 0.8em;
-        width: 1em;
-        height: 1em; }
+        line-height: 1.5em; }
   .tovabbiak .more {
     display: block;
     color: #99cc00;
@@ -3754,6 +3755,20 @@ blockquote {
       background-color: #d98957; }
     .content-info .widget_impr .face i, .content-info .widget_impr .gplus i, .content-info .widget_impr .twitter i {
       line-height: 1.75em; }
+
+.tothetop {
+  display: block;
+  margin: 0.5em auto 0 auto;
+  width: 1.5em;
+  height: 1.5em;
+  font-size: 1.25em;
+  line-height: 1.5em;
+  text-align: center;
+  border: 1px solid #58595b;
+  border-radius: 50%; }
+  .tothetop:hover, .tothetop:focus {
+    color: #ffffff !important;
+    border-color: #ffffff; }
 
 /* =============================================================================
    Header

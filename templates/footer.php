@@ -69,6 +69,7 @@
 <em>Hírlevél feliratkozóink között havonta kisorsolunk egy <a href="<?php echo get_permalink('654'); ?>">kézmasszázst.</a></em>
 </div>
 <!--End mc_embed_signup-->
+    <a class="tothetop" href="#"><i class="ion-arrow-up-c"></i></a>
       </section>
 
     </div><!-- /.wrapped -->

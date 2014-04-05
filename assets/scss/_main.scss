@@ -181,6 +181,9 @@
   margin-bottom:2em;
   padding:1em 1em;
   @include breakpoint($s2) {
+    >*:first-child{
+      margin-top:0.875em;
+    }
     float:right;
     width:66%;
   }
