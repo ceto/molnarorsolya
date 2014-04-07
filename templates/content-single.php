@@ -16,7 +16,7 @@
 
           <h1 class="entry-title"><?php the_title(); ?></h1>
           <?php if (get_post_meta( $post->ID, '_meta_akcio_kezdet', true )!='') : ?>
-          <?php setlocale(LC_ALL, "hu_HU"); ?>
+          <?php setlocale(LC_ALL, "hu_HU.UTF8"); ?>
           <div class="akcio-int">
             <h4>Akció időtartama</h4>
             <span class="kezd">
