@@ -1,5 +1,5 @@
 /* Author:
-
+ Gabor Szabo <szabogabi@gmail.com>
 */
 
 function initialize() {
@@ -54,6 +54,24 @@ $(document).ready(function(){
     e.preventDefault();
     $('.cucu').toggleClass('nyitva');
     return false;
+  });
+
+  $('.popup-gallery').magnificPopup({
+    delegate: 'a',
+    type: 'image',
+    tLoading: 'Loading image #%curr%...',
+    mainClass: 'mfp-img-mobile',
+    gallery: {
+      enabled: true,
+      navigateByImgClick: true,
+      preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+    },
+    image: {
+      tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+      titleSrc: function(item) {
+        return item.el.next().text() + '<small>Molnár Orsolya - A Kozmetikusom</small>';
+      }
+    }
   });
 
 });

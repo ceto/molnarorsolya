@@ -378,6 +378,7 @@
     float:left;
     box-sizing:border-box;
     padding:0 1em;
+    margin-top:0 !important;
     }
   @include breakpoint($s3) {
     width:50%;
@@ -405,7 +406,7 @@
     @include breakpoint($s2) {
       float:none;
       width:auto;
-      margin:0 auto
+      margin:0 auto;
     }
   @include breakpoint($s3) {
       float:none;

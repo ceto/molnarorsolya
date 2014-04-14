@@ -1,0 +1,35 @@
+.gallery{
+  margin:1em -0.5em;
+  padding:0;
+  li{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    list-style-type: none;
+    display: block;
+    float:left;
+    width:50%;
+    padding: 0.5em;
+    text-align: center;
+    font-weight: 400;
+    font-size: 0.875em;
+    line-height: 1.4em;
+    font-style: italic;
+    @include breakpoint($s1){
+      width:33.333%;
+    }
+    @include breakpoint($s3){
+      width:25%;
+    }
+
+    a{
+      border:2px solid $white-light;
+      display: block;
+      background-color: $black;
+      &:hover, &:focus {
+        border-color:$skin;
+        filter:brightness(0.666);
+      }
+    }
+  }
+}
