@@ -1,6 +1,6 @@
 # [Molnár Orsolya - Wordpress Theme](http:/molnarorsolya.hu/)
 
-Molnar Orsolya is Unique WordPress theme made for [Molnar Orsolya - A kozemtikusom](http://molnarorsolya.hu) by [HYDROGENEDESIGN](http://hydrogene.hu/). Built with [Grunt](http://gruntjs.com/)
+Molnar Orsolya is Unique WordPress theme made for [Molnár Orsolya - A kozemtikusom](http://molnarorsolya.hu) by [HYDROGENEDESIGN](http://hydrogene.hu/). Built with [Grunt](http://gruntjs.com/)
 
 ## Links
 
