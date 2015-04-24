@@ -15,6 +15,11 @@ add_theme_support('jquery-cdn');            // Enable to load jQuery from the Go
 define('GOOGLE_ANALYTICS_ID', 'UA-44070532-1'); // UA-XXXXX-Y
 define('POST_EXCERPT_LENGTH', 40);
 
+if (!defined('WP_ENV')) {
+  define('WP_ENV', 'development');
+}
+
+
 /**
  * .main classes
  */

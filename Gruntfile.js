@@ -1,6 +1,28 @@
 'use strict';
 module.exports = function(grunt) {
+  // Load all tasks
+  require('load-grunt-tasks')(grunt);
+  // Show elapsed time
+  require('time-grunt')(grunt);
 
+  var jsFileList = [
+    'assets/vendor/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js',
+    // 'assets/vendor/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js',
+    // 'assets/vendor/bootstrap-sass-official/assets/javascripts/bootstrap/button.js',
+    // 'assets/vendor/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js',
+    'assets/vendor/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js',
+    // 'assets/vendor/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js',
+    // 'assets/vendor/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js',
+    // 'assets/vendor/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js',
+    // 'assets/vendor/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js',
+    // 'assets/vendor/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js',
+    'assets/vendor/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js',
+    // 'assets/vendor/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js',
+    'assets/vendor/waypoints/lib/jquery.waypoints.min.js',
+    'assets/js/plugins/*.js',
+    'assets/js/_*.js'
+  ];
+  
   grunt.initConfig({
     jshint: {
       options: {
@@ -9,120 +31,170 @@ module.exports = function(grunt) {
       all: [
         'Gruntfile.js',
         'assets/js/*.js',
-        '!assets/js/scripts.min.js'
+        '!assets/js/scripts.js',
+        '!assets/**/*.min.*'
       ]
     },
-    uglify: {
-      dist: {
-        options: {
-          beautify: true,
-          mangle: false,
-          compress: false
-        },
+    sass: {
+      dev: {
         files: {
-          'assets/js/scripts.min.js': [
-            'assets/js/plugins/*.js',
-            'assets/js/_*.js'
-          ]
+          'assets/css/main.css': ['assets/scss/main.scss']
+        },
+        options: {
+          outputStyle: 'nested',
+          sourceMap: true
+        }
+      },
+      build: {
+        files: {
+          'assets/css/main.min.css': ['assets/scss/main.scss']
+        },
+        options: {
+          outputStyle: 'compressed',
+          sourceMap: true
         }
       }
     },
-    version: {
+    concat: {
       options: {
-        file: 'lib/scripts.php',
-        css: 'assets/css/main.min.css',
-        cssHandle: 'roots_main',
-        js: 'assets/js/scripts.min.js',
-        jsHandle: 'roots_scripts'
-      }
-    },
-    // sass: {
-    //   dist: {
-    //     options: {
-    //      style: 'nested',
-    //      sourcemap: true
-    //     },
-    //     files: {
-    //       'assets/css/main.css': 'assets/scss/styles.scss'
-    //     }
-    //   }
-    // },
-    sass: {
+        separator: ';',
+      },
       dist: {
-        options: {
-         outputStyle: 'nested',
-         sourceComments: 'map'
-        },
+        src: [jsFileList],
+        dest: 'assets/js/scripts.js',
+      },
+    },
+    uglify: {
+      dist: {
         files: {
-          'assets/css/main.css': 'assets/scss/styles.scss'
+          'assets/js/scripts.min.js': [jsFileList]
         }
       }
     },
     autoprefixer: {
-      dist: {
+      dev: {
         options: {
-            map: true
+          map: true
         },
-        src: 'assets/css/main.css',
-        dest: 'assets/css/main.min.css'
+        src: 'assets/css/main.css'
+      },
+      build: {
+        src: 'assets/css/main.min.css'
+      }
+    },
+    modernizr: {
+      build: {
+        devFile: 'assets/vendor/modernizr/modernizr.js',
+        outputFile: 'assets/js/vendor/modernizr.min.js',
+        files: {
+          'src': [
+            ['assets/js/scripts.min.js'],
+            ['assets/css/main.min.css']
+          ]
+        },
+        extra: {
+          shiv: false
+        },
+        uglify: true,
+        parseFiles: true
+      }
+    },
+    version: {
+      default: {
+        options: {
+          format: true,
+          length: 32,
+          manifest: 'assets/manifest.json',
+          querystring: {
+            style: 'roots_css',
+            script: 'roots_js'
+          }
+        },
+        files: {
+          'lib/scripts.php': 'assets/{css,js}/{main,scripts}.min.{css,js}'
+        }
+      }
+    },
+    notify: {
+      options: {
+        enabled: true,
+        max_jshint_notifications: 5, // maximum number of notifications from jshint output
+        title: "Project Name" // defaults to the name in package.json, or will use project directory's name
+      }
+    },
+    browserSync: {
+      dev: {
+          bsFiles: {
+              src : [
+                  'assets/css/main.css',
+                  'assets/js/scripts.js',
+                  'assets/img/*',
+                  '*/*.php'
+              ]
+          },
+          options: {
+              watchTask: true,
+              host: 'ceto.no-ip.org',
+              proxy: 'ceto.no-ip.org/mo'
+          }
       }
     },
     watch: {
       sass: {
         files: [
-          'assets/scss/*.scss'
+          'assets/scss/*.scss',
+          'assets/scss/**/*.scss'
         ],
-        tasks: ['sass', 'autoprefixer', 'version']
+        tasks: [
+          'sass:dev',
+          'autoprefixer:dev'
+        ]
       },
       js: {
         files: [
+          jsFileList,
           '<%= jshint.all %>'
         ],
-        tasks: ['jshint', 'uglify', 'version']
+        tasks: ['jshint', 'concat']
       },
       livereload: {
         // Browser live reloading
         // https://github.com/gruntjs/grunt-contrib-watch#live-reloading
         options: {
-          livereload: true
+          livereload: false
         },
         files: [
-          'assets/css/main.min.css',
-          'assets/js/scripts.min.js',
+          'assets/css/main.css',
+          'assets/js/scripts.js',
           'templates/*.php',
-          '*.php',
-          '!lib/scripts.php'
+          '*.php'
         ]
       }
-    },
-    clean: {
-      dist: [
-        'assets/css/main.min.css',
-        'assets/js/scripts.min.js'
-      ]
     }
   });
 
-  // Load tasks
-  grunt.loadNpmTasks('grunt-contrib-clean');
-  grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-wp-version');
-  grunt.loadNpmTasks('grunt-sass');
-  grunt.loadNpmTasks('grunt-autoprefixer');
-
+  //grunt.loadNpmTasks('grunt-browser-sync');
 
   // Register tasks
   grunt.registerTask('default', [
-    'clean',
-    'sass',
-    'uglify',
-    'version',
-    'autoprefixer'
+    'dev'
   ]);
   grunt.registerTask('dev', [
-    'watch'
+    'jshint',
+    'sass:dev',
+    'autoprefixer:dev',
+    'concat',
+    'browserSync',
+    'watch',
+    'notify'
   ]);
-
+  grunt.registerTask('build', [
+    'jshint',
+    'sass:build',
+    'autoprefixer:build',
+    'uglify',
+    'modernizr',
+    'version',
+    'notify'
+  ]);
 };

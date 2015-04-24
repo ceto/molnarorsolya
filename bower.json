@@ -1,0 +1,23 @@
+{
+  "name": "hydrogene",
+  "version": "1.0.0",
+  "homepage": "http://hydrogene.hu",
+  "authors": [
+    "Gabor Szabo <szabogabi@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "assets/vendor"
+  ],
+  "dependencies": {
+    "modernizr": "2.8.2",
+    "jquery": "1.11.1",
+    "bootstrap-sass-official": "3.3.1",
+    "respond": "1.4.2",
+    "normalize.css": "3.0.2",
+    "waypoints": "3.1.1"
+  }
+}

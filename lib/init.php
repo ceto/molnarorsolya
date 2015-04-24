@@ -2,6 +2,7 @@
 /**
  * Roots initial setup and constants
  */
+
 function roots_setup() {
   // Make theme available for translation
   load_theme_textdomain('roots', get_template_directory() . '/lang');
