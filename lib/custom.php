@@ -3,39 +3,37 @@
  * Custom functions
  */
 
-add_action( 'init', 'cmb_initialize_cmb_meta_boxes', 9999 );
-/**
- * Initialize the metabox class.
- */
-function cmb_initialize_cmb_meta_boxes() {
 
-	if ( ! class_exists( 'cmb_Meta_Box' ) )
-		require_once 'cmb/init.php';
 
-}
 
-add_filter( 'cmb_meta_boxes', 'cmb_metadata_metaboxes' );
+/************ MetaBoxes **********/
 
-function cmb_metadata_metaboxes( array $meta_boxes ) {
+if ( file_exists(  __DIR__ .'/CMB2/init.php' ) ) { require_once  __DIR__ .'/CMB2/init.php';};
+
+// function cmb2_hide_if_no_cats( $field ) {
+//   if ( ! has_tag( 'cats', $field->object_id ) ) {
+//     return false;
+//   }
+//   return true;
+// }
+
+add_filter( 'cmb2_meta_boxes', 'mo_metaboxes' );
+
+function mo_metaboxes( array $meta_boxes ) {
 
   // Start with an underscore to hide fields from custom fields list
   $prefix = '_meta_';
 
-  $meta_boxes[] = array(
-    'id'         => 'metadata',
-    'title'      => 'Kiegészítő meta adatok',
-    'pages'      => array( 'page', 'post' ), // Post type
+  $meta_boxes['kezeles'] = array(
+    'id'         => 'kezeles_meta',
+    'title'      => 'Kezelés oldalsáv',
+    'object_types'  => array( 'page'), // Post type
+    'show_on'      => array( 'key' => 'page-template', 'value' => 'template-kezeles.php' ),
     'context'    => 'normal',
     'priority'   => 'high',
     'show_names' => true, // Show field names on the left
     'fields'     => array(
       
-      // array(
-      //   'name' => 'Test Date Picker',
-      //   'desc' => 'field description (optional)',
-      //   'id'   => $prefix . 'test_textdate',
-      //   'type' => 'text_date',
-      // ),
       array(
         'name' => 'Intro, bevezető',
         'desc' => 'Rövid frappáns kivonat, vagy bevezető (kötelező).',
@@ -55,41 +53,98 @@ function cmb_metadata_metaboxes( array $meta_boxes ) {
         'type' => 'text_medium',
       ),
 
-      array(
-        'name' => 'Akció csali',
-        'desc' => 'Akció esetén az nyereség kiemelésére. (pl.: megtakarítás 3000 Ft)',
-        'id'   => $prefix . 'csali',
-        'type' => 'text_medium',
+
+    ),
+  );
+
+  $meta_boxes['akcio'] = array(
+      'id'         => 'akcio_meta',
+      'title'      => 'Akció esetén kitöltendő',
+      'object_types'  => array( 'post'),
+      'context'    => 'normal',
+      'priority'   => 'high',
+      'show_names' => true, // Show field names on the left
+      'fields'     => array(
+        
+        array(
+          'name' => 'Intro, bevezető',
+          'desc' => 'Rövid frappáns kivonat, vagy bevezető (kötelező).',
+          'id'   => $prefix . 'intro',
+          'type' => 'textarea_small',
+        ),
+
+        array(
+          'name' => 'Akció csali',
+          'desc' => 'Akció esetén az nyereség kiemelésére. (pl.: megtakarítás 3000 Ft)',
+          'id'   => $prefix . 'csali',
+          'type' => 'text_medium',
+        ),
+
+        array(
+          'name' => 'Akció kezdete',
+          'desc' => 'Csak akció esetén kitöltendő',
+          'id'   => $prefix . 'akcio_kezdet',
+          'type' => 'text_date_timestamp',
+        ),
+
+        array(
+          'name' => 'Akció vége',
+          'desc' => 'Csak akció esetén kitöltendő',
+          'id'   => $prefix . 'akcio_veg',
+          'type' => 'text_date_timestamp',
+        ),
+
       ),
+    );
+
+  $meta_boxes['arak'] = array(
+    'id'         => 'arak_metadata',
+    'title'      => 'Árlista',
+    'object_types'     => array( 'page'),
+    'show_on'      => array( 'key' => 'page-template', 'value' => 'template-arlista.php' ),
+    'context'    => 'normal',
+    'priority'   => 'high',
+    'show_names' => true, // Show field names on the left
+    'fields'     => array(
+        array(
+          'id'          => 'repeat_group',
+          'type'        => 'group',
+          'description' => __( 'Ismételhető kezeléscsoportok', 'cmb' ),
+          'options'     => array(
+            'group_title'   => __( 'Kezeléscsoport {#}', 'cmb' ),
+            'add_button'    => __( 'Új kezeléscsoport', 'cmb' ),
+            'remove_button' => __( 'Csoport eltávolítása', 'cmb' ),
+            'sortable'      => true, // beta
+          ),
+          'fields' => array (
+
+            array(
+              'name' => 'Megjegyzés',
+              'desc' => 'Csoport lábléc',
+              'id'   => $prefix . 'footer',
+              'type' => 'wysiwyg',
+              'options' => array(
+                'media_buttons' => false, // show insert/upload button(s)
+                'textarea_rows' => get_option('default_post_edit_rows', 3), // rows="..."
+                'teeny' => true, // output the minimal editor config used in Press This
+              ),
+            ),
+
+          ) 
+
+        ),
+
+
+ 
 
       array(
-        'name' => 'Akció kezdete',
-        'desc' => 'Csak akció esetén kitöltendő',
-        'id'   => $prefix . 'akcio_kezdet',
-        'type' => 'text_date_timestamp',
-      ),
-
-      array(
-        'name' => 'Akció vége',
-        'desc' => 'Csak akció esetén kitöltendő',
-        'id'   => $prefix . 'akcio_veg',
-        'type' => 'text_date_timestamp',
+        'name' => 'Ár intro',
+        'desc' => 'Rövid frappáns kivonat, vagy bevezető (kötelező).',
+        'id'   => $prefix . 'intro',
+        'type' => 'textarea_small',
       ),
 
 
-      array(
-        'name'    => 'Test wysiwyg',
-        'desc'    => 'field description (optional)',
-        'id'      => $prefix . 'test_wysiwyg',
-        'type'    => 'wysiwyg',
-        'options' => array( 'textarea_rows' => 5, ),
-      ),
-      array(
-        'name' => 'Beágyazott videó/média',
-        'desc' => 'Enter a youtube, twitter, or instagram URL. Supports services listed at <a href="http://codex.wordpress.org/Embeds">http://codex.wordpress.org/Embeds</a>.',
-        'id'   => $prefix . 'test_embed',
-        'type' => 'oembed',
-      ),
     ),
   );
 
@@ -97,7 +152,6 @@ function cmb_metadata_metaboxes( array $meta_boxes ) {
   return $meta_boxes;
 }
 
-add_action( 'init', 'cmb_initialize_cmb_meta_boxes', 9999 );
 
 
 
