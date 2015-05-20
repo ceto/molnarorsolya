@@ -10,12 +10,8 @@
 
 if ( file_exists(  __DIR__ .'/CMB2/init.php' ) ) { require_once  __DIR__ .'/CMB2/init.php';};
 
-// function cmb2_hide_if_no_cats( $field ) {
-//   if ( ! has_tag( 'cats', $field->object_id ) ) {
-//     return false;
-//   }
-//   return true;
-// }
+
+
 
 add_filter( 'cmb2_meta_boxes', 'mo_metaboxes' );
 
@@ -107,21 +103,61 @@ function mo_metaboxes( array $meta_boxes ) {
     'show_names' => true, // Show field names on the left
     'fields'     => array(
         array(
-          'id'          => 'repeat_group',
+          'id'          => 'kezelescsoport',
           'type'        => 'group',
           'description' => __( 'Ismételhető kezeléscsoportok', 'cmb' ),
           'options'     => array(
-            'group_title'   => __( 'Kezeléscsoport {#}', 'cmb' ),
+            'group_title'   => __( '{#}. nagy kezeléscsoport', 'cmb' ),
             'add_button'    => __( 'Új kezeléscsoport', 'cmb' ),
-            'remove_button' => __( 'Csoport eltávolítása', 'cmb' ),
+            'remove_button' => __( 'Csoport törlése', 'cmb' ),
             'sortable'      => true, // beta
           ),
           'fields' => array (
-
             array(
-              'name' => 'Megjegyzés',
-              'desc' => 'Csoport lábléc',
-              'id'   => $prefix . 'footer',
+              'name' => 'Csoport címe',
+              'id'   => 'title',
+              'type' => 'text',
+            ),
+            array(
+              'name' => 'Cím url',
+              'id'   => 'title_url',
+              'type' => 'text_url',
+            ),
+            array(
+              'name' => 'Kezelések és árak',
+              'description' => __( 'Kezelés neve és ára ":"-al elválasztva pl:--> Teljes szőrtelenítés:12300', 'cmb' ),
+              'id'   => 'kezelesesar',
+              'type' => 'text',
+              'repeatable' => 'true',
+            ),
+
+            // array(
+            //   'id'          => 'elemcsoport',
+            //   'type'        => 'group',
+            //   'description' => __( 'Ismételhető kezelések', 'cmb' ),
+            //   'options'     => array(
+            //     'group_title'   => __( '{#}. kezelés', 'cmb' ),
+            //     'add_button'    => __( 'Új kezelés', 'cmb' ),
+            //     'remove_button' => __( 'Kezelés törlése', 'cmb' ),
+            //     'sortable'      => true, // beta
+            //   ),
+            //   'fields' => array (
+            //     array(
+            //       'name' => 'Kezelés neve',
+            //       'id'   => 'name',
+            //       'type' => 'text',
+            //     ),
+            //     array(
+            //       'name' => 'Ár',
+            //       'id'   => 'price',
+            //       'type' => 'text_small',
+            //     ), 
+            //   )
+            // ),
+            array(
+              'name' => 'Csoport lábléc',
+              'desc' => 'Megjegyzés a csoport aljára',
+              'id'   => 'footer',
               'type' => 'wysiwyg',
               'options' => array(
                 'media_buttons' => false, // show insert/upload button(s)
@@ -130,23 +166,19 @@ function mo_metaboxes( array $meta_boxes ) {
               ),
             ),
 
+
+
           ) 
 
         ),
 
 
- 
 
-      array(
-        'name' => 'Ár intro',
-        'desc' => 'Rövid frappáns kivonat, vagy bevezető (kötelező).',
-        'id'   => $prefix . 'intro',
-        'type' => 'textarea_small',
-      ),
 
 
     ),
   );
+
 
 
   return $meta_boxes;
