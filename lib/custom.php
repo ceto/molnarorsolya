@@ -107,7 +107,7 @@ function mo_metaboxes( array $meta_boxes ) {
           'type'        => 'group',
           'description' => __( 'Ismételhető kezeléscsoportok', 'cmb' ),
           'options'     => array(
-            'group_title'   => __( '{#}. nagy kezeléscsoport', 'cmb' ),
+            'group_title'   => __( 'Nagy kezeléscsoport {#}', 'cmb' ),
             'add_button'    => __( 'Új kezeléscsoport', 'cmb' ),
             'remove_button' => __( 'Csoport törlése', 'cmb' ),
             'sortable'      => true, // beta
@@ -124,36 +124,13 @@ function mo_metaboxes( array $meta_boxes ) {
               'type' => 'text_url',
             ),
             array(
-              'name' => 'Kezelések és árak',
-              'description' => __( 'Kezelés neve és ára ":"-al elválasztva pl:--> Teljes szőrtelenítés:12300', 'cmb' ),
+              'name' => 'Kezelések árak és leírás',
+              'description' => __( 'Kezelés neve ára és leírása ";"-el elválasztva pl:--> Teljes szőrtelenítés;12300;fertőtlenítés, maszk, kézmasszázs, masszázs, visszavezetés', 'cmb' ),
               'id'   => 'kezelesesar',
               'type' => 'text',
               'repeatable' => 'true',
             ),
 
-            // array(
-            //   'id'          => 'elemcsoport',
-            //   'type'        => 'group',
-            //   'description' => __( 'Ismételhető kezelések', 'cmb' ),
-            //   'options'     => array(
-            //     'group_title'   => __( '{#}. kezelés', 'cmb' ),
-            //     'add_button'    => __( 'Új kezelés', 'cmb' ),
-            //     'remove_button' => __( 'Kezelés törlése', 'cmb' ),
-            //     'sortable'      => true, // beta
-            //   ),
-            //   'fields' => array (
-            //     array(
-            //       'name' => 'Kezelés neve',
-            //       'id'   => 'name',
-            //       'type' => 'text',
-            //     ),
-            //     array(
-            //       'name' => 'Ár',
-            //       'id'   => 'price',
-            //       'type' => 'text_small',
-            //     ), 
-            //   )
-            // ),
             array(
               'name' => 'Csoport lábléc',
               'desc' => 'Megjegyzés a csoport aljára',
