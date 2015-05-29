@@ -21,10 +21,13 @@ Template Name: Árlista Sablon
     <article <?php post_class(); ?>>
       <header>
         <h1><?php echo roots_title(); ?></h1>
+        <p class="arhelper">Az árak bruttó forintban értendők</p>
       </header>
-      <div class="entry-content">
+      <div class="entry-arak">
 
         <?php 
+        if ( get_post_meta( get_the_ID(), 'kezelescsoport', true ) ) {
+
         $arblokkok = get_post_meta( get_the_ID(), 'kezelescsoport', true );
 
         foreach ( (array) $arblokkok as $key => $entry ) { ?>
@@ -39,9 +42,9 @@ Template Name: Árlista Sablon
                 $ito=str_getcsv($ientry, ";");
                 ?>
                 <div class="arblokk__item">
-                  <h4 class="arblokk__itemname"><?php echo $ito['0']; ?></h4>
-                  <span class="arblokk__ar"><?php echo $ito['1']; ?></span>
-                  <p class="arblokk__itemdescr"><?php echo $ito['2']; ?></p>
+                  <h4 class="arblokk__item__name"><?php echo $ito['0']; ?></h4>
+                  <span class="arblokk__item__ar"><?php echo number_format($ito['1'],0,'','.'); ?>,-</span>
+                  <p class="arblokk__item__descr"><?php echo $ito['2']; ?></p>
                 </div>
               
               <?php } ?>
@@ -52,7 +55,10 @@ Template Name: Árlista Sablon
             </footer>
           </section>
 
-        <?php } ?>
+        <?php } 
+
+        }
+        ?>
 
       </div>
       <footer>

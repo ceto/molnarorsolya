@@ -1,0 +1,99 @@
+.entry-arak {
+	padding:0 1em;
+	@include bp($s3) {
+		padding:0 2em;
+	}
+	@include bp($s4) {
+		padding:0;
+	}
+}
+.arlistawrap {
+	padding-bottom: 6em;
+	header {
+		text-align: center;
+		padding:0 1em;
+		margin: 4em 0 3em 0;
+	}
+}
+
+.arhelper {
+	margin-top: -.5em;
+}
+.arblokk {
+	@include clearfix();
+	margin:1.5em auto;
+	max-width:35em;
+	@include bp($s3) {
+		max-width: none;
+		width:45%;
+		float:left;
+		clear:left;
+		&:nth-of-type(2n) {
+			float:right;
+			clear:right;
+		}
+	}
+}
+
+.arblokk__title {
+	margin:0 0 .5em;
+	
+	a {
+		color:inherit;
+		position: relative;
+		&:hover, &:focus {
+			color:$gray-darker;
+			text-decoration: none;
+			background: $gray-light;
+		}
+		&:after {
+			content:">";
+			right:0;
+			position: absolute;
+		}
+	}
+
+
+}
+
+.arblokk__footer {
+	font-style: italic;
+	font-size: .875em;
+	margin-top: 2em;
+}
+
+.arblokk__item{
+	margin:2em 0;
+}
+
+.arblokk__item__name{
+	font-weight: normal;
+	margin: 0 0;
+	float:left;
+	width:80%;
+}
+
+.arblokk__item__ar{
+	float:right;
+	width:20%;
+	margin: 0 0;
+  font-size: 1em;
+  font-weight:400;
+  font-style: italic;
+  text-align: right;
+
+}
+
+.arblokk__item__penznem {
+	//font-style: normal;
+}
+
+.arblokk__item__descr{
+	clear: both;
+	width:80%;
+	margin:0;
+	font-size: .875em;
+
+}
+
+

@@ -85,7 +85,7 @@ Template Name: Home Page
           </a>
           <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
           <p class="intro"><?php echo get_post_meta( $post->ID, '_meta_intro', true ); ?></p>
-          <a class="buti" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+          <a class="buti" href="<?php the_permalink(); ?>"><?php _e('Bővebben','mo'); ?>&hellip;</a>
         </div>
       <?php endwhile; ?>       
       <?php // comments_template('/templates/comments.php'); ?>
@@ -106,6 +106,7 @@ Template Name: Home Page
   );
 ?>
 
+  <!--
     <div class="eszkozokwrap wrap clearfix">
       <div class="wrapped">    
       <article <?php post_class(); ?>>
@@ -132,36 +133,35 @@ Template Name: Home Page
           </div>
         <?php endwhile; ?>       
       </article>
-      </div><!-- /.wrapped -->
-    </div><!-- /.homegyujtowrap -->
+      </div>
+    </div> -->
 
 <?php 
     $the_bemutatkozas=new WP_Query( array(
     'post_type' => 'page',
-    'page_id' => 124
+    'post__in' => array(1327,124),
+    //'orderby' => 'date',
+    'order'   => 'ASC',
     )
   );
 ?>
 
+<?php while ($the_bemutatkozas->have_posts()) : $the_bemutatkozas->the_post(); ?>
     <div class="bemutatkozowrap wrap">
       <div class="wrapped clearfix">
-        <?php while ($the_bemutatkozas->have_posts()) : $the_bemutatkozas->the_post(); ?>
-           <figure>
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/orsi.jpg" alt="Molnár Orsolya - A kozmetikusom">
-              <figcaption>
-                <h4>Molnár Orsolya</h4>
-                <em>Kozmetikus, gyakorlati oktató, szépségterapeuta.</em>
-              </figcaption>
-            </figure>
-            <div class="colcsi">
-              <h3><?php the_title(); ?></h3>
-              <?php the_content(); ?>
-            </div>
-        <?php endwhile; ?>       
+
+         <figure>
+            <?php the_post_thumbnail(); ?>
+         </figure>
+        <div class="colcsi">
+          <h3><?php the_title(); ?></h3>
+          <?php the_content(); ?>
+        </div>
 
       </div><!-- /.wrapped -->
     </div><!-- /.bemutatkozowrap -->
 
+<?php endwhile; ?>       
 
 
 <?php 

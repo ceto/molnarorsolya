@@ -2,7 +2,7 @@
   <div class="wrap container">
     <div class="wrapped clearfix">
       <a class="brand" title="<?php bloginfo('name'); ?>" href="<?php echo home_url(); ?>/">
-      <img src="<?php echo  get_template_directory_uri().'/assets/img/logo.png'; ?>" alt="<?php bloginfo('name'); ?>">
+      <img src="<?php echo  get_template_directory_uri().'/assets/img/mo_kozmetika_logo.png'; ?>" alt="<?php bloginfo('name'); ?>">
       </a>
       <nav class="nav-main clearfix" role="navigation">
         <?php

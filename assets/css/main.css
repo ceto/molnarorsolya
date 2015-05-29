@@ -351,8 +351,8 @@ img {
 */
 @font-face {
   font-family: "Ionicons";
-  src: url("../font/ionicons.eot?v=1.4.1");
-  src: url("../font/ionicons.eot?v=1.4.1#iefix") format("embedded-opentype"), url("../font/ionicons.ttf?v=1.4.1") format("truetype"), url("../font/ionicons.woff?v=1.4.1") format("woff"), url("../font/ionicons.svg?v=1.4.1#Ionicons") format("svg");
+  src: url("../fonts/ionicons.eot?v=1.4.1");
+  src: url("../fonts/ionicons.eot?v=1.4.1#iefix") format("embedded-opentype"), url("../fonts/ionicons.ttf?v=1.4.1") format("truetype"), url("../fonts/ionicons.woff?v=1.4.1") format("woff"), url("../fonts/ionicons.svg?v=1.4.1#Ionicons") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -2031,6 +2031,16 @@ img {
 /* ==========================================================================
    Base
    ========================================================================== */
+html {
+  overflow-y: auto;
+  min-height: 100%;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility; }
+
 body {
   position: relative;
   color: #58595b;
@@ -2305,6 +2315,9 @@ blockquote {
   .nav-sub li.menu-egyeb-kezelesek a:before {
     background: url('../img/ikon_pumpa.png') no-repeat center center #aacfec;
     background-size: 100%; }
+  .nav-sub li.menu-oktatas-es-egyeb a:before {
+    background: url('../img/ikon_oktatas.png') no-repeat center center #aacfec;
+    background-size: 100%; }
 
 .nav-post {
   box-sizing: border-box;
@@ -2485,92 +2498,94 @@ blockquote {
     .actionwrap .ajandekut .akcio-title a {
       color: #ecc4aa; }
 
-.homegyujtowrap header {
-  padding: 1em;
-  text-align: center; }
-  .homegyujtowrap header h2 {
-    margin-bottom: 0; }
-  .homegyujtowrap header h3 {
-    margin-top: 0;
-    font-weight: 400; }
-.homegyujtowrap .homekezike {
-  padding: 1em 1em;
-  margin-bottom: 1em;
-  text-align: center;
-  box-sizing: border-box; }
-  @media only screen and (min-width: 768px) {
-    .homegyujtowrap .homekezike {
-      float: left;
-      width: 50%; } }
-  @media only screen and (min-width: 1024px) {
-    .homegyujtowrap .homekezike {
-      float: left;
-      width: 50%; } }
-  .homegyujtowrap .homekezike a.hentry {
-    display: inline-block;
-    font-size: 1em;
-    text-decoration: none;
-    background: #ecc4aa;
-    width: 6em;
-    height: 6em;
-    border-radius: 50%;
-    color: #747474;
-    background-size: cover;
-    -webkit-transition-property: border-radius,background-color;
-            transition-property: border-radius,background-color;
-    -webkit-transition-duration: 100ms;
-            transition-duration: 100ms;
-    -webkit-transition-timing-function: ease-in;
-            transition-timing-function: ease-in; }
-    .homegyujtowrap .homekezike a.hentry:hover, .homegyujtowrap .homekezike a.hentry:focus {
-      background-color: #e6e6e6;
-      color: #58595b;
-      border-radius: 0; }
-    .homegyujtowrap .homekezike a.hentry.post-31 {
-      background: url('../img/ikon_tukor.png') no-repeat center center #e7bef0;
-      background-size: cover; }
-    .homegyujtowrap .homekezike a.hentry.post-33 {
-      background: url('../img/ikon_szaj.png') no-repeat center center #ece7aa;
-      background-size: cover; }
-    .homegyujtowrap .homekezike a.hentry.post-34 {
-      background: url('../img/ikon_spiral.png') no-repeat center center #ecc4aa;
-      background-size: cover; }
-    .homegyujtowrap .homekezike a.hentry.post-36 {
-      background: url('../img/ikon_szor.png') no-repeat center center #aaecea;
-      background-size: cover; }
-    .homegyujtowrap .homekezike a.hentry.post-38 {
-      background: url('../img/ikon_pumpa.png') no-repeat center center #aacfec;
-      background-size: cover; }
-    @media only screen and (min-width: 1024px) {
-      .homegyujtowrap .homekezike a.hentry {
+.homegyujtowrap {
+  padding: 2em 0 4em; }
+  .homegyujtowrap header {
+    padding: 1em;
+    text-align: center; }
+    .homegyujtowrap header h2 {
+      margin-bottom: 0; }
+    .homegyujtowrap header h3 {
+      margin-top: 0;
+      font-weight: 400; }
+  .homegyujtowrap .homekezike {
+    padding: 1em 1em;
+    margin-bottom: 1em;
+    text-align: center;
+    box-sizing: border-box; }
+    @media only screen and (min-width: 768px) {
+      .homegyujtowrap .homekezike {
         float: left;
-        margin-top: 7%;
-        margin-right: 5%;
-        margin-bottom: 10%; } }
-    .homegyujtowrap .homekezike a.hentry i {
-      line-height: 1.8em; }
-  .homegyujtowrap .homekezike h3 {
-    font-weight: 400; }
+        width: 50%; } }
     @media only screen and (min-width: 1024px) {
-      .homegyujtowrap .homekezike h3 {
-        text-align: left; } }
-    .homegyujtowrap .homekezike h3 a {
+      .homegyujtowrap .homekezike {
+        float: left;
+        width: 50%; } }
+    .homegyujtowrap .homekezike a.hentry {
+      display: inline-block;
+      font-size: 1em;
+      text-decoration: none;
+      background: #ecc4aa;
+      width: 6em;
+      height: 6em;
+      border-radius: 50%;
       color: #747474;
-      text-decoration: none; }
-      .homegyujtowrap .homekezike h3 a:hover, .homegyujtowrap .homekezike h3 a:focus {
-        color: #4e4e4e; }
-  .homegyujtowrap .homekezike .intro {
-    text-align: left; }
-  .homegyujtowrap .homekezike .buti {
-    display: block;
-    text-align: right;
-    font-size: 0.875em;
-    font-weight: bold;
-    font-style: italic; }
-    @media only screen and (min-width: 1024px) {
-      .homegyujtowrap .homekezike .buti {
-        text-align: left;
-        margin-left: 8.66666667em; } }
+      background-size: cover;
+      -webkit-transition-property: border-radius,background-color;
+              transition-property: border-radius,background-color;
+      -webkit-transition-duration: 100ms;
+              transition-duration: 100ms;
+      -webkit-transition-timing-function: ease-in;
+              transition-timing-function: ease-in; }
+      .homegyujtowrap .homekezike a.hentry:hover, .homegyujtowrap .homekezike a.hentry:focus {
+        background-color: #e6e6e6;
+        color: #58595b;
+        border-radius: 0; }
+      .homegyujtowrap .homekezike a.hentry.post-31 {
+        background: url('../img/ikon_tukor.png') no-repeat center center #e7bef0;
+        background-size: cover; }
+      .homegyujtowrap .homekezike a.hentry.post-33 {
+        background: url('../img/ikon_szaj.png') no-repeat center center #ece7aa;
+        background-size: cover; }
+      .homegyujtowrap .homekezike a.hentry.post-34 {
+        background: url('../img/ikon_spiral.png') no-repeat center center #ecc4aa;
+        background-size: cover; }
+      .homegyujtowrap .homekezike a.hentry.post-36 {
+        background: url('../img/ikon_szor.png') no-repeat center center #aaecea;
+        background-size: cover; }
+      .homegyujtowrap .homekezike a.hentry.post-38 {
+        background: url('../img/ikon_oktatas.png') no-repeat center center #aacfec;
+        background-size: cover; }
+      @media only screen and (min-width: 1024px) {
+        .homegyujtowrap .homekezike a.hentry {
+          float: left;
+          margin-top: 7%;
+          margin-right: 5%;
+          margin-bottom: 10%; } }
+      .homegyujtowrap .homekezike a.hentry i {
+        line-height: 1.8em; }
+    .homegyujtowrap .homekezike h3 {
+      font-weight: 400; }
+      @media only screen and (min-width: 1024px) {
+        .homegyujtowrap .homekezike h3 {
+          text-align: left; } }
+      .homegyujtowrap .homekezike h3 a {
+        color: #747474;
+        text-decoration: none; }
+        .homegyujtowrap .homekezike h3 a:hover, .homegyujtowrap .homekezike h3 a:focus {
+          color: #4e4e4e; }
+    .homegyujtowrap .homekezike .intro {
+      text-align: left; }
+    .homegyujtowrap .homekezike .buti {
+      display: block;
+      text-align: right;
+      font-size: 0.875em;
+      font-weight: bold;
+      font-style: italic; }
+      @media only screen and (min-width: 1024px) {
+        .homegyujtowrap .homekezike .buti {
+          text-align: left;
+          margin-left: 8.66666667em; } }
 
 .eszkozokwrap {
   background: #f2f2f2; }
@@ -2625,9 +2640,7 @@ blockquote {
       display: block; }
 
 .bemutatkozowrap {
-  background: #58595b;
-  color: #ffffff;
-  padding: 3em 0; }
+  padding: 5em 0; }
   .bemutatkozowrap figure {
     box-sizing: border-box;
     padding: 0 1em;
@@ -2635,14 +2648,15 @@ blockquote {
     @media only screen and (min-width: 768px) {
       .bemutatkozowrap figure {
         float: left;
-        width: 50%; } }
-    @media only screen and (min-width: 1024px) {
-      .bemutatkozowrap figure {
-        float: left;
-        width: 50%; } }
+        width: 50%;
+        margin-top: 5em; } }
     .bemutatkozowrap figure img {
       border-radius: 50%;
-      border: 6px solid #ffffff; }
+      border: 6px solid #cccccc;
+      max-width: 75%; }
+      @media only screen and (min-width: 480px) {
+        .bemutatkozowrap figure img {
+          max-width: 389px; } }
   .bemutatkozowrap .colcsi {
     box-sizing: border-box;
     padding: 0 1em; }
@@ -2650,10 +2664,21 @@ blockquote {
       .bemutatkozowrap .colcsi {
         float: left;
         width: 50%; } }
-    @media only screen and (min-width: 1024px) {
-      .bemutatkozowrap .colcsi {
-        float: left;
-        width: 50%; } }
+    .bemutatkozowrap .colcsi h3 {
+      margin-bottom: 0; }
+    .bemutatkozowrap .colcsi p:first-of-type {
+      margin-top: 0;
+      font-style: italic; }
+  .bemutatkozowrap:nth-of-type(2n) {
+    background: #f2f2f2; }
+  @media only screen and (min-width: 768px) {
+    .bemutatkozowrap:nth-of-type(2n) figure {
+      float: right;
+      width: 50%; } }
+  @media only screen and (min-width: 768px) {
+    .bemutatkozowrap:nth-of-type(2n) .colcsi {
+      float: left;
+      width: 50%; } }
 
 .brandswrap {
   padding: 3em 0; }
@@ -3159,73 +3184,85 @@ blockquote {
     box-sizing: border-box;
     padding: 0 2em; } }
 
+.entry-arak {
+  padding: 0 1em; }
+  @media only screen and (min-width: 1024px) {
+    .entry-arak {
+      padding: 0 2em; } }
+  @media only screen and (min-width: 1280px) {
+    .entry-arak {
+      padding: 0; } }
+
 .arlistawrap {
   padding-bottom: 6em; }
-  .arlistawrap article {
-    margin: 0 auto; }
   .arlistawrap header {
+    text-align: center;
     padding: 0 1em;
-    text-align: center; }
-  .arlistawrap h1 {
-    margin: 2em 0 0; }
-  .arlistawrap .entry-content {
-    padding: 1em 1em; }
-    @media only screen and (min-width: 768px) {
-      .arlistawrap .entry-content {
-        float: none;
-        width: auto;
-        margin: 0 auto; } }
-    @media only screen and (min-width: 1024px) {
-      .arlistawrap .entry-content {
-        float: none;
-        width: auto;
-        margin: 0 auto; } }
-    .arlistawrap .entry-content h3 {
-      clear: both;
-      margin: 3em 0 1em 0;
-      font-size: 1.125em;
-      /***** clearfix *****/
-      *zoom: 1; }
-      .arlistawrap .entry-content h3 a {
-        display: block;
-        color: #58595b;
-        position: relative; }
-        .arlistawrap .entry-content h3 a:hover, .arlistawrap .entry-content h3 a:focus {
-          color: #4e4e4e;
-          text-decoration: none;
-          background: #747474; }
-        .arlistawrap .entry-content h3 a:after {
-          content: ">";
-          right: 0;
-          position: absolute; }
-      .arlistawrap .entry-content h3:before, .arlistawrap .entry-content h3:after {
-        display: table;
-        content: "";
-        line-height: 0; }
-      .arlistawrap .entry-content h3:after {
-        clear: both; }
-    .arlistawrap .entry-content h4 {
-      font-size: 1.125em;
-      width: 80%;
+    margin: 4em 0 3em 0; }
+
+.arhelper {
+  margin-top: -.5em; }
+
+.arblokk {
+  margin: 1.5em auto;
+  max-width: 35em; }
+  .arblokk:before, .arblokk:after {
+    content: " ";
+    display: table; }
+  .arblokk:after {
+    clear: both; }
+  @media only screen and (min-width: 1024px) {
+    .arblokk {
+      max-width: none;
+      width: 45%;
       float: left;
-      margin: 1em 0 0 0;
-      box-sizing: border-box;
-      padding: 0 0;
-      font-size: 1em;
-      font-weight: 400; }
-    .arlistawrap .entry-content p {
-      box-sizing: border-box;
-      padding: 0 0;
-      width: 80%; }
-    .arlistawrap .entry-content p.ar {
-      float: left;
-      width: 20%;
-      margin: 1em 0 0 0;
-      padding: 0 0 0 0;
-      font-size: 1em;
-      font-weight: 400;
-      font-style: italic;
-      text-align: right; }
+      clear: left; }
+      .arblokk:nth-of-type(2n) {
+        float: right;
+        clear: right; } }
+
+.arblokk__title {
+  margin: 0 0 .5em; }
+  .arblokk__title a {
+    color: inherit;
+    position: relative; }
+    .arblokk__title a:hover, .arblokk__title a:focus {
+      color: #4e4e4e;
+      text-decoration: none;
+      background: #747474; }
+    .arblokk__title a:after {
+      content: ">";
+      right: 0;
+      position: absolute; }
+
+.arblokk__footer {
+  font-style: italic;
+  font-size: .875em;
+  margin-top: 2em; }
+
+.arblokk__item {
+  margin: 2em 0; }
+
+.arblokk__item__name {
+  font-weight: normal;
+  margin: 0 0;
+  float: left;
+  width: 80%; }
+
+.arblokk__item__ar {
+  float: right;
+  width: 20%;
+  margin: 0 0;
+  font-size: 1em;
+  font-weight: 400;
+  font-style: italic;
+  text-align: right; }
+
+.arblokk__item__descr {
+  clear: both;
+  width: 80%;
+  margin: 0;
+  font-size: .875em; }
 
 .entry-related {
   margin-bottom: 8em; }

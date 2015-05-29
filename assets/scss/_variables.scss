@@ -22,6 +22,7 @@ $sand:rgb(236, 231, 170);
 $skin: rgb(236,196, 170);
 $cyan: rgb(170, 236, 234); 
 $sky:rgb(170, 207, 236);
+$tutor:#aaecb3;
 
 
 
@@ -30,6 +31,7 @@ $sky:rgb(170, 207, 236);
 $s1:480px;
 $s2:768px;
 $s3:1024px;
+$s4:1280px;
 
 $maximum:1100px;
 
@@ -82,6 +84,9 @@ img {
 }
 
 @mixin breakpoint($breakpoint) {
+  @media only screen and (min-width: $breakpoint) { @content; }
+}
+@mixin bp($breakpoint) {
   @media only screen and (min-width: $breakpoint) { @content; }
 }
 

@@ -2671,9 +2671,7 @@ function mce_success_cb(resp){
 
 
 
-;// place any jQuery/helper plugins in here, instead of separate, slower script files.;/* Author:
- Gabor Szabo <szabogabi@gmail.com>
-*/
+;// place any jQuery/helper plugins in here, instead of separate, slower script files.;/* Author: Gabor Szabo <szabogabi@gmail.com> */
 
 function initialize() {
   // Create an array of styles.
@@ -2686,7 +2684,7 @@ function initialize() {
     }
   ];
 
-  var placem = new google.maps.LatLng(47.433733853169215, 19.10593271255493);
+  var placem = new google.maps.LatLng(47.491034, 19.052867);
   var mapOptions = {
      zoom: 12,
      center: placem,
@@ -2697,14 +2695,14 @@ function initialize() {
   
 
   var flag = {
-          url: 'http://molnarorsolya.hu/wp-content/themes/molnarorsolya/assets/img/flag.png',
+          url: 'http://molnarkozmetika.hu/wp-content/themes/molnarorsolya/assets/img/flag.png',
           size: new google.maps.Size(124, 127),
           origin: new google.maps.Point(0,0),
           anchor: new google.maps.Point(10, 120)
         };
   
   var flagshadow = {
-          url: 'http://molnarorsolya.hu/wp-content/themes/molnarorsolya/assets/img/flag-shadow.png',
+          url: 'http://molnarkozmetika.hu/wp-content/themes/molnarorsolya/assets/img/flag-shadow.png',
           size: new google.maps.Size(124, 127),
           origin: new google.maps.Point(0,0),
           anchor: new google.maps.Point(10, 100)

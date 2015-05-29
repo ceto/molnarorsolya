@@ -53,6 +53,26 @@ function mo_metaboxes( array $meta_boxes ) {
     ),
   );
 
+
+  $meta_boxes['kezelesgyujto'] = array(
+    'id'         => 'kezelesgyujto_meta',
+    'title'      => 'Kezelés oldalsáv',
+    'object_types'  => array( 'page'), // Post type
+    'show_on'      => array( 'key' => 'page-template', 'value' => 'template-kezelesgyujto.php' ),
+    'context'    => 'normal',
+    'priority'   => 'high',
+    'show_names' => true, // Show field names on the left
+    'fields'     => array(
+      
+      array(
+        'name' => 'Intro, bevezető',
+        'desc' => 'Rövid frappáns kivonat, vagy bevezető (kötelező).',
+        'id'   => $prefix . 'intro',
+        'type' => 'textarea_small',
+      ),
+    ),
+  );
+
   $meta_boxes['akcio'] = array(
       'id'         => 'akcio_meta',
       'title'      => 'Akció esetén kitöltendő',

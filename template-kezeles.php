@@ -36,7 +36,7 @@ Template Name: Kezelés Szimpla Sablon
     </article>
     </div><!-- /.wrapped -->
   </div><!-- /.kezeleswrap -->
-  <?php comments_template('/templates/comments-face.php'); ?>
+  <?php //comments_template('/templates/comments-face.php'); ?>
   <?php endwhile; ?>
 </div><!-- /.main -->
 

@@ -45,5 +45,5 @@
      </article>
   </div><!-- / .wrapped --> 
 </div><!-- / .articlewrap -->
-<?php comments_template('/templates/comments-face.php'); ?>
+<?php //comments_template('/templates/comments-face.php'); ?>
 <?php endwhile; ?>

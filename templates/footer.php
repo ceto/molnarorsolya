@@ -36,7 +36,7 @@
     <div class="wrapped clearfix">
       <section class="widget widget_impr">
           <p>&copy; <?php echo date('Y'); ?> <strong><?php bloginfo('name'); ?></strong><br />
-            Hand crafted site with love by <a target="_blank" href="http://hydrogene.hu">Hydrogene</a></p>
+            Hand crafted site with love by <a target="_blank" href="http://hydrogene.hu/referencia/kozmetikus-arculat-es-weboldal/">Hydrogene</a></p>
           <p><strong>Megtalálsz még itt is</strong><br>
             <a href="https://www.facebook.com/akozmetikusom" class="face"><i class="ion-social-facebook"></i></a>
             <a href="#" class="gplus"><i class="ion-social-googleplus"></i></a>

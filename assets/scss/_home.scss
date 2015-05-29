@@ -203,6 +203,7 @@
 
 
  .homegyujtowrap {
+  padding:2em 0 4em;
 
   header{
     padding:1em;
@@ -274,7 +275,7 @@
         background-size:cover;
       }
       &.post-38 {
-        background:url('../img/ikon_pumpa.png') no-repeat center center $sky;
+        background:url('../img/ikon_oktatas.png') no-repeat center center $sky;
         background-size:cover;
       }
 
@@ -415,9 +416,9 @@
 
 
 .bemutatkozowrap{
-  background: $gray;
-  color:$white;
-  padding:3em 0;
+  //background: $gray;
+  //color:$white;
+  padding:5em 0;
   
   figure {
 
@@ -428,15 +429,17 @@
     @include breakpoint($s2) {
       float:left;
       width:50%;
-    }
-    @include breakpoint($s3) {
-      float:left;
-      width:50%;
+      margin-top: 5em;      
     }
 
     img {
       border-radius:50%;
-      border:6px solid $white;
+      border:6px solid $gray-lighter;
+      max-width: 75%;
+
+      @include breakpoint($s1) {
+        max-width: 389px;
+      }
     }
 
   }
@@ -449,21 +452,51 @@
       float:left;
       width:50%;
     }
-    @include breakpoint($s3) {
-      float:left;
-      width:50%;
-    }
-
     h3{
+      margin-bottom:0;
 
     }
+    p {
+      //font-size: .875em;
+      
+      &:first-of-type {
+        margin-top: 0;
+        font-style: italic;
+      }
+    }
 
+
+  }
+
+
+  &:nth-of-type(2n) {
+    background: lighten($gray-lighter,15%);
+    // background: $gray;
+    // color:$white;
+  }
+  
+  &:nth-of-type(2n) figure{
+    @include breakpoint($s2) {
+      float:right;
+      width:50%;      
+    }
+  }
+
+  &:nth-of-type(2n) .colcsi{
+    @include breakpoint($s2) {
+      float:left;
+      width:50%;      
+    }
   }
 
 }
 
 
+
+
+
 .brandswrap{
+  
   padding:3em 0;
 
   .colcsi1 {
