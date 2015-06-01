@@ -22,8 +22,9 @@ Template Name: Kezelés Szimpla Sablon
             <?php endif; ?>
             
             <div class="entry-actionblock">
-              <a href="tel:+36704337511" class="tel"><i class="ion-ios7-telephone"></i>Foglalj időpontot <span>+36 70 433 7511</span></a>
-              <a href="?page_id=11&ap_id=<?php echo get_the_ID(); ?>#respond" class="online"><i class="ion-compose"></i>vagy jelentkezz Online</a>
+              <a href="tel:+36704337511" class="tel"><i class="ion-ios7-telephone"></i>Hívd Orsit<span>+36 70 433 7511</span></a>
+              <a href="tel:+36308649091" class="tel"><i class="ion-iphone"></i>Vagy Barbit<span>+36 30 864 9091</span></a>
+              <a href="?page_id=11&ap_id=<?php echo get_the_ID(); ?>#respond" class="online"><i class="ion-compose"></i>jelentkezz Online</a>
             </div>
             <?php get_template_part('templates/sharing'); ?>
           </div>
