@@ -101,41 +101,41 @@
 
 .entry-actionblock {
   margin:1.5em 0 2em;
-  font-size: 2em;
+  font-size: 1.5em;
   font-style: italic;
   font-weight:800;
-  color:$orange;
+  color:$berry;
   text-transform: uppercase;
   line-height:1em;
 
   .tel, .online {
     margin:0.75em 0em;
     position:relative;
-    padding-left:3em;
+    padding-left:2.5em;
     display: block;
-    color:$orange;
+    color:$gray-new;
     text-decoration: none;
     display:block;
     &:hover, &:focus {
-      color:darken($orange,20%);
+      color:$berry;
     }
 
     &:hover i, &:focus i {
-      background:darken($orange,20%);
+      background:$berry;
 
     }
 
     i {
       position: absolute;
       left:0;
-      display: block;
-      font-size:1.5em;
-      line-height:1.5em;
-      width:1.5em;
-      height:1.5em;
+      display: inline-block;
+      font-size:1em;
+      line-height:1.75em;
+      width:1.75em;
+      height:1.75em;
       text-align:center;
       color:$white;
-      background: $orange;
+      background: $gray-new;
       border-radius:50%;
 
 
@@ -364,7 +364,8 @@
       padding:0.25em 0.5em;
       box-sizing:border-box;
       &:hover, &:focus {
-        background:$green;
+        background:$berry;
+        color:$white;
         text-decoration: none;
       }
     }

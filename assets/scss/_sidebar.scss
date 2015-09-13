@@ -169,7 +169,7 @@
     }
     
     .category-akcio & {
-          background: $purple;
+          background: $berry;
     }
   }
 }
@@ -205,19 +205,21 @@
 
 
 .tovabbiak {
-  background: $gray;
+  background: $gray-new;
   color:$white;
   font-size:0.875em;
   padding-bottom:4em;
+  padding-top:2em;
 
   a {
-  color:$orange;
+  color:$berry;
   &:hover, &:focus {
-      color:$green;
+      color:$berry;
     }
   }
   h2 {
     text-align:center;
+    margin-bottom:2em;
   }
 
   .tovkez {
@@ -226,7 +228,7 @@
 
     margin:2em 6%;
     padding:0 4em 2em 0;
-    border-bottom: 1px solid $gray-dark;
+    //border-bottom: 1px solid $gray-darker;
     @include breakpoint($s2) {
       margin:1em 3%;
       width:44%;
@@ -250,7 +252,7 @@
         content:'';
         position:absolute;
         left:0;bottom:0;right:0;
-          border-top: 1px solid $gray-darker;
+        //  border-top: 1px solid $black;
     }
 
 
@@ -264,7 +266,7 @@
         color:$white;
         &:hover, &:focus {
           text-decoration: none;
-          color:$green;
+          color:$berry;
 
         }
 
@@ -275,7 +277,7 @@
       margin-top:0.5em;
     }
     .read-more {
-      background: $orange;
+      background: $gray-lighter;
       color:$gray;
       display: block;
       position:absolute;
@@ -289,7 +291,7 @@
       height:1.5em;
       border-radius:50%;
       &:hover, &:focus {
-        background:$green;
+        background:$berry;
         text-decoration: none;
       }
       i {
@@ -307,14 +309,14 @@
   
   .more {
     display: block;
-    color:$green;
+    color:$berry;
     font-weight:bold;
     font-style: italic;
     margin:2em 6% 4em 6%;
     &:hover, &:focus {
       text-decoration:underline;
       //color:darken($green,10%);
-      color:darken($orange,20%);
+      color:$white;
     }
     @include breakpoint($s2) {
           float:left;
@@ -344,9 +346,11 @@
   padding-bottom:1.25em;
 
   a {
-  color:$orange;
+  font-weight:700;
+  color:$gray-lighter;
   &:hover, &:focus {
-      color:$green;
+      color:$berry;
+      text-decoration:none;
     }
   }
   
@@ -436,7 +440,7 @@
     height:40px;
     width:30%;
     font-size: 1em;
-    background: $green;
+    background: $berry;
     color: $white;
     }
 }

@@ -12,17 +12,21 @@
   }
 
   @include breakpoint($s2) {
-       margin-top:6.75em;
+       margin-top:5.5em;
   }
 
   @include breakpoint($s3) {
-    margin-top:7em;
+    margin-top:6em;
   }
 
   ul {
-    font-size: 1.125em;
+    @include clearfix();
+    font-size: .875em;
     list-style-type: none;
     padding:0;
+    @include breakpoint($s3) {
+      font-size:1.125em;
+    }
   }
   li {
     box-sizing:border-box;
@@ -31,7 +35,7 @@
     width:50%;
     float:left;
     margin:0.66666667em 0;
-    
+
     @include breakpoint($s1) {
       width:25%;
     }
@@ -42,7 +46,7 @@
         margin-left:20%;
       }
     }
-  
+
     @include breakpoint($s3) {
       width:20%;
       &:nth-child(3) {
@@ -54,7 +58,7 @@
 
 
   a {
-    padding:3px 3px;
+    padding:.333em .666em;
     color:$black;
     text-decoration: none;
     font-weight: 800;
@@ -62,28 +66,28 @@
     letter-spacing: 0.066666667em;
     &:hover, &:focus {
       color:$white;
-      background: $gray-dark;
+      background: $berry;
     }
   }
 
   .active a{
     color:$white;
-    background: $gray-light;
+    background: $berry;
     &:hover, &:focus {
     //  background: $gray-dark;
     }
   }
-  
+
 
 }
 
 
 .nav-sub {
     box-shadow:$black 0 0 8px 3px inset;
-    
+
     background: url('../img/subnav_bg_varo.jpg') no-repeat center center $gray-flat;
     background-size:cover;
-    
+
 
     .parent-pageid-16 & {
       background: url('../img/subnav_bg_cassa.jpg') no-repeat center center $gray-flat;
@@ -92,7 +96,7 @@
 
 
   .wrapped {
-    padding:3em 1em; 
+    padding:3em 1em;
     @include breakpoint($s2) {
       padding: 2em 0 0 0;
     }
@@ -123,10 +127,10 @@
     width:46%;
     margin:3% 2% 3% 2%;
     text-align: center;
-    
 
 
-    
+
+
     @include breakpoint($s1) {
       width:29%;
       //padding-top:31%;
@@ -137,7 +141,7 @@
       width:16%;
       //padding-top:18%;
     }
-  
+
     @include breakpoint($s3) {
       width:16%;
       //padding-top:18%;
@@ -157,7 +161,7 @@
     text-decoration: none;
     text-shadow:$black 0 0 4px;
 
-    
+
     &:before {
       content: "";
       //line-height:8em;
@@ -187,7 +191,7 @@
       border:2px solid $white;
     }
   }
-  
+
   li.active:after {
     content: "";
     display: block;
@@ -209,20 +213,20 @@
     @include breakpoint($s2) {
       margin-left: 5.66666%;
     }
-  
+
     @include breakpoint($s3) {
       margin-left: 5.66666%;
 
     }
 
-    
+
 
   }
 
   li.menu-arckezelesek a:before {
     background:url('../img/ikon_tukor.png') no-repeat center center $purple;
     background-size:100%;
-    
+
   }
   li.menu-gepi-kezelesek a:before {
     background:url('../img/ikon_szaj.png') no-repeat center center $sand;
@@ -319,7 +323,7 @@
     text-decoration: none;
     color:$gray;
     padding:1px 3px;
-    
+
     &:hover, &:focus {
       color:$white;
       background: $gray;

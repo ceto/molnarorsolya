@@ -22,7 +22,7 @@ module.exports = function(grunt) {
     'assets/js/plugins/*.js',
     'assets/js/_*.js'
   ];
-  
+
   grunt.initConfig({
     jshint: {
       options: {
@@ -134,8 +134,8 @@ module.exports = function(grunt) {
           },
           options: {
               watchTask: true,
-              host: 'ceto.no-ip.org',
-              proxy: 'ceto.no-ip.org/mo'
+              host: 'ceti.no-ip.org',
+              proxy: 'ceti.no-ip.org/molnarkozmetika'
           }
       }
     },

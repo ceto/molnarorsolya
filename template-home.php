@@ -11,16 +11,15 @@ Template Name: Home Page
 <div class="herowrap wrap">
   <div class="wrapped clearfix">
     <div class="heroblokk">
-     <!--  <h3>Cimsor a formázásra</h3> -->
-      <p>A professzionális szakmai tudás alkalmazása mellett vendégeim kezelésénél természetes anyagokat használok és  fontosnak tartom megteremteni a nyugodt légkört, hogy ez is elősegítse a kiváló minőségű szolgáltatást.</p>
-      <br /><a href="?page_id=31" class="btn">Kezelések megtekintése</a>
+      <h3>Csak rád figyelünk</h3>
+      <p>Első látogatásodkor vendégünk vagy egy <a href="<?= get_permalink(651); ?>" class="btn">arcdiagnosztikára</a></p>
     </div>
   </div><!-- /.wrapped -->
 </div><!-- /.heroswrap -->
 
 <section class="actionwrap clearfix wrap">
   <div class="wrapped">
-    <div class="akcio clearfix">  
+    <div class="akcio clearfix">
       <?php $the_fact=new WP_Query ( array (
         'cat' => 7,
         'post_type' => 'post',
@@ -50,14 +49,10 @@ Template Name: Home Page
         <?php endwhile; ?>
       <?php endif; ?>
     </div>
-    <div class="ajandekut clearfix">
-      <h3>Tudtad-e?</h3>
-      <h4 class="akcio-title">Ha először jársz nálunk vendégünk vagy egy <a href="<?php echo get_permalink('651'); ?>">ingyenes arcdiagnosztikára</a></h4>
-    </div>
   </div><!-- /.wrapped -->
 </section>
 <?php
-  
+
   wp_reset_query();
 
   $the_kezeles=new WP_Query( array(
@@ -68,16 +63,16 @@ Template Name: Home Page
     )
   );
 ?>
-<div class="main <?php echo roots_main_class(); ?>" role="main"> 
+<div class="main <?php echo roots_main_class(); ?>" role="main">
 
   <div class="homegyujtowrap wrap clearfix">
-    <div class="wrapped">    
+    <div class="wrapped">
     <article <?php post_class(); ?>>
       <header>
         <h2><?php echo roots_title(); ?></h2>
         <h3>Kozmetikai kezelések</h3>
       </header>
-      <?php $i=1; 
+      <?php $i=1;
        while ($the_kezeles->have_posts()) : $the_kezeles->the_post(); ?>
         <div class="homekezike">
           <a href="<?php the_permalink(); ?>" <?php post_class('gomboc'); ?>>
@@ -87,13 +82,13 @@ Template Name: Home Page
           <p class="intro"><?php echo get_post_meta( $post->ID, '_meta_intro', true ); ?></p>
           <a class="buti" href="<?php the_permalink(); ?>"><?php _e('Bővebben','mo'); ?>&hellip;</a>
         </div>
-      <?php endwhile; ?>       
+      <?php endwhile; ?>
       <?php // comments_template('/templates/comments.php'); ?>
     </article>
     </div><!-- /.wrapped -->
   </div><!-- /.homegyujtowrap -->
 
-<?php 
+<?php
   $the_eszkoz=new WP_Query( array(
     'post_type' => 'post',
     //'category__or' => array( 6,8,9 ),
@@ -108,7 +103,7 @@ Template Name: Home Page
 
   <!--
     <div class="eszkozokwrap wrap clearfix">
-      <div class="wrapped">    
+      <div class="wrapped">
       <article <?php post_class(); ?>>
         <header class="entry-header">
           <h2>Érdekességek, hírek</h2>
@@ -131,12 +126,12 @@ Template Name: Home Page
             </p>
             <a class="buti" href="<?php the_permalink(); ?>">További részletek</a>
           </div>
-        <?php endwhile; ?>       
+        <?php endwhile; ?>
       </article>
       </div>
     </div> -->
 
-<?php 
+<?php
     $the_bemutatkozas=new WP_Query( array(
     'post_type' => 'page',
     'post__in' => array(1327,124),
@@ -161,10 +156,10 @@ Template Name: Home Page
       </div><!-- /.wrapped -->
     </div><!-- /.bemutatkozowrap -->
 
-<?php endwhile; ?>       
+<?php endwhile; ?>
 
 
-<?php 
+<?php
     $the_brands=new WP_Query( array(
     'post_type' => 'page',
      'page_id' => 127
@@ -174,8 +169,8 @@ Template Name: Home Page
     <div class="brandswrap wrap">
       <div class="wrapped clearfix">
         <?php while ($the_brands->have_posts()) : $the_brands->the_post(); ?>
-          <?php the_content(); ?></div> 
-        <?php endwhile; ?>      
+          <?php the_content(); ?></div>
+        <?php endwhile; ?>
       </div><!-- /.wrapped -->
     </div><!-- /.brandswrap -->
 </div><!-- /.main -->
@@ -184,4 +179,4 @@ Template Name: Home Page
 
 
 
-<?php endwhile; ?>  
+<?php endwhile; ?>

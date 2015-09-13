@@ -1,3 +1,9 @@
+<aside class="tiptop">
+  <div class="wrap container">
+    <div class="tiptop__tel">Orsi&nbsp;<a href="tel:+36 70 433 7511">+36 70 433 7511</a> Barbi&nbsp;<a href="+36 30 864 9091">+36 30 864 9091</a></div>
+    <div class="tiptop__lang"><?php do_action('wpml_add_language_selector'); ?></div>
+  </div>
+</aside>
 <header class="banner" role="banner">
   <div class="wrap container">
     <div class="wrapped clearfix">
@@ -14,6 +20,6 @@
     </div>
   </div>
   <?php if (is_page_template( 'template-kezeles.php' )) {
-     get_template_part('templates/page', 'header'); 
+     get_template_part('templates/page', 'header');
    } ?>
 </header>

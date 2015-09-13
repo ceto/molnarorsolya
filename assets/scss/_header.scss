@@ -1,3 +1,56 @@
+.tiptop {
+  @include clearfix();
+  background-color: $gray-new;
+  color:$berry;
+  padding: .5em .5em;
+  line-height: 1;
+}
+
+
+.tiptop__tel {
+  color:$berry;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: .875em;
+  font-style: italic;
+  a {
+    font-weight: 300;
+    color:$white;
+    //font-size: .875em;
+    &:hover, &:focus {
+      color:$berry;
+      text-decoration: none;
+    }
+  }
+  @include bp($s2) {
+    float:left;
+  }
+}
+
+.tiptop__lang {
+  font-size: .875em;
+  @include bp($s2) {
+    float:right;
+    width:6em;
+  }
+
+  ul {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+
+    li {
+      display:inline-block;
+      margin:0;
+      padding: 0;
+      a {
+        display: inline;
+      }
+    }
+  }
+
+}
+
 .parent-pageid-16 .banner {
 //  background: url('../img/head_bg_cassa.jpg') no-repeat center bottom transparent;
 //  @include background-size(cover);
@@ -12,7 +65,7 @@
   padding-bottom: 4em;
 
 
-  
+
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
@@ -25,13 +78,13 @@
 
 
 
-    
-    
+
+
     .entry-title {
       font-size: 1.75em;
       margin:0 0 1em 0;
       color:lighten($black,10%);
-      
+
       @include breakpoint($s1) {
         //margin-top:2em;
       }
@@ -45,7 +98,7 @@
           //width:75%;
           //margin-top:5em;
       }
-   
+
   }
 
   }
@@ -89,7 +142,7 @@
   box-sizing:border-box;
   text-align: center;
   display: block;
-  //background: $sky;  
+  //background: $sky;
   //width:75%;
   margin:2em auto 0 auto;
   //padding:1em 1em;
@@ -104,7 +157,7 @@
     left:0; right:0;
     width:30%;
     margin:2em auto 0 auto;
-      
+
   }
 }
 
@@ -113,7 +166,7 @@
 .akcio-fej {
   font-size: 0.875em;
   h3 {
-    margin-bottom:0;    
+    margin-bottom:0;
   }
   .akcio-title {
     font-style: italic;
@@ -125,10 +178,10 @@
     margin: 0 0 0.5em;
 
     a {
-      text-decoration: none;      
+      text-decoration: none;
       color:$gray;
 
-    }  
+    }
   }
   .btn {
     font-size:0.875em;
@@ -138,7 +191,7 @@
     &:after {
       font-size: 2em;
       line-height: 0em;
-    } 
+    }
   }
 
 

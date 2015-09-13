@@ -1,527 +1,437 @@
 .herowrap {
-  //position: relative;
-  //overflow: hidden;
-  //z-index:-1;
-  margin-top:-395px;
-  padding-top: 330px;
-  padding-bottom: 50px;
-  background-image: url('../img/head_bg_small.jpg');
+  min-height: 20em;
+
+  background-color: $gray-new;
+  background-image: url('../img/hero-image.jpg');
   background-repeat: no-repeat;
-  background-position: right bottom;
-  //background-attachment: fixed;
-  background-color:#b2b4a7;
-  background-size:auto 100%;
+  background-position: center top;
+  background-size: cover;
+  //box-shadow: $black 0px 5px 0 5px inset;
 
   @include breakpoint($s1) {
-    margin-top:-347px;
-    padding-top: 270px;
-
   }
-
   @include breakpoint($s2) {
-    background-image: url('../img/head_bg.jpg');
-     margin-top:-242px;
-     padding-top: 240px;
-
+    //background-image: url('../img/hero-image.jpg');
+    min-height: 0;
+    padding-top: 37%;
   }
   @include breakpoint($s3) {
-      //margin-top:-340px;
-
   }
-
-
-
-
   .heroblokk {
-    padding:1em 1em;
     //margin:0 auto;
-    
+    display: none;
+
+    padding: 1em 1em;
+
     @include breakpoint($s1) {
-    
-
     }
-
     @include breakpoint($s2) {
-        width:85%;
-
+      width: 85%;
     }
     @include breakpoint($s3) {
-        width:75%;
-
+      width: 75%;
     }
-
-    
-    p{
+    p {
+      font-size: 1.25em;
+      font-weight: 700;
+      line-height: 1.75em;
 
       display: inline;
-      font-size:1.25em;
-      line-height: 1.75em;
-      background: rgba($gray,0.7);
-      box-shadow: 10px 0 0 rgba($gray,0.7), -10px 0 0 rgba($gray,0.7);
-      padding:2px 0;
 
-      font-weight: 700;
+      padding: 2px 0;
+
+      transform: translateX(10px);
       //@include text-shadow(0 0 20px black);
       //text-transform: uppercase;
-      color:$white;
-      transform:translateX(10px);
+
+      color: $white;
+      background: rgba($gray,.7);
+      box-shadow: 10px 0 0 rgba($gray,.7), -10px 0 0 rgba($gray,.7);
+
       @include breakpoint($s1) {
-        font-size:1.25em;
+        font-size: 1.25em;
         line-height: 1.75em;
       }
       @include breakpoint($s2) {
-        font-size:1.75em;
+        font-size: 1.75em;
         line-height: 1.75em;
       }
     }
     .btn {
-      margin-top:1.5em;
+      margin-top: 1.5em;
       //float:right;
     }
-
   }
 }
-.actionwrap{
+.actionwrap {
+  color: $white;
+  background-color: $gray-new;
 
-   
-
-  border-top:8px solid $gray;
-
-  background: $skin;
-  
   @include breakpoint($s2) {
-   background-image: linear-gradient(to right, $skin 50%, $white-light 50%);
+    //background-image: linear-gradient(to right, $skin 50%, $white-light 50%);
   }
-  
   @include breakpoint($s3) {
-    background-image:linear-gradient(to right, $skin 50%, $white-light 50%);
+    //background-image:linear-gradient(to right, $skin 50%, $white-light 50%);
   }
-
   .btn {
-      font-size:1em;
-      float:right;
-      width:2em;
-      height:2em;
-      padding:0;
-      text-align: center;
-      i{
-        line-height:1.875em;
-      }
+    font-size: 1em;
 
+    float: right;
+
+    width: 2em;
+    height: 2em;
+    padding: 0;
+
+    text-align: center;
+    i {
+      line-height: 1.875em;
+    }
   }
-
   .akcio-title {
-      margin:0.5em 0 0.5em;
-      font-size:1.5em;
-      font-weight: 400;
-      font-style:italic;
-      text-transform:none;
-      letter-spacing: 0;
-      line-height: 1.125em;
-      a {
-        color:$gray-dark;
-        text-decoration: none;
-      }
-    }
-  
+    font-size: 1.5em;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.125em;
 
+    margin: .5em 0 .5em;
+
+    letter-spacing: 0;
+    text-transform: none;
+    a {
+      text-decoration: none;
+
+      color: $gray-dark;
+    }
+  }
   .akcio {
-    box-sizing:border-box;
-    padding:1em;
-    
+    box-sizing: border-box;
+    padding: 1em;
+
     @include breakpoint($s2) {
-      float:left;
-      width:50%;
     }
+
     @include breakpoint($s3) {
-      float:left;
-      width:50%;
-    }
 
-    
+    }
     h3 {
-      margin-top:1em;
-      margin-bottom:0;
-
+      margin-top: 1em;
+      margin-bottom: 0;
     }
-
     .megtak {
-      margin-top:0;
-      font-size: 0.875em;
-      font-style:italic;
-    }
-
-
-   
-
-    .idotartam {
-      margin:2em 0 1em;
-      font-size: 0.75em;
+      font-size: .875em;
       font-style: italic;
-      i {   
-        margin-right:0.125em;
-      }
 
+      margin-top: 0;
+    }
+    .idotartam {
+      font-size: .75em;
+      font-style: italic;
+
+      margin: 2em 0 1em;
+      i {
+        margin-right: .125em;
+      }
       span {
-          //display: block;
+        //display: block;
       }
     }
-  
-
   }
-
-  .ajandekut {
-    box-sizing:border-box;
-    padding:1em;
-    background: $white-light;
-
-    @include breakpoint($s2) {
-      float:left;
-      width:50%;
-      background: none;
-    }
-    @include breakpoint($s3) {
-      float:left;
-      width:50%;
-      background: none;
-    }
-
-    h3 {
-      margin:1em 0;
-    }
-    .akcio-title{
-      a {
-        color:$skin;
-      }
-    }
-
-  }
-
 }
 
 
 
 
- .homegyujtowrap {
-  padding:2em 0 4em;
+.homegyujtowrap {
+  padding: 2em 0 4em;
+  header {
+    padding: 1em;
 
-  header{
-    padding:1em;
     text-align: center;
-    h2{
+    h2 {
       margin-bottom: 0;
     }
     h3 {
-      margin-top:0;
       font-weight: 400;
+
+      margin-top: 0;
     }
   }
-
   .homekezike {
-    padding:1em 1em;
-    margin-bottom:1em;
+    box-sizing: border-box;
+    margin-bottom: 1em;
+    padding: 1em 1em;
+
     text-align: center;
-    box-sizing:border-box;
+
     @include breakpoint($s2) {
-      float:left;
-      width:50%;
+      float: left;
+
+      width: 50%;
     }
     @include breakpoint($s3) {
-      float:left;
-      width:50%;
+      float: left;
+
+      width: 50%;
     }
-
-    a.hentry{
-      display:inline-block;
+    a.hentry {
       font-size: 1em;
+
+      display: inline-block;
+
+      width: 6em;
+      height: 6em;
+
+      transition-timing-function: ease-in;
+      transition-duration: 100ms;
+      transition-property: border-radius,background-color;
       text-decoration: none;
-      background: $orange;
-      width:6em;
-      height:6em;
+
+      color: $gray-light;
       border-radius: 50%;
-      color:$gray-light;
-
-      background-size:cover;
-
-      transition-property:border-radius,background-color;
-      transition-duration:100ms;
-      transition-timing-function:ease-in; 
-    
-
-
-      &:hover, &:focus {
-        background-color:lighten($gray-lighter,10%);
-        color:$gray;
-        border-radius: 0;
-      }
-      
-
-
-
-      &.post-31 {
-        background:url('../img/ikon_tukor.png') no-repeat center center $purple;
-        background-size:cover;
-      }
-      &.post-33 {
-        background:url('../img/ikon_szaj.png') no-repeat center center $sand;
-        background-size:cover;
-      }
-      &.post-34 {
-        background:url('../img/ikon_spiral.png') no-repeat center center $skin;
-        background-size:cover;
-      }
-      &.post-36 {
-        background:url('../img/ikon_szor.png') no-repeat center center $cyan;
-        background-size:cover;
-      }
-      &.post-38 {
-        background:url('../img/ikon_oktatas.png') no-repeat center center $sky;
-        background-size:cover;
-      }
-
+      background: $orange;
+      background-size: cover;
 
       @include breakpoint($s3) {
-        float:left;
-        margin-top:7%;
-        margin-right:5%;
-        margin-bottom:10%;
+        float: left;
+
+        margin-top: 7%;
+        margin-right: 5%;
+        margin-bottom: 10%;
       }
-
-
-
-      i{
-        line-height:1.8em;       
+      &:hover, &:focus {
+        color: $gray;
+        border-radius: 0;
+        background-color: lighten($gray-lighter,10%);
+      }
+      &.post-31 {
+        background: url('../img/ikon_tukor.png') no-repeat center center $purple;
+        background-size: cover;
+      }
+      &.post-33 {
+        background: url('../img/ikon_szaj.png') no-repeat center center $sand;
+        background-size: cover;
+      }
+      &.post-34 {
+        background: url('../img/ikon_spiral.png') no-repeat center center $skin;
+        background-size: cover;
+      }
+      &.post-36 {
+        background: url('../img/ikon_szor.png') no-repeat center center $cyan;
+        background-size: cover;
+      }
+      &.post-38 {
+        background: url('../img/ikon_oktatas.png') no-repeat center center $sky;
+        background-size: cover;
+      }
+      i {
+        line-height: 1.8em;
       }
     }
-
-    
-
-
-
-
-    
     h3 {
       font-weight: 400;
 
       @include breakpoint($s3) {
         text-align: left;
       }
-
       a {
-        color:$gray-light;
         text-decoration: none;
+
+        color: $gray-light;
         &:hover, &:focus {
-          color:$gray-darker;
+          color: $gray-darker;
         }
       }
     }
-
     .intro {
       text-align: left;
     }
-    
-
     .buti {
-      display:block;
-      text-align:right;
-      font-size: 0.875em;
+      font-size: .875em;
       font-weight: bold;
       font-style: italic;
-      
 
+      display: block;
 
+      text-align: right;
       //clear:both;
+
       @include breakpoint($s3) {
-       text-align: left;
-       margin-left:8.66666667em;
+        margin-left: 8.66666667em;
+
+        text-align: left;
       }
     }
-
   }
- }
+}
 
 .eszkozokwrap {
   background: lighten($gray-lighter,15%);
+  header {
+    padding: 1em;
 
-
-
-  header{
-    padding:1em;
     text-align: center;
-    h2{
+    h2 {
       margin-bottom: 0;
     }
     h3 {
-      margin-top:0;
       font-weight: 400;
+
+      margin-top: 0;
     }
   }
   .eszkoz {
-    padding:1em 1em;
-    margin-bottom:2em;
-    box-sizing:border-box;
+    box-sizing: border-box;
+    margin-bottom: 2em;
+    padding: 1em 1em;
+
     @include breakpoint($s2) {
-      float:left;
-      width:33%;
+      float: left;
+
+      width: 33%;
     }
     @include breakpoint($s3) {
-      float:left;
-      width:33%;
-    }
-  
+      float: left;
 
+      width: 33%;
+    }
     figure {
       text-align: center;
       a {
         &:hover, &:focus {
-          img{
-            transition-property:border;
-            transition-duration:200ms;
-            transition-timing-function:ease-in; 
-            border:5px solid $gray-light;
+          img {
+            transition-timing-function: ease-in;
+            transition-duration: 200ms;
+            transition-property: border;
+
+            border: 5px solid $gray-light;
           }
         }
       }
-      img{
+      img {
+        border: 5px solid $gray-lighter;
         border-radius: 50%;
-        border:5px solid $gray-lighter;
       }
     }
     h3 {
       font-weight: 400;
-      text-transform: none;
+
       text-align: center;
+      text-transform: none;
       a {
-        color:$gray;
-        letter-spacing: 0;
         text-decoration: none;
+        letter-spacing: 0;
+
+        color: $gray;
         &:hover, &:focus {
-          color:$gray-darker;
+          color: $gray-darker;
         }
       }
     }
-
     .buti {
-      font-size: 0.875em;
+      font-size: .875em;
       font-weight: bold;
       font-style: italic;
-      text-align: right;
+
       display: block;
+
+      text-align: right;
     }
-
-
   }
- 
- }
+}
 
 
-.bemutatkozowrap{
+.bemutatkozowrap {
   //background: $gray;
   //color:$white;
-  padding:5em 0;
-  
+  padding: 5em 0;
   figure {
+    box-sizing: border-box;
+    padding: 0 1em;
 
-    box-sizing:border-box;
-    padding:0 1em;
     text-align: center;
 
     @include breakpoint($s2) {
-      float:left;
-      width:50%;
-      margin-top: 5em;      
-    }
+      float: left;
 
+      width: 50%;
+      margin-top: 5em;
+    }
     img {
-      border-radius:50%;
-      border:6px solid $gray-lighter;
       max-width: 75%;
+
+      border: 6px solid $gray-lighter;
+      border-radius: 50%;
 
       @include breakpoint($s1) {
         max-width: 389px;
       }
     }
-
   }
   .colcsi {
-    box-sizing:border-box;
-    padding:0 1em;
-
+    box-sizing: border-box;
+    padding: 0 1em;
 
     @include breakpoint($s2) {
-      float:left;
-      width:50%;
-    }
-    h3{
-      margin-bottom:0;
+      float: left;
 
+      width: 50%;
+    }
+    h3 {
+      margin-bottom: 0;
     }
     p {
       //font-size: .875em;
-      
       &:first-of-type {
-        margin-top: 0;
         font-style: italic;
+
+        margin-top: 0;
       }
     }
-
-
   }
-
-
   &:nth-of-type(2n) {
     background: lighten($gray-lighter,15%);
     // background: $gray;
     // color:$white;
   }
-  
-  &:nth-of-type(2n) figure{
+  &:nth-of-type(2n) figure {
     @include breakpoint($s2) {
-      float:right;
-      width:50%;      
+      float: right;
+
+      width: 50%;
     }
   }
-
-  &:nth-of-type(2n) .colcsi{
+  &:nth-of-type(2n) .colcsi {
     @include breakpoint($s2) {
-      float:left;
-      width:50%;      
+      float: left;
+
+      width: 50%;
     }
   }
-
 }
 
 
 
 
 
-.brandswrap{
-  
-  padding:3em 0;
-
+.brandswrap {
+  padding: 3em 0;
   .colcsi1 {
-    box-sizing:border-box;
-    padding:1em 1em;
-
+    box-sizing: border-box;
+    padding: 1em 1em;
 
     @include breakpoint($s2) {
-      float:left;
-      width:50%;
+      float: left;
+
+      width: 50%;
     }
     @include breakpoint($s3) {
-      float:left;
-      width:50%;
+      float: left;
+
+      width: 50%;
     }
-    
     .conti {
-      font-size:1.5em;
+      font-size: 1.5em;
       //line-height: 1.125em;
     }
-
-
-
   }
-
-
-
 }

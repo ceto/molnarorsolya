@@ -4,7 +4,11 @@
  */
 
 
-
+define('ICL_DONT_LOAD_NAVIGATION_CSS', TRUE);
+define('ICL_DONT_LOAD_LANGUAGE_SELECTOR_CSS', TRUE);
+define('ICL_DONT_LOAD_LANGUAGES_JS', TRUE);
+remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+remove_action( 'wp_print_styles', 'print_emoji_styles' );
 
 /************ MetaBoxes **********/
 
@@ -29,7 +33,7 @@ function mo_metaboxes( array $meta_boxes ) {
     'priority'   => 'high',
     'show_names' => true, // Show field names on the left
     'fields'     => array(
-      
+
       array(
         'name' => 'Intro, bevezető',
         'desc' => 'Rövid frappáns kivonat, vagy bevezető (kötelező).',
@@ -63,7 +67,7 @@ function mo_metaboxes( array $meta_boxes ) {
     'priority'   => 'high',
     'show_names' => true, // Show field names on the left
     'fields'     => array(
-      
+
       array(
         'name' => 'Intro, bevezető',
         'desc' => 'Rövid frappáns kivonat, vagy bevezető (kötelező).',
@@ -81,7 +85,7 @@ function mo_metaboxes( array $meta_boxes ) {
       'priority'   => 'high',
       'show_names' => true, // Show field names on the left
       'fields'     => array(
-        
+
         array(
           'name' => 'Intro, bevezető',
           'desc' => 'Rövid frappáns kivonat, vagy bevezető (kötelező).',
@@ -165,7 +169,7 @@ function mo_metaboxes( array $meta_boxes ) {
 
 
 
-          ) 
+          )
 
         ),
 
