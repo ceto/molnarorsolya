@@ -12,7 +12,7 @@ Template Name: Home Page
   <div class="wrapped clearfix">
     <div class="heroblokk">
       <h3>Csak rád figyelünk</h3>
-      <p>Első látogatásodkor vendégünk vagy egy <a href="<?= get_permalink(651); ?>" class="btn">arcdiagnosztikára</a></p>
+      <p>Első látogatásodkor vendégünk vagy egy <a href="<?= get_permalink(651); ?>">arcdiagnosztikára</a></p>
     </div>
   </div><!-- /.wrapped -->
 </div><!-- /.heroswrap -->
@@ -26,26 +26,19 @@ Template Name: Home Page
         'posts_per_page' => 1
       )); ?>
       <?php if (!$the_fact->have_posts()) : ?>
-        <h3>Aktuális akció</h3>
-        <h4 class="akcio-title">
-          Jelenleg nincs kiemelt akció, iratkozz fel hírlevelünkre ha értesülni akarsz a következőröl.
+        <h4 class="akcio__title">
+           Érdemes feliratkozni hírlevelünkre, akcióinkról emailben értesítünk.
         </h4>
-        <a href="<?php the_permalink(); ?>">Hírlevél feliratkozás</a>
+        <a href="<?php the_permalink(); ?>" class="btn">Hírlevél feliratkozás</a>
       <?php else : ?>
         <?php while ($the_fact->have_posts()) : $the_fact->the_post(); ?>
-          <h3>Aktuális akció</h3>
-          <p class="megtak"><?php echo get_post_meta( $post->ID, '_meta_csali', true ); ?></p>
-          <h4 class="akcio-title">
+          <h4 class="akcio__title">
             <a href="<?php the_permalink(); ?>">
               <?php the_title(); ?>
             </a>
           </h4>
-          <!-- <p class="intro"><?php echo get_post_meta( $post->ID, '_meta_intro', true ); ?></p> -->
-          <a href="<?php the_permalink(); ?>" class="btn"><i class="ion-ios7-arrow-right"></i></a>
-          <?php setlocale(LC_ALL, "hu_HU.UTF8"); ?>
-          <p class="idotartam"><i class="ion-star"></i>Az akció időtartama:
-            <span><?php echo strftime('%Y. %B %d. %A', get_post_meta( $post->ID, '_meta_akcio_kezdet', true )); ?> &mdash; <?php echo strftime('%Y. %B %d. %A',get_post_meta( $post->ID, '_meta_akcio_veg', true )); ?></span>
-          </p>
+          <p class="akcio__discl"><?php echo get_post_meta( $post->ID, '_meta_csali', true ); ?></p>
+          <a href="<?php the_permalink(); ?>" class="btn">Részletek</a>
         <?php endwhile; ?>
       <?php endif; ?>
     </div>

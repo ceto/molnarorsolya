@@ -19,7 +19,4 @@
       </nav>
     </div>
   </div>
-  <?php if (is_page_template( 'template-kezeles.php' )) {
-     get_template_part('templates/page', 'header');
-   } ?>
 </header>

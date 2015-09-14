@@ -339,7 +339,7 @@
 
 .sidebarwrap {
   
-  background: $gray-dark;
+  background: $gray-new;
   //background: lighten($gray-lighter,15%);
   color:$white;
   font-size:0.875em;
@@ -381,7 +381,7 @@
     display:block;
     //background: $gray-lighter;
     padding:0.3333em 0em;
-    border-bottom: 1px solid $gray-light;
+    border-bottom: 1px solid $gray-darker;
 
     font-size:1.25em;
     text-transform: uppercase;
@@ -391,11 +391,11 @@
         content:'';
         position:absolute;
         left:0;bottom:0;right:0;
-        border-top: 1px solid $gray-darker;
+        border-top: 1px solid $black;
     }
 
     &:hover, &:focus {
-      color:$green;
+      color:$gray-lighter;
       text-decoration: none;
     }
 

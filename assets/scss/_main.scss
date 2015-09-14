@@ -1,8 +1,9 @@
 .blogitemwrap {
- 
 
 }
 .articlewrap {
+  padding-top:2em;
+  //border:1px solid $gray-lighter;
 }
 
 .pagewrap {
@@ -10,6 +11,12 @@
     padding:0 1em;
   }
 
+}
+
+.blog, .archive, .category, {
+  .page-header {
+    margin-bottom:2em;
+  }
 }
 
 .page-header header {
@@ -29,26 +36,26 @@
 }
 
 .blogitemwrap, .articlewrap{
-  
+
   .entry-figure {
     text-align: center;
     //box-sizing:border-box;
     padding:0.75em 0 0;
-    
-    
+
+
     a {
 
       &:hover, &:focus {
         img{
           border:5px solid $gray-lighter;
         }
-      
+
       }
     }
     img{
       transition-property:border;
       transition-duration:200ms;
-      transition-timing-function:ease-in; 
+      transition-timing-function:ease-in;
       border-radius: 50%;
       border:5px solid lighten($gray-lighter,15%);
     }
@@ -87,7 +94,7 @@
 
 .entry-intro {
 
-  font-size:1.5em;
+  font-size:1.333em;
   font-weight: 700;
   //font-style: italic;
   margin-bottom: 2em;
@@ -100,7 +107,7 @@
 }
 
 .entry-actionblock {
-  margin:1.5em 0 2em;
+  margin:3em 0 3em;
   font-size: 1.5em;
   font-style: italic;
   font-weight:800;
@@ -113,15 +120,15 @@
     position:relative;
     padding-left:2.5em;
     display: block;
-    color:$gray-new;
+    color:$berry;
     text-decoration: none;
     display:block;
     &:hover, &:focus {
-      color:$berry;
+      color:$gray-new;
     }
 
     &:hover i, &:focus i {
-      background:$berry;
+      background:$gray-new;
 
     }
 
@@ -135,7 +142,7 @@
       height:1.75em;
       text-align:center;
       color:$white;
-      background: $gray-new;
+      background: $berry;
       border-radius:50%;
 
 
@@ -164,10 +171,10 @@
   h4 {
     margin: 0;
     font-size: 0.875em;
-    color:$gray;
+    //color:$gray;
     //display: inline
   }
-  background: $purple;
+  background: $berry;
   .kezd, .veg {
     font-size: 0.875em;
     font-style: italic;
@@ -204,7 +211,7 @@
     }
   }
 
-} 
+}
 
 .kommentnyito {
   box-sizing:border-box;
@@ -219,7 +226,7 @@
   text-align: center;
   background: lighten($gray-lighter,15%);
   color:$gray;
- 
+
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -256,7 +263,7 @@
       float:right;
       width:66%;
     }
-    
+
     &.nyitva {
       display:block;
     }
@@ -302,7 +309,7 @@
   header{
     padding:0 1em;
   }
-  
+
   h1 {
     margin:2em 0 1em;
     text-align: center;
@@ -352,7 +359,7 @@
     }
     .intro {
       //font-size: 1.25em;
-      
+
     }
 
     .buti {
@@ -373,7 +380,7 @@
  }
 
 .felez {
-  
+
   @include breakpoint($s2) {
     width:50%;
     float:left;

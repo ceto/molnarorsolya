@@ -301,18 +301,19 @@
 }
 
 .breadcrumb {
-  margin-top: 1em;
-  font-size: 0.875em;
+  margin-top: 0em;
+  font-size: 1em;
   font-weight: bold;
+  color:$gray-lighter;
   @include breakpoint($s1) {
-    margin-top:2em;
+    margin-top:0em;
   }
 
   @include breakpoint($s2) {
-    margin-top:5em;
+    margin-top:0em;
   }
   @include breakpoint($s3) {
-    margin-top:5em;
+    margin-top:0em;
   }
   .breadcrumb_last {
     display:none;
@@ -321,12 +322,12 @@
   a {
 
     text-decoration: none;
-    color:$gray;
+    color:$gray-lighter;
     padding:1px 3px;
 
     &:hover, &:focus {
       color:$white;
-      background: $gray;
+      background-color: $berry;
     }
   }
 }

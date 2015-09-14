@@ -3,7 +3,8 @@
 Template Name: Kezelés Szimpla Sablon
 */
 ?>
-<div class="main <?php echo roots_main_class(); ?>" role="main"> 
+<?php get_template_part('templates/page', 'header'); ?>
+<div class="main <?php echo roots_main_class(); ?>" role="main">
   <?php while (have_posts()) : the_post(); ?>
   <div class="kezeleswrap wrap">
     <div class="wrapped clearfix">
@@ -16,14 +17,14 @@ Template Name: Kezelés Szimpla Sablon
               <div class="entry-testimon">
                 <blockquote>
                   <p><?php echo get_post_meta( $post->ID, '_meta_ugyfel_mondta', true ); ?></p>
-                  <footer>&mdash; <?php echo get_post_meta( $post->ID, '_meta_ugyfel_nev', true ); ?></footer>          
+                  <footer>&mdash; <?php echo get_post_meta( $post->ID, '_meta_ugyfel_nev', true ); ?></footer>
                 </blockquote>
               </div>
             <?php endif; ?>
-            
+
             <div class="entry-actionblock">
               <a href="tel:+36704337511" class="tel"><i class="ion-ios7-telephone"></i>Hívd Orsit<span>+36 70 433 7511</span></a>
-              <a href="tel:+36308649091" class="tel"><i class="ion-iphone"></i>Vagy Barbit<span>+36 30 864 9091</span></a>
+              <a href="tel:+36308649091" class="tel"><i class="ion-iphone"></i>vagy Barbit<span>+36 30 864 9091</span></a>
               <a href="?page_id=11&ap_id=<?php echo get_the_ID(); ?>#respond" class="online"><i class="ion-compose"></i>jelentkezz Online</a>
             </div>
             <?php get_template_part('templates/sharing'); ?>
@@ -65,7 +66,7 @@ Template Name: Kezelés Szimpla Sablon
               <i class="ion-ios7-arrow-right"></i>
             </a>
           </div>
-        <?php endwhile; ?>                  
+        <?php endwhile; ?>
         <a class="more" href="<?php echo get_permalink($father); ?>">Még több kezelés ...</a>
       </aside>
    </div><!-- /.wrapped -->
