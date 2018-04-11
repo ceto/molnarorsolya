@@ -37,11 +37,12 @@
       <footer>
         <?php related_posts(); ?>
         <?php wp_link_pages(array('before' => '<nav class="page-nav"><p>' . __('Pages:', 'roots'), 'after' => '</p></nav>')); ?>
-      </footer>
-      <nav class="nav-post clearfix">
-        <?php previous_post_link('%link','<i class="ion-arrow-left-c"></i> %title'); ?>
-        <?php next_post_link('%link','%title <i class="ion-arrow-right-c"></i>'); ?>
-      </nav>
+        <nav class="nav-post clearfix">
+            <?php previous_post_link('%link','<i class="ion-arrow-left-c"></i> %title'); ?>
+            <?php next_post_link('%link','%title <i class="ion-arrow-right-c"></i>'); ?>
+        </nav>  
+    </footer>
+      
      </article>
   </div><!-- / .wrapped --> 
 </div><!-- / .articlewrap -->

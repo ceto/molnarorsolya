@@ -7,13 +7,17 @@
 }
 
 .pagewrap {
+    padding-bottom:4em;
+}
+
+.pagewrap {
   article {
     padding:0 1em;
   }
 
 }
 
-.blog, .archive, .category, {
+.blog, .archive, .category, .page-template-template-newsletter {
   .page-header {
     margin-bottom:2em;
   }

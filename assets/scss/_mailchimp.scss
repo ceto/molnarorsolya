@@ -1,5 +1,9 @@
+.nls {
+    max-width: 600px;
+    margin:0 auto;
+}
 /* MailChimp Form Embed Code - Classic - 08/17/2011 */
-#mc_embed_signup {
+#amc_embed_signup {
   form {
     display:block; position:relative; text-align:left;
   }
@@ -34,9 +38,9 @@
   .size1of2 {clear:none; float:left; display:inline-block; width:46%; margin-right:4%;}
 }
 
-* html #mc_embed_signup .size1of2 {margin-right:2%; /* Fix for IE6 double margins. */}
+* html #amc_embed_signup .size1of2 {margin-right:2%; /* Fix for IE6 double margins. */}
 
-#mc_embed_signup{
+#amc_embed_signup{
   .mc-field-group label {
     display: none;
   }

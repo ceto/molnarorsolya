@@ -67,7 +67,7 @@
 
 
 .formwrap {
-  @extend contactwrap;
+  @extend .contactwrap;
 
   background: $white;
   

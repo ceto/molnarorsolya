@@ -259,24 +259,24 @@
 
 .nav-post {
   box-sizing:border-box;
-  padding:0 1em;
+  //padding:0 1em;
 
 
   margin-bottom: 4em;
   @include breakpoint($s2) {
-    float:left;
-    width:34%;
-    position:absolute;
-    bottom:0;
-    margin-bottom:1em;
+    // float:left;
+    // width:34%;
+    // position:absolute;
+    // bottom:0;
+    //margin-bottom:1em;
 
   }
   @include breakpoint($s3) {
-    float:left;
-    width:34%;
-    position:absolute;
-    bottom:0;
-    margin-bottom:1em;
+    // float:left;
+    // width:34%;
+    // position:absolute;
+    // bottom:0;
+    // margin-bottom:1em;
 
   }
 

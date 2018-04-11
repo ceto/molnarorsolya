@@ -2673,6 +2673,7 @@ function mce_success_cb(resp){
 
 ;// place any jQuery/helper plugins in here, instead of separate, slower script files.;/* Author: Gabor Szabo <szabogabi@gmail.com> */
 
+
 function initialize() {
   // Create an array of styles.
   var styles = [
@@ -2717,9 +2718,14 @@ function initialize() {
 
  });
 }
-google.maps.event.addDomListener(window, 'load', initialize);
+
+
 
 $(document).ready(function(){
+
+    if ($('.page-template-template-contact').length) {
+        google.maps.event.addDomListener(window, 'load', initialize);
+    }
 
   $('.kommentnyito').click(function(e){
     e.preventDefault();
