@@ -30,7 +30,7 @@ Template Name: Hírlevél Sablon
                         </div>
                         <div class="amc-field-group">
                             <label for="checkbox1"><input id="checkbox1" required="required" class="required" name="checkbox1" type="checkbox" value="1"> Hozzájárulok, hogy marketing tartalmú hírlevelet küldjenek.</label><br>
-                            <label for="checkbox2"><input id="checkbox2" required="required" class="required" name="checkbox2" type="checkbox" value="1" required> Elfogadom az adatkezelési irányelveket.</label><br><br>
+                            <label for="checkbox2"><input id="checkbox2" required="required" class="required" name="checkbox2" type="checkbox" value="1" required> Elfogadom az <a href="<?php the_permalink(2302); ?>">adatkezelési irányelveket.</a></label><br><br>
                         </div>
                         <div id="mce-responses" class="clear">
                             <div class="response" id="mce-error-response" style="display:none"></div>

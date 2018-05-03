@@ -45,31 +45,12 @@
       </section>
       <?php dynamic_sidebar('sidebar-footer-2'); ?>
 
-      <section class="widget widget_newsletter">
+      <section class="widget widget_impr">
+        <h3>Iratkozz fel hírlevelünkre</h3>
+        <p><strong>Újdonságainkról és az akcióinkról értesülj elsőként!</strong></p>
+        <a href="<?php the_permalink(2301); ?>" class="btn">Tovább a feliratkozásra  <i class="ion-paper-airplane"></i></a>
 
-
-<!-- Begin MailChimp Signup Form -->
-<div id="mc_embed_signup">
-<form action="http://molnarorsolya.us7.list-manage.com/subscribe/post?u=bdc266f9fef1502dcc0a3a5ed&amp;id=8e7bed2111" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-  <h3>Érdemes feliratkozni</h3>
-  <h4>Hírlevelünkből az újdonságainkról és az akcióinkról értesülhetsz</h4>
-<div class="mc-field-group">
-  <label for="mce-EMAIL">Email cím </label>
-  <input type="email" value="" placeholder="Add meg az email címed" name="EMAIL" class="required email" id="mce-EMAIL">
-  <input type="submit" value="Ok" name="subscribe" id="mc-embedded-subscribe" class="button">
-</div>
-<!-- p><a href="http://us7.campaign-archive1.com/home/?u=bdc266f9fef1502dcc0a3a5ed&id=8e7bed2111" title="View previous campaigns">
-  Korábbi hírlevelek
-</a></p -->
-  <div id="mce-responses">
-    <div class="response" id="mce-error-response" style="display:none"></div>
-    <div class="response" id="mce-success-response" style="display:none"></div>
-  </div>
-</form>
-<em>Hírlevél feliratkozóink között havonta kisorsolunk egy <a href="<?php echo get_permalink('654'); ?>">kézmasszázst.</a></em>
-</div>
-<!--End mc_embed_signup-->
-    <a class="tothetop" href="#"><i class="ion-arrow-up-c"></i></a>
+        <a class="tothetop" href="#"><i class="ion-arrow-up-c"></i></a>
       </section>
 
     </div><!-- /.wrapped -->
