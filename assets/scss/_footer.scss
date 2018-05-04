@@ -1,3 +1,23 @@
+#cookie-notice {
+    .button.wp-default {
+        background: $berry;
+        color:$white-light;
+        font-weight: 800;
+        border: none;
+        text-shadow: none;
+        &:focus, &:hover {
+            background: $black;
+            color: $white-light;
+        }
+    }
+    a {
+        &:focus, &:hover {
+            color: $berry;
+
+        }
+    }
+
+}
 .content-info {
   font-size:0.875em;
 }
