@@ -1,20 +1,20 @@
 .herowrap {
-  min-height: 20em;
+  min-height: 22em;
   position: relative;
 
-  background-color: $gray-new;
-  background-image: url('../img/hero-image.jpg');
+  //background-color: $gray-lighter;
+  background-image: url('../img/head_bg_old.jpg');
   background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
+  background-position: center center;
+  background-size: auto 100%;
   //box-shadow: $black 0px 5px 0 5px inset;
 
   @include breakpoint($s1) {
   }
   @include breakpoint($s2) {
-    //background-image: url('../img/hero-image.jpg');
+    //background-image: url('../img/head_bg_old_small.jpg');
     min-height: 0;
-    padding-top: 37%;
+    padding-top: 45%;
   }
   @include breakpoint($s3) {
   }
@@ -77,7 +77,7 @@
     //height: 2em;
     padding: 0;
     background-color: $berry;
-    color:$white-light;
+    color:$white;
     font-weight: 800;
     padding:.875em 1.75em;
     border-radius: 4px;
