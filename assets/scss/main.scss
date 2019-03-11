@@ -74,24 +74,24 @@
 .entry-content{
    .aligncenter {
       display: block;
-      margin: 0 auto; 
+      margin: 0 auto;
    }
-   .alignleft { 
+   .alignleft {
       display: block;
       @include breakpoint($s1){
          float: left;
          display: inline-block;
          margin-right: 1em;
-         margin-bottom: 1em; 
+         margin-bottom: 1em;
       }
     }
-   .alignright { 
+   .alignright {
          display: block;
       @include breakpoint($s1){
          float: right;
          display: inline-block;
          margin-left:1em;
-         margin-bottom: 1em;  
+         margin-bottom: 1em;
       }
    }
 }
@@ -106,3 +106,4 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 @media (max-width: 767px) {
 
 }
+
