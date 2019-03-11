@@ -10,3 +10,4 @@ assets/vendor/*
 !assetsvendor/jquery/dist/jquery.min.js
 !assetsvendor/jquery/dist/jquery.js
 #assets/manifest.json
+dploy.yaml
