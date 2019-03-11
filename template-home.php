@@ -13,7 +13,7 @@ Template Name: Home Page
     <img src="<?= get_stylesheet_directory_uri() ?>/assets/img/head_bg_old.jpg" alt="">
     <div class="heroblokk">
       <!-- <h3>Csak rád figyelünk</h3> -->
-      <p>Szakmai felkészültség és természetes anyagok használata. Várjuk kedves vendégeinket.</p>
+      <p><?php _e('Szakmai felkészültség és természetes anyagok használata. Várjuk kedves vendégeinket.','mo'); ?></p>
 
       <!-- <p>Első látogatásodkor vendégünk vagy egy <a href="<?= get_permalink(651); ?>">arcdiagnosztikára</a></p> -->
     </div>
@@ -30,9 +30,9 @@ Template Name: Home Page
       )); ?>
       <?php if (!$the_fact->have_posts()) : ?>
         <h4 class="akcio__title">
-           Érdemes feliratkozni hírlevelünkre, akcióinkról emailben értesítünk.
+        <?php _e('Érdemes feliratkozni hírlevelünkre, akcióinkról emailben értesítünk.','mo'); ?>
         </h4>
-        <a href="<?php the_permalink(); ?>" class="btn">Hírlevél feliratkozás</a>
+        <a href="<?php the_permalink(); ?>" class="btn"><?php _e('Hírlevél feliratkozás','mo'); ?></a>
       <?php else : ?>
         <?php while ($the_fact->have_posts()) : $the_fact->the_post(); ?>
           <h4 class="akcio__title">
@@ -66,7 +66,7 @@ Template Name: Home Page
     <article <?php post_class(); ?>>
       <header>
         <h2><?php echo roots_title(); ?></h2>
-        <h3>Kozmetikai kezelések</h3>
+        <h3><?php _e('Kozmetikai kezelések','mo'); ?></h3>
       </header>
       <?php $i=1;
        while ($the_kezeles->have_posts()) : $the_kezeles->the_post(); ?>

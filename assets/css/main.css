@@ -2402,6 +2402,7 @@ blockquote {
   .nav-sub li.menu-gepi-kezelesek a:before {
     background: url("../img/ikon_szaj.png") no-repeat center center #ece7aa;
     background-size: 100%; }
+  .nav-sub li.menu-smink a:before,
   .nav-sub li.menu-smink-es-tetovalas a:before {
     background: url("../img/ikon_spiral.png") no-repeat center center #ecc4aa;
     background-size: 100%; }
