@@ -1,37 +1,38 @@
 .herowrap {
-  min-height: 22em;
+  //min-height: 22em;
+
   position: relative;
 
-  //background-color: $gray-lighter;
-  background-image: url('../img/head_bg_old.jpg');
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: auto 100%;
+  // background-color: $gray-lighter;
+  // background-image: url('../img/head_bg_old.jpg');
+  // background-repeat: no-repeat;
+  // background-position: center center;
+  // background-size: auto 100%;
   //box-shadow: $black 0px 5px 0 5px inset;
 
   @include breakpoint($s1) {
   }
   @include breakpoint($s2) {
+    //margin-bottom:3rem;
     //background-image: url('../img/head_bg_old_small.jpg');
-    min-height: 0;
-    padding-top: 45%;
+    //min-height: 0;
+    //padding-top: 45%;
   }
   @include breakpoint($s3) {
+    margin-bottom:3rem;
   }
   .heroblokk {
-    color:$white;
+    color:$white-light;
     font-size: 1;
 
     padding: 1em 1em;
 
-    @include breakpoint($s1) {
       position: absolute;
       bottom:2em;
-    }
     @include breakpoint($s2) {
       bottom:3em;
     }
-    @include breakpoint($s4) {
+    @include breakpoint($s3) {
       bottom:4em;
     }
     h3 {
@@ -44,11 +45,17 @@
     p {
       font-weight: 700;
       margin:0;
+      font-size: 1.25em;
+      max-width: 22em;
+      //text-transform: uppercase;
       a {
         color:$berry;
       }
        @include breakpoint($s1) {
         margin-left: 1.75em;
+      }
+      @include breakpoint($s2) {
+        font-size: 1.75em;
       }
     }
 

@@ -2458,28 +2458,20 @@ blockquote {
       background-color: #E38B9E; }
 
 .herowrap {
-  min-height: 22em;
-  position: relative;
-  background-image: url("../img/head_bg_old.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: auto 100%; }
-  @media only screen and (min-width: 768px) {
+  position: relative; }
+  @media only screen and (min-width: 1024px) {
     .herowrap {
-      min-height: 0;
-      padding-top: 45%; } }
+      margin-bottom: 3rem; } }
   .herowrap .heroblokk {
-    color: #ffffff;
+    color: #fef4e2;
     font-size: 1;
-    padding: 1em 1em; }
-    @media only screen and (min-width: 480px) {
-      .herowrap .heroblokk {
-        position: absolute;
-        bottom: 2em; } }
+    padding: 1em 1em;
+    position: absolute;
+    bottom: 2em; }
     @media only screen and (min-width: 768px) {
       .herowrap .heroblokk {
         bottom: 3em; } }
-    @media only screen and (min-width: 1280px) {
+    @media only screen and (min-width: 1024px) {
       .herowrap .heroblokk {
         bottom: 4em; } }
     .herowrap .heroblokk h3 {
@@ -2490,12 +2482,17 @@ blockquote {
       font-weight: 700; }
     .herowrap .heroblokk p {
       font-weight: 700;
-      margin: 0; }
+      margin: 0;
+      font-size: 1.25em;
+      max-width: 22em; }
       .herowrap .heroblokk p a {
         color: #E38B9E; }
       @media only screen and (min-width: 480px) {
         .herowrap .heroblokk p {
           margin-left: 1.75em; } }
+      @media only screen and (min-width: 768px) {
+        .herowrap .heroblokk p {
+          font-size: 1.75em; } }
 
 .actionwrap {
   color: #ffffff;

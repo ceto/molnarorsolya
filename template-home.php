@@ -10,9 +10,12 @@ Template Name: Home Page
 
 <div class="herowrap wrap">
   <div class="wrapped clearfix">
+    <img src="<?= get_stylesheet_directory_uri() ?>/assets/img/head_bg_old.jpg" alt="">
     <div class="heroblokk">
-      <h3>Csak rád figyelünk</h3>
-      <p>Első látogatásodkor vendégünk vagy egy <a href="<?= get_permalink(651); ?>">arcdiagnosztikára</a></p>
+      <!-- <h3>Csak rád figyelünk</h3> -->
+      <p>Szakmai felkészültség és természetes anyagok használata. Várjuk kedves vendégeinket.</p>
+
+      <!-- <p>Első látogatásodkor vendégünk vagy egy <a href="<?= get_permalink(651); ?>">arcdiagnosztikára</a></p> -->
     </div>
   </div><!-- /.wrapped -->
 </div><!-- /.heroswrap -->
