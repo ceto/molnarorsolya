@@ -2151,6 +2151,8 @@ blockquote {
     width: 1.125rem;
     text-align: center;
     color: #000; }
+    .tiptop__tel .face:hover, .tiptop__tel .face:focus {
+      color: #fff; }
 
 .tiptop__lang {
   font-size: .875em;
