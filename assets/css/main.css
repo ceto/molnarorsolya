@@ -2141,6 +2141,12 @@ blockquote {
   @media only screen and (min-width: 480px) {
     .tiptop__tel {
       float: left; } }
+  .tiptop__tel .face {
+    background-color: #E38B9E;
+    display: inline-block;
+    width: 1.125rem;
+    text-align: center;
+    color: #000; }
 
 .tiptop__lang {
   font-size: .875em;

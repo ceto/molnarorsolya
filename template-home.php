@@ -130,7 +130,7 @@ Template Name: Home Page
 <?php
     $the_bemutatkozas=new WP_Query( array(
     'post_type' => 'page',
-    'post__in' => array(1327,124),
+    'post__in' => array(1327,124,2637),
     //'orderby' => 'date',
     'order'   => 'ASC',
     )

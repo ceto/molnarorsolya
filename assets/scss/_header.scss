@@ -25,6 +25,16 @@
   @include bp($s1) {
     float:left;
   }
+
+  .face {
+    background-color: $berry;
+    display: inline-block;
+    width: 1.125rem;
+    text-align: center;
+    color:#000;
+
+
+  }
 }
 
 
