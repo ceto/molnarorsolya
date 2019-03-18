@@ -29,11 +29,12 @@
   .face {
     background-color: $berry;
     display: inline-block;
-    width: 1.125rem;
+    width: 1rem;
     text-align: center;
     color:#000;
     &:hover, &:focus {
-      color:#fff;
+      color:#000;
+      background-color: #fff;
     }
   }
 }

@@ -2148,9 +2148,12 @@ blockquote {
   .tiptop__tel .face {
     background-color: #E38B9E;
     display: inline-block;
-    width: 1.125rem;
+    width: 1rem;
     text-align: center;
     color: #000; }
+    .tiptop__tel .face:hover, .tiptop__tel .face:focus {
+      color: #000;
+      background-color: #fff; }
 
 .tiptop__lang {
   font-size: .875em;
@@ -3033,7 +3036,6 @@ blockquote {
 
 .kezgyujtowrap {
   padding-bottom: 12em;
-  background-image: url("../img/main_bg_studio.jpg");
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: 100% auto;
