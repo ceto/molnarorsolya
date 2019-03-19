@@ -20,7 +20,7 @@ Template Name: Kapcsolati oldal Sablon
 
   //response messages
   $not_human       = "Person identifikasjon er feil.";
-  $missing_content = "Vennligst oppgi all informasjon";
+  $missing_content = "Üzenet szövege hiányzik";
   $email_invalid   = "Érvénytelen e-mail cím.";
   $message_unsent  = "Küldés nem sikerült. Vedd fel velünk a kpacsolatot telefonon.";
   $message_sent    = "Üzenetedet postáztuk. Hamarosan jelentkezünk ";
