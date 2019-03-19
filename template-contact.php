@@ -10,12 +10,12 @@ Template Name: Kapcsolati oldal Sablon
 
   //function to generate response
   function generate_response($type, $message){
-    
+
     global $response;
 
     if($type == "success") $response = "<div class='success'>{$message}</div>";
     else $response = "<div class='error'>{$message}</div>";
-    
+
   }
 
   //response messages
@@ -37,7 +37,7 @@ Template Name: Kapcsolati oldal Sablon
 
   //php mailer variables
   //$to = get_option('admin_email');
-  $to = 'alexander.tvedt@fanasparebank.no';
+  $to = 'mo@molnarorsolya.hu';
   $subject = "Message from ".get_bloginfo('name');
 //  $headers = 'From: '. $email . "\r\n" .
 //    'Reply-To: ' . $email . "\r\n";
@@ -48,11 +48,11 @@ $headers .= "Reply-To: ". strip_tags($email) . "\r\n";
 $headers .= "MIME-Version: 1.0\r\n";
 //$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
-  
+
 if(!$human == 0){
     if($human != 2) generate_response("error", $not_human); //not human!
     else {
-      
+
       //validate email
       if(!filter_var($email, FILTER_VALIDATE_EMAIL))
         generate_response("error", $email_invalid);
@@ -71,12 +71,12 @@ if(!$human == 0){
         }
       }
     }
-  } 
-  else 
+  }
+  else
     if ($_POST['submitted']) generate_response("error", $missing_content);
 
 ?>
-<div class="main <?php echo roots_main_class(); ?>" role="main"> 
+<div class="main <?php echo roots_main_class(); ?>" role="main">
   <?php while (have_posts()) : the_post(); ?>
   <div class="contactwrap wrap">
     <div class="wrapped clearfix">
@@ -114,8 +114,8 @@ if(!$human == 0){
     </div>
 
 
-    <?php 
-      $the_ap = new WP_Query ( 
+    <?php
+      $the_ap = new WP_Query (
         array(
           'post_type' => 'page',
           'posts_per_page'=>100,
@@ -124,8 +124,8 @@ if(!$human == 0){
           'post_parent__in'=>array(31,33,34,36,38)
          )
         );
-    ?>    
-    
+    ?>
+
     <div class="controlsa clearfix">
       <label for="ap_id">Tárgy</label>
       <select name="ap_id" id="ap_id">
@@ -153,6 +153,6 @@ if(!$human == 0){
     <div class="right">
       <div class="fb-like-box" data-href="https://www.facebook.com/akozmetikusom" data-width="400" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>
     </div>
-  </div><!-- / .wrapped --> 
+  </div><!-- / .wrapped -->
 </div><!-- / .formwrap -->
 
