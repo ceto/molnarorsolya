@@ -2121,14 +2121,15 @@ blockquote {
 .tiptop {
   background-color: #23282d;
   color: #E38B9E;
-  padding: .5em .5em;
+  padding: 0 0 0 .5em;
   line-height: 1;
-  text-align: center; }
-  .tiptop:before, .tiptop:after {
-    content: " ";
-    display: table; }
-  .tiptop:after {
-    clear: both; }
+  text-align: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center; }
 
 .tiptop__tel {
   color: #E38B9E;
@@ -2142,50 +2143,53 @@ blockquote {
     .tiptop__tel a:hover, .tiptop__tel a:focus {
       color: #E38B9E;
       text-decoration: none; }
-  @media only screen and (min-width: 480px) {
-    .tiptop__tel {
-      float: left; } }
   .tiptop__tel .face {
-    background-color: #E38B9E;
+    background-color: #fff;
     display: inline-block;
     width: 1rem;
     text-align: center;
     color: #000; }
     .tiptop__tel .face:hover, .tiptop__tel .face:focus {
       color: #000;
-      background-color: #fff; }
+      background-color: #E38B9E; }
+
+.tiptop__actions {
+  color: #E38B9E;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: .875em; }
+  .tiptop__actions a {
+    color: #ffffff;
+    display: inline-block;
+    padding: .75em .75em;
+    background-color: #E38B9E;
+    line-height: 1; }
+    .tiptop__actions a:hover, .tiptop__actions a:focus {
+      background-color: #d44d6a;
+      text-decoration: none; }
+    .tiptop__actions a i {
+      font-size: 112.5%; }
 
 .tiptop__lang {
-  font-size: .875em;
-  line-height: 1;
-  color: #ffffff;
-  font-weight: 800;
-  text-transform: uppercase;
-  margin-top: .5em; }
-  @media only screen and (min-width: 480px) {
-    .tiptop__lang {
-      margin-top: 0;
-      float: right; } }
+  display: inline-block; }
   .tiptop__lang ul {
+    display: inline-block;
     list-style-type: none;
     margin: 0;
     padding: 0; }
     .tiptop__lang ul li {
       display: inline-block;
       margin: 0;
-      padding: 0; }
-      .tiptop__lang ul li:not(:first-child):before {
-        display: inline-block;
-        font-style: normal;
-        font-weight: 300;
-        content: '/';
-        color: #ffffff;
-        margin: 0 .25em; }
+      padding: 0;
+      font-style: italic; }
+      .tiptop__lang ul li.wpml-ls-current-language {
+        display: none; }
       .tiptop__lang ul li a {
-        color: inherit;
-        display: inline; }
+        color: #fff;
+        display: inline;
+        font-weight: 800; }
         .tiptop__lang ul li a:hover, .tiptop__lang ul li a:focus {
-          color: #fff;
+          color: #E38B9E;
           text-decoration: none; }
         .tiptop__lang ul li a.lang_sel_sel {
           color: #E38B9E; }
@@ -2196,10 +2200,13 @@ blockquote {
 
 .banner {
   position: relative;
-  padding-bottom: 4em;
+  padding-bottom: 2em;
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover; }
+  @media only screen and (min-width: 768px) {
+    .banner {
+      padding-bottom: 4em; } }
 
 .page-header {
   padding: 3em 1em;
@@ -2226,6 +2233,8 @@ blockquote {
   text-align: center;
   display: block;
   margin: 2em auto 0 auto; }
+  .brand img {
+    max-width: 33vw; }
   @media only screen and (min-width: 768px) {
     .brand {
       position: absolute;
@@ -2950,11 +2959,17 @@ blockquote {
       color: #ffffff;
       background: #E38B9E;
       border-radius: 50%; }
-  .entry-actionblock .tel span {
-    font-size: 1em;
-    font-weight: 300;
-    display: block;
-    margin-top: 0.125em; }
+    .entry-actionblock .tel span, .entry-actionblock .online span {
+      font-size: 1em;
+      font-weight: 300;
+      display: block;
+      margin-top: 0.125em; }
+
+.entry-actionblock.dontmove {
+  background-color: #fafafa;
+  margin: 1.5rem 0;
+  border-top: 1px solid #efefef;
+  padding: .25rem .5rem .25rem 1rem; }
 
 .akcio-int {
   padding: 0.5em 1em;

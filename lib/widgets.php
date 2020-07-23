@@ -32,7 +32,7 @@ function roots_widgets_init() {
   ));
 
   // Widgets
-  register_widget('Roots_Vcard_Widget');
+  // register_widget('Roots_Vcard_Widget');
 }
 add_action('widgets_init', 'roots_widgets_init');
 
@@ -92,18 +92,18 @@ class Roots_Vcard_Widget extends WP_Widget {
       echo $before_title, $title, $after_title;
     }
   ?>
-    <p class="vcard">
-      <a class="fn org url" href="<?php echo home_url('/'); ?>"><?php bloginfo('name'); ?></a><br>
-      <span class="adr">
+<p class="vcard">
+    <a class="fn org url" href="<?php echo home_url('/'); ?>"><?php bloginfo('name'); ?></a><br>
+    <span class="adr">
         <span class="street-address"><?php echo $instance['street_address']; ?></span><br>
         <span class="locality"><?php echo $instance['locality']; ?></span>,
         <span class="region"><?php echo $instance['region']; ?></span>
         <span class="postal-code"><?php echo $instance['postal_code']; ?></span><br>
-      </span>
-      <span class="tel"><span class="value"><?php echo $instance['tel']; ?></span></span><br>
-      <a class="email" href="mailto:<?php echo $instance['email']; ?>"><?php echo $instance['email']; ?></a>
-    </p>
-  <?php
+    </span>
+    <span class="tel"><span class="value"><?php echo $instance['tel']; ?></span></span><br>
+    <a class="email" href="mailto:<?php echo $instance['email']; ?>"><?php echo $instance['email']; ?></a>
+</p>
+<?php
     echo $after_widget;
 
     $cache[$args['widget_id']] = ob_get_flush();
@@ -132,11 +132,12 @@ class Roots_Vcard_Widget extends WP_Widget {
     foreach($this->fields as $name => $label) {
       ${$name} = isset($instance[$name]) ? esc_attr($instance[$name]) : '';
     ?>
-    <p>
-      <label for="<?php echo esc_attr($this->get_field_id($name)); ?>"><?php _e("{$label}:", 'roots'); ?></label>
-      <input class="widefat" id="<?php echo esc_attr($this->get_field_id($name)); ?>" name="<?php echo esc_attr($this->get_field_name($name)); ?>" type="text" value="<?php echo ${$name}; ?>">
-    </p>
-    <?php
+<p>
+    <label for="<?php echo esc_attr($this->get_field_id($name)); ?>"><?php _e("{$label}:", 'roots'); ?></label>
+    <input class="widefat" id="<?php echo esc_attr($this->get_field_id($name)); ?>"
+        name="<?php echo esc_attr($this->get_field_name($name)); ?>" type="text" value="<?php echo ${$name}; ?>">
+</p>
+<?php
     }
   }
 }
