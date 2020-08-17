@@ -17,7 +17,7 @@ if (!jqueryLoaded) {
     if (script.readyState && script.onload!==null){
         script.onreadystatechange= function () {
               if (this.readyState == 'complete') mce_preload_check();
-        }    
+        }
     }
 }
 
@@ -50,7 +50,7 @@ function mce_preload_check(){
     }
     var script = document.createElement('script');
     script.type = 'text/javascript';
-    script.src = 'http://downloads.mailchimp.com/js/jquery.form-n-validate.js';
+    script.src = 'https://downloads.mailchimp.com/js/jquery.form-n-validate.js';
     head.appendChild(script);
     try {
         var validatorLoaded=jQuery("#fake-form").validate({});
@@ -65,7 +65,7 @@ function mce_init_form(){
       var options = { errorClass: 'mce_inline_error', errorElement: 'div', onkeyup: function(){}, onfocusout:function(){}, onblur:function(){}  };
       var mce_validator = $("#mc-embedded-subscribe-form").validate(options);
       $("#mc-embedded-subscribe-form").unbind('submit');//remove the validator so we can get into beforeSubmit on the ajaxform, which then calls the validator
-      options = { url: 'http://molnarorsolya.us7.list-manage.com/subscribe/post-json?u=bdc266f9fef1502dcc0a3a5ed&id=8e7bed2111&c=?', type: 'GET', dataType: 'json', contentType: "application/json; charset=utf-8",
+      options = { url: 'https://molnarorsolya.us7.list-manage.com/subscribe/post-json?u=bdc266f9fef1502dcc0a3a5ed&id=8e7bed2111&c=?', type: 'GET', dataType: 'json', contentType: "application/json; charset=utf-8",
                     beforeSubmit: function(){
                         $('#mce_tmp_error_msg').remove();
                         $('.datefield','#mc_embed_signup').each(
@@ -91,7 +91,7 @@ function mce_init_form(){
                                         this.value = '';
                       } else {
                           if (/\[day\]/.test(fields[0].name)){
-                                              this.value = fields[1].value+'/'+fields[0].value+'/'+fields[2].value;                         
+                                              this.value = fields[1].value+'/'+fields[0].value+'/'+fields[2].value;
                           } else {
                                               this.value = fields[0].value+'/'+fields[1].value+'/'+fields[2].value;
                                           }
@@ -117,12 +117,12 @@ function mce_init_form(){
                                     });
                             });
                         return mce_validator.form();
-                    }, 
+                    },
                     success: mce_success_cb
                 };
       $('#mc-embedded-subscribe-form').ajaxForm(options);
-      
-      
+
+
     });
 }
 function mce_success_cb(resp){
@@ -158,11 +158,11 @@ function mce_success_cb(resp){
         try{
             if (index== -1){
                 $('#mce-'+resp.result+'-response').show();
-                $('#mce-'+resp.result+'-response').html(msg);            
+                $('#mce-'+resp.result+'-response').html(msg);
             } else {
                 err_id = 'mce_tmp_error_msg';
                 html = '<div id="'+err_id+'" style="'+err_style+'"> '+msg+'</div>';
-                
+
                 var input_id = '#mc_embed_signup';
                 var f = $(input_id);
                 if (ftypes[index]=='address'){

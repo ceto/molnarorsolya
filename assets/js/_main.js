@@ -20,22 +20,22 @@ function initialize() {
   };
   var helyszin_map = new google.maps.Map(document.getElementById('gmap'), mapOptions);
   helyszin_map.setOptions({styles: styles});
-  
+
 
   var flag = {
-          url: 'http://molnarkozmetika.hu/wp-content/themes/molnarorsolya/assets/img/flag.png',
+          url: 'https://molnarkozmetika.hu/wp-content/themes/molnarorsolya/assets/img/flag.png',
           size: new google.maps.Size(124, 127),
           origin: new google.maps.Point(0,0),
           anchor: new google.maps.Point(10, 120)
         };
-  
+
   var flagshadow = {
-          url: 'http://molnarkozmetika.hu/wp-content/themes/molnarorsolya/assets/img/flag-shadow.png',
+          url: 'https://molnarkozmetika.hu/wp-content/themes/molnarorsolya/assets/img/flag-shadow.png',
           size: new google.maps.Size(124, 127),
           origin: new google.maps.Point(0,0),
           anchor: new google.maps.Point(10, 100)
         };
-        
+
  var markimark = new google.maps.Marker({
     position: placem,
     map: helyszin_map,
@@ -90,7 +90,7 @@ function fbs_click(mi, width, height) {
     var u=location.href;
     var t=document.title;
     if (mi==='fb') {
-      window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(u)+'&t='+encodeURIComponent(t),'sharer', windowFeatures);
+      window.open('https://www.facebook.com/sharer.php?u='+encodeURIComponent(u)+'&t='+encodeURIComponent(t),'sharer', windowFeatures);
     } else {
       window.open('https://plus.google.com/share?url='+encodeURIComponent(u)+'&t='+encodeURIComponent(t),'sharer', windowFeatures);
     }
