@@ -2143,15 +2143,14 @@ blockquote {
     .tiptop__tel a:hover, .tiptop__tel a:focus {
       color: #E38B9E;
       text-decoration: none; }
-  .tiptop__tel .face {
-    background-color: #fff;
+  .tiptop__tel .face, .tiptop__tel .insta {
     display: inline-block;
     width: 1rem;
     text-align: center;
-    color: #000; }
-    .tiptop__tel .face:hover, .tiptop__tel .face:focus {
-      color: #000;
-      background-color: #E38B9E; }
+    font-size: 1.25em; }
+    .tiptop__tel .face svg, .tiptop__tel .insta svg {
+      width: 1em;
+      height: 1em; }
 
 .tiptop__actions {
   color: #E38B9E;

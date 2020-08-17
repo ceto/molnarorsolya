@@ -25,16 +25,27 @@
       text-decoration: none;
     }
   }
-  .face {
-    background-color: #fff;
+  .face, .insta {
+    // background-color: #fff;
     display: inline-block;
     width: 1rem;
     text-align: center;
-    color:#000;
-    &:hover, &:focus {
-      color:#000;
-      background-color: $berry;
+    font-size: 1.125em;
+
+
+    // color:#000;
+    // &:hover, &:focus {
+    //   color:#000;
+    //   background-color: $berry;
+    // }
+
+    svg {
+      width: 1em;
+      height: 1em;
+      fill: currentColor;
+      transform: translateY(.125em);
     }
+
   }
 }
 

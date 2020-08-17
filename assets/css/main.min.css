@@ -2143,15 +2143,16 @@ blockquote {
     .tiptop__tel a:hover, .tiptop__tel a:focus {
       color: #E38B9E;
       text-decoration: none; }
-  .tiptop__tel .face {
-    background-color: #fff;
+  .tiptop__tel .face, .tiptop__tel .insta {
     display: inline-block;
     width: 1rem;
     text-align: center;
-    color: #000; }
-    .tiptop__tel .face:hover, .tiptop__tel .face:focus {
-      color: #000;
-      background-color: #E38B9E; }
+    font-size: 1.125em; }
+    .tiptop__tel .face svg, .tiptop__tel .insta svg {
+      width: 1em;
+      height: 1em;
+      fill: currentColor;
+      transform: translateY(0.125em); }
 
 .tiptop__actions {
   color: #E38B9E;
@@ -3613,7 +3614,7 @@ blockquote {
     padding-left: 1em;
     padding-right: 1em;
     margin-bottom: 1em; }
-  .content-info .widget_impr .face, .content-info .widget_impr .gplus, .content-info .widget_impr .twitter {
+  .content-info .widget_impr .face, .content-info .widget_impr .gplus, .content-info .widget_impr .twitter, .content-info .widget_impr .insta {
     display: inline-block;
     width: 1.75em;
     height: 1.75em;
@@ -3627,10 +3628,15 @@ blockquote {
     position: relative;
     background-color: #58595b;
     color: #cccccc; }
-    .content-info .widget_impr .face:hover, .content-info .widget_impr .face:focus, .content-info .widget_impr .gplus:hover, .content-info .widget_impr .gplus:focus, .content-info .widget_impr .twitter:hover, .content-info .widget_impr .twitter:focus {
+    .content-info .widget_impr .face:hover, .content-info .widget_impr .face:focus, .content-info .widget_impr .gplus:hover, .content-info .widget_impr .gplus:focus, .content-info .widget_impr .twitter:hover, .content-info .widget_impr .twitter:focus, .content-info .widget_impr .insta:hover, .content-info .widget_impr .insta:focus {
       background-color: #E38B9E; }
-    .content-info .widget_impr .face i, .content-info .widget_impr .gplus i, .content-info .widget_impr .twitter i {
+    .content-info .widget_impr .face i, .content-info .widget_impr .gplus i, .content-info .widget_impr .twitter i, .content-info .widget_impr .insta i {
       line-height: 1.75em; }
+    .content-info .widget_impr .face svg, .content-info .widget_impr .gplus svg, .content-info .widget_impr .twitter svg, .content-info .widget_impr .insta svg {
+      width: 1em;
+      height: 1em;
+      fill: currentColor;
+      transform: translateY(0.125em); }
 
 .tothetop {
   display: block;
