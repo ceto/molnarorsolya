@@ -12,7 +12,7 @@ function initialize() {
     }
   ];
 
-  var placem = new google.maps.LatLng(47.490873, 19.052944);
+  var placem = new google.maps.LatLng(47.48781, 19.05839);
   var mapOptions = {
      zoom: 18,
      center: placem,
